@@ -1204,8 +1204,8 @@ T[6916]={{lvl=12,qid=1645,title="신앙의 고서",titleEn="The Tome of Divinity
 T[7442]={{lvl=14,qid=2098,title="자이로마스트의 수색",titleEn="Gyromast's Retrieval"}}
 T[7676]={{lvl=16,qid=2381,title="약탈자 약탈하기",titleEn="Plundering the Plunderers"}}
 T[7678]={{lvl=20,qid=2359,title="클라벤의 탑",titleEn="Klaven's Tower"}}
-T[7866]={{lvl=40,qid=2203,title="황야의 땅에서 재료 찾기",titleEn="Badlands Reagent Run II"},{lvl=40,qid=2501,title="Badlands Reagent Run II"}}
-T[7870]={{lvl=40,qid=2203,title="황야의 땅에서 재료 찾기",titleEn="Badlands Reagent Run II"},{lvl=40,qid=2501,title="Badlands Reagent Run II"}}
+T[7866]={{lvl=40,qid=2203,title="황야의 땅에서 재료 찾기",titleEn="Badlands Reagent Run II"},{lvl=40,qid=2501,title="황야의 땅에서 재료 찾기",titleEn="Badlands Reagent Run II"}}
+T[7870]={{lvl=40,qid=2203,title="황야의 땅에서 재료 찾기",titleEn="Badlands Reagent Run II"},{lvl=40,qid=2501,title="황야의 땅에서 재료 찾기",titleEn="Badlands Reagent Run II"}}
 T[7907]={{lvl=16,qid=2282,title="앨더의 제재소",titleEn="Alther's Mill"}}
 T[7970]={{lvl=16,qid=2381,title="약탈자 약탈하기",titleEn="Plundering the Plunderers"}}
 T[7983]={{lvl=40,qid=2761,title="대장기술과 채광",titleEn="Smelt On, Smelt Off"}}
@@ -1213,8 +1213,8 @@ T[7984]={{lvl=40,qid=2762,title="훌륭한 가짜배기 은",titleEn="The Great 
 T[7985]={{lvl=40,qid=2763,title="보석 채취",titleEn="The Art of the Imbue"}}
 T[8173]={{lvl=30,qid=338,title="가시덤불 골짜기의 푸른 언덕",titleEn="The Green Hills of Stranglethorn"}}
 T[8432]={{lvl=20,qid=2609,title="잔질의 손길",titleEn="The Touch of Zanzil"}}
-T[8703]={{lvl=40,qid=2765,title="Expert Blacksmith!"}}
-T[8708]={{lvl=40,qid=2765,title="Expert Blacksmith!"}}
+T[8703]={{lvl=40,qid=2765,title="고급 대장기술",titleEn="Expert Blacksmith!"}}
+T[8708]={{lvl=40,qid=2765,title="고급 대장기술",titleEn="Expert Blacksmith!"}}
 T[9173]={{lvl=20,qid=2843,title="놈리거어어어언!",titleEn="Gnomer-gooooone!"}}
 T[9320]={{lvl=35,qid=2932,title="준엄한 메시지",titleEn="Grim Message"}}
 T[9362]={{lvl=24,qid=2945,title="꼬질꼬질한 반지",titleEn="Grime-Encrusted Ring"},{lvl=28,qid=2947,title="반지의 귀환",titleEn="Return of the Ring [Alliance]"},{lvl=28,qid=2949,title="반지의 귀환",titleEn="Return of the Ring [Horde]"}}
@@ -1222,7 +1222,7 @@ T[9363]={{lvl=0,qid=2952,title="삐까뻔쩍세척기 5200!",titleEn="The Sparkl
 T[9367]={{lvl=40,qid=2758,title="대장기술의 근원",titleEn="The Origins of Smithing"}}
 T[9602]={{lvl=3,qid=2561,title="발톱의 드루이드",titleEn="Druid of the Claw"}}
 T[10338]={{lvl=10,qid=882,title="이샤무헤일",titleEn="Ishamuhale"}}
-T[10398]={{lvl=30,qid=3721,title="An OOX of Your Own"}}
+T[10398]={{lvl=30,qid=3721,title="선물로 받은 OOX",titleEn="An OOX of Your Own"}}
 T[10456]={{lvl=12,qid=116,title="떨어져 가는 술",titleEn="Dry Times"}}
 T[10790]={{lvl=30,qid=3647,title="회원권 갱신",titleEn="Membership Card Renewal [A]"},{lvl=30,qid=3641,title="직접 만든 물건",titleEn="Show Your Work"},{lvl=30,qid=3645,title="회원권 갱신",titleEn="Membership Card Renewal [H]"},{lvl=30,qid=3643,title="직접 만든 물건",titleEn="Show Your Work"}}
 T[10791]={{lvl=30,qid=3646,title="회원권 갱신",titleEn="Membership Card Renewal"}}
@@ -1257,7 +1257,7 @@ T[19152]={{lvl=45,qid=7865,title="Sentinel Advanced Care Package"}}
 T[19153]={{lvl=45,qid=7868,title="Outrider Advanced Care Package"}}
 T[19154]={{lvl=0,qid=7866,title="Outrider Basic Care Package"}}
 T[19155]={{lvl=0,qid=7867,title="Outrider Standard Care Package"}}
-T[19483]={{lvl=0,qid=7161,title="Proving Grounds (Horde)"}}
+T[19483]={{lvl=0,qid=7161,title="신병 계급장",titleEn="Proving Grounds (Horde)"}}
 T[19484]={{lvl=0,qid=7162,title="신병 계급장",titleEn="Proving Grounds (Alliance)"}}
 T[20228]={{lvl=45,qid=8265,title="Defiler's Advanced Care Package"}}
 T[20229]={{lvl=0,qid=8263,title="Defiler's Basic Care Package"}}
@@ -1266,14 +1266,14 @@ T[20231]={{lvl=45,qid=8262,title="Arathor Advanced Care Package"}}
 T[20233]={{lvl=0,qid=8260,title="Arathor Basic Care Package"}}
 T[20236]={{lvl=0,qid=8261,title="Arathor Standard Care Package"}}
 T[20709]={{lvl=13,qid=97237,title="서가에서 골라 담기",titleEn="Shelf Picked"}}
-T[21946]={{lvl=58,qid=8921,title="The Ectoplasmic Distiller"}}
+T[21946]={{lvl=58,qid=8921,title="심령체 추출기",titleEn="The Ectoplasmic Distiller"}}
 T[22057]={{lvl=58,qid=8996,title="Return to Bodley"}}
 T[22137]={{lvl=58,qid=8945,title="Dead Man's Plea"}}
 T[22192]={{lvl=58,qid=8985,title="More Components of Importance [WARRIOR, ROGUE]"},{lvl=58,qid=8986,title="More Components of Importance [DRUID, PALADIN, SHAMAN]"},{lvl=58,qid=8987,title="More Components of Importance [PRIEST, MAGE]"},{lvl=58,qid=8988,title="More Components of Importance [HUNTER, WARLOCK]"}}
 T[22193]={{lvl=58,qid=8985,title="More Components of Importance [WARRIOR, ROGUE]"},{lvl=58,qid=8986,title="More Components of Importance [DRUID, PALADIN, SHAMAN]"},{lvl=58,qid=8987,title="More Components of Importance [PRIEST, MAGE]"},{lvl=58,qid=8988,title="More Components of Importance [HUNTER, WARLOCK]"}}
 T[22243]={{lvl=20,qid=65603,title="결속",titleEn="The Binding (Incubus) [Stormwind City]"},{lvl=20,qid=1739,title="결속",titleEn="The Binding (Succubus) [Stormwind City]"}}
 T[22244]={{lvl=30,qid=1795,title="결속",titleEn="The Binding (Felhunter)"}}
-T[22320]={{lvl=58,qid=8921,title="The Ectoplasmic Distiller"}}
+T[22320]={{lvl=58,qid=8921,title="심령체 추출기",titleEn="The Ectoplasmic Distiller"}}
 T[22344]={{lvl=58,qid=8996,title="Return to Bodley"}}
 T[22742]={{lvl=0,qid=9272,title="Dressing the Part"}}
 T[22743]={{lvl=0,qid=9272,title="Dressing the Part"}}

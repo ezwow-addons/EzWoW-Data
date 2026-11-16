@@ -15,3 +15,4 @@
 ## X-Credits: spawn, vendor and item drop data from CMaNGOS Classic-DB (GPL v3)
 
 QuestMap_001.lua
+QuestMap_002.lua
