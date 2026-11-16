@@ -4,6 +4,10 @@
 --   subname : [npcID] = subtitle
 local T
 T = EzWoW_Data._Table("Names-koKR", "quest")
+T[8937]="정당한 보상"
+T[8938]="정당한 보상"
+T[8939]="정당한 보상"
+T[8940]="정당한 보상"
 T[8941]="정당한 보상"
 T[8942]="정당한 보상"
 T[8943]="정당한 보상"
