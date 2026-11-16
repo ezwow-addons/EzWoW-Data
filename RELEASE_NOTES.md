@@ -1,7 +1,7 @@
-# v1.0.3
+# v1.0.4
 
 ### 한국어
-- 퀘스트 요구 조건(종족·직업·전문기술·앞 단계 퀘스트) 정보를 추가하고 퀘스트 위치 정보를 갱신했습니다.
+- 데이터를 애드온들의 최신 데이터로 다시 만들었습니다(퀘스트 지도 표 등).
 
 ### English
-- Added quest requirements (race, class, profession, earlier quests) and updated quest spot data.
+- Data rebuilt from the addons' latest data (quest map tables and more).
