@@ -1,7 +1,7 @@
-# v1.0.7
+# v1.0.8
 
 ### 한국어
-- 이름·던전·퀘스트 위치 데이터를 최신 게임 기록으로 갱신했습니다.
+- 이름·퀘스트 위치 데이터를 최신 게임 기록으로 갱신했습니다.
 
 ### English
-- Updated name, dungeon and quest location data to the latest game records.
+- Updated name and quest location data to the latest game records.
