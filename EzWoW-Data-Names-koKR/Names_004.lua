@@ -4,6 +4,9 @@
 --   subname : [npcID] = subtitle
 local T
 T = EzWoW_Data._Table("Names-koKR", "quest")
+T[8748]="수호자의 길"
+T[8749]="수호자의 길"
+T[8750]="수호자의 길"
 T[8751]="칼림도어의 수호자"
 T[8752]="정복자의 길"
 T[8753]="정복자의 길"
