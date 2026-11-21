@@ -6,9 +6,6 @@
 --   foreverDrops : [itemID] = { {inst=zone or Korean instance name, boss=English name, npc=npcID}, ... }
 --   foreverQuests : [itemID] = { {qid, title=Korean, titleEn, lvl, minLevel?, choice?, side?}, ... }
 --   foreverVendors : [itemID] = { {zone, boss=vendor name, npc=npcID, side?}, ... } side "alliance"/"horde"/"both"
---   worldDrops : [itemID] = { {inst=zone, boss=English name, npc=npcID?}, ... } (rare and zone drops)
---   worldVendors : same shape as foreverVendors (zone vendors)
---   worldQuests : same shape as foreverQuests (zone quest rewards)
 local T
 T = EzWoW_Data._Table("Gear", "craftInfo")
 T[252570]={reag={{4304,12},{4236,4},{249428,6},{8343,2},{7069,4},{249427,3}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 90, 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 90, 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 90, Honored\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 90, Honored"}
@@ -502,6 +499,7 @@ T[6341]={{boss="Fel Steed",inst="그림자송곳니 성채",npc=3864},{boss="Com
 T[6443]={{boss="Kresh",inst="통곡의 동굴",npc=3653}}
 T[6446]={{boss="Lady Anacondra",inst="통곡의 동굴",npc=3671}}
 T[6672]={{boss="Mekgineer Thermaplugg",inst="놈리건",npc=7800}}
+T[6841]={{boss="Roogug",inst="가시덩굴 우리",npc=6168}}
 T[6893]={{boss="Electrocutioner 6000",inst="놈리건",npc=6235}}
 T[7192]={{boss="Mekgineer Thermaplugg",inst="놈리건",npc=7800}}
 T[7365]={{boss="Sneed's Shredder",inst="죽음의 폐광",npc=642}}
@@ -522,7 +520,9 @@ T[9234]={{boss="Hydromancer Velratha",inst="줄파락",npc=7795}}
 T[9299]={{boss="Mekgineer Thermaplugg",inst="놈리건",npc=7800}}
 T[9308]={{boss="Dark Iron Ambassador",inst="놈리건",npc=6228},{boss="Grubbis",inst="놈리건",npc=7361}}
 T[9399]={{boss="Baelog",inst="울다만",npc=6906}}
+T[9444]={{boss="첨단로봇",inst="놈리건",npc=216666},{boss="첨단로봇",inst="놈리건",npc=228142}}
 T[9471]={{boss="Nekrum Gutchewer",inst="줄파락",npc=7796}}
+T[9479]={{boss="Chief Ukorz Sandscalp",inst="줄파락",npc=7267}}
 T[9523]={{boss="Nekrum Gutchewer",inst="줄파락",npc=7796},{boss="Ruuzlu",inst="줄파락",npc=7797},{boss="Sandarr Dunereaver",inst="줄파락",npc=10080}}
 T[9738]={{boss="Lord Cobrahn",inst="통곡의 동굴",npc=3669}}
 T[9739]={{boss="Lady Anacondra",inst="통곡의 동굴",npc=3671}}
@@ -691,12 +691,17 @@ T[23200]={{boss="Lady Illucia Barov",inst="스칼로맨스",npc=10502},{boss="In
 T[23201]={{boss="Lady Illucia Barov",inst="스칼로맨스",npc=10502},{boss="Instructor Malicia",inst="스칼로맨스",npc=10505},{boss="The Ravenian",inst="스칼로맨스",npc=10507},{boss="Lorekeeper Polkelt",inst="스칼로맨스",npc=10901},{boss="Doctor Theolen Krastinov",inst="스칼로맨스",npc=11261}}
 T[23320]={{boss="Pyroguard Emberseer",inst="검은바위 첨탑",npc=9816}}
 T[24101]={{boss="The Beast",inst="검은바위 첨탑",npc=10430}}
+T[249692]={{boss="Varrox Bleakhoof",inst="검은아귀 요새",npc=247234}}
 T[251381]={{boss="Fel Steed",inst="그림자송곳니 성채",npc=3864},{boss="Shadow Charger",inst="그림자송곳니 성채",npc=3865}}
 T[251961]={{boss="Shade of the Archmage",inst="달라란",npc=246020}}
+T[267086]={{boss="Overlord Mugg",inst="크롤도크 보루",npc=258968}}
+T[267104]={{boss="Nar'gurk",inst="크롤도크 보루",npc=258964}}
 T[268518]={{boss="The Baron",inst="로데론의 폐허",npc=250660}}
 T[270180]={{boss="Highland Horror",inst="발굴 현장: 저습지",npc=260808}}
 T[270865]={{boss="Relic Guardian",inst="발굴 현장: 저습지",npc=260326}}
 T[270866]={{boss="Relic Guardian",inst="발굴 현장: 저습지",npc=260326}}
+T[271718]={{boss="Primeval Elemental",inst="가라앉은 도시",npc=263886},{boss="Primeval Elemental",inst="가라앉은 도시",npc=273738}}
+T[271721]={{boss="Overlord Mugg",inst="크롤도크 보루",npc=258968}}
 T[273085]={{boss="Rath'mael",inst="로데론의 폐허",npc=250657}}
 T[273086]={{boss="Gilnid",inst="죽음의 폐광",npc=1763}}
 T[273087]={{boss="Lord Serpentis",inst="통곡의 동굴",npc=3673}}
@@ -709,10 +714,31 @@ T[273102]={{boss="Cookie",inst="죽음의 폐광",npc=645}}
 T[273103]={{boss="Shade of the Archmage",inst="달라란",npc=246020},{boss="Rath'mael",inst="로데론의 폐허",npc=250657}}
 T[273105]={{boss="Commander Springvale",inst="그림자송곳니 성채",npc=4278}}
 T[273106]={{boss="Shadetooth",inst="발굴 현장: 저습지",npc=260325}}
+T[273128]={{boss="Nanaya",inst="구체자의 정원",npc=261809}}
 T[273141]={{boss="Gelihast",inst="검은심연의 나락",npc=6243}}
+T[273883]={{boss="Tidemistress Ca'zass",inst="알카즈 감옥",npc=255997}}
+T[274029]={{boss="The Questioner",inst="알카즈 감옥",npc=256236}}
 T[274049]={{boss="Crowd Pummeler 9-60",inst="놈리건",npc=6229}}
 T[274286]={{boss="Durgen Dirgehammer",inst="영주의 전당",npc=261319}}
+T[274463]={{boss="Charlga Razorflank",inst="가시덩굴 우리",npc=4421}}
+T[274608]={{boss="Min'loth the Serpent",inst="가라앉은 도시",npc=267852}}
+T[274609]={{boss="Min'loth the Serpent",inst="가라앉은 도시",npc=267852}}
+T[274610]={{boss="Min'loth the Serpent",inst="가라앉은 도시",npc=267852}}
+T[274611]={{boss="Primeval Elemental",inst="가라앉은 도시",npc=273738}}
+T[274612]={{boss="Primeval Elemental",inst="가라앉은 도시",npc=273738}}
+T[274615]={{boss="Primeval Elemental",inst="가라앉은 도시",npc=273738}}
 T[275443]={{boss="Witherfang",inst="로데론의 폐허",npc=250483}}
+T[276890]={{boss="Blazeroar",inst="알카즈 감옥",npc=255702}}
+T[277129]={{boss="Magmus",inst="검은바위 나락",npc=9938}}
+T[280012]={{boss="Ravasaur Hunters",inst="구체자의 정원",npc=262688}}
+T[280013]={{boss="Ravasaur Hunters",inst="구체자의 정원",npc=262688}}
+T[280014]={{boss="Ravasaur Hunters",inst="구체자의 정원",npc=262688}}
+T[280026]={{boss="Snowtalon",inst="구체자의 정원",npc=262297},{boss="Vitrix",inst="구체자의 정원",npc=272561}}
+T[280027]={{boss="Vitrix",inst="구체자의 정원",npc=272561}}
+T[280028]={{boss="Vitrix",inst="구체자의 정원",npc=272561}}
+T[280029]={{boss="Vitrix",inst="구체자의 정원",npc=272561}}
+T[280031]={{boss="Vitrix",inst="구체자의 정원",npc=272561}}
+T[280032]={{boss="Vitrix",inst="구체자의 정원",npc=272561}}
 T = EzWoW_Data._Table("Gear", "dungeonQuests")
 T[918]={{lvl=0,qid=1486,title="돌연변이 통가죽",titleEn="Deviate Hides"}}
 T[1264]={{lvl=0,qid=378,title="격노",titleEn="The Fury Runs Deep"}}
@@ -1130,6 +1156,7 @@ T[3343]={{lvl=10,qid=140,title="샌더 선장의 숨겨진 보물",titleEn="Capt
 T[3352]={{lvl=19,qid=470,title="가방 찾기",titleEn="Digging Through the Ooze"}}
 T[3382]={{lvl=5,qid=92840,title="바람을 붙잡다",titleEn="Catching Wind"}}
 T[3388]={{lvl=14,qid=79007,title="...그때 찾은 그 기록",titleEn="... and that note you found (H)"},{lvl=14,qid=79008,title="...그때 찾은 그 기록",titleEn="... and that note you found (A)"}}
+T[3443]={{choice=true,lvl=10,minLevel=4,qid=98435,side="horde",title="썬더혼의 보고서"}}
 T[3573]={{lvl=15,qid=531,title="바이린의 복수",titleEn="Vyrin's Revenge"}}
 T[3574]={{lvl=15,qid=531,title="바이린의 복수",titleEn="Vyrin's Revenge"}}
 T[3576]={{lvl=15,qid=86776,title="용광로 재료",titleEn="Ingredients for the Forge"}}
@@ -1167,6 +1194,8 @@ T[4952]={{lvl=11,qid=821,title="첸의 빈 술통",titleEn="Chen's Empty Keg"}}
 T[4953]={{lvl=11,qid=822,title="첸의 빈 술통",titleEn="Chen's Empty Keg"}}
 T[4957]={{lvl=13,qid=896,title="광부의 행운",titleEn="Miner's Fortune"}}
 T[4960]={{lvl=0,qid=745,title="대지의 공유",titleEn="Sharing the Land"}}
+T[4961]={{choice=true,lvl=10,minLevel=4,qid=98435,side="horde",title="썬더혼의 보고서"}}
+T[5016]={{lvl=35,minLevel=30,qid=81570,side="both",title="자를의 검"}}
 T[5057]={{lvl=8,qid=184,title="펄브로우의 땅문서",titleEn="Furlbrow's Deed"}}
 T[5095]={{lvl=7,qid=95065,title="낚시 시간",titleEn="Fishin' Time"}}
 T[5175]={{lvl=3,qid=92468,title="대지의 부름",titleEn="Call of Earth"},{lvl=4,qid=1518,title="대지의 부름",titleEn="Call of Earth"},{lvl=4,qid=1521,title="대지의 부름",titleEn="Call of Earth"},{lvl=4,qid=94375,title="대지의 부름",titleEn="Call of Earth"}}
@@ -1199,6 +1228,10 @@ T[6714]={{lvl=27,qid=88756,title="화끈한 회수 작전",titleEn="Bring Back a
 T[6735]={{lvl=0,qid=1618,title="붉은마루산맥 무기 조달",titleEn="Gearing Redridge"}}
 T[6755]={{lvl=20,qid=1221,title="청엽수 줄기",titleEn="Blueleaf Tubers"}}
 T[6756]={{lvl=20,qid=1221,title="청엽수 줄기",titleEn="Blueleaf Tubers"}}
+T[6773]={{choice=true,lvl=42,minLevel=35,qid=96222,side="both",title="칸 흐라사"}}
+T[6774]={{choice=true,lvl=42,minLevel=35,qid=96222,side="both",title="칸 흐라사"}}
+T[6788]={{choice=true,lvl=42,minLevel=35,qid=96222,side="both",title="칸 흐라사"}}
+T[6789]={{choice=true,lvl=42,minLevel=35,qid=96222,side="both",title="칸 흐라사"}}
 T[6811]={{lvl=10,qid=1580,title="전력추진기",titleEn="Electropellers"}}
 T[6916]={{lvl=12,qid=1645,title="신앙의 고서",titleEn="The Tome of Divinity (1a/8)"}}
 T[7442]={{lvl=14,qid=2098,title="자이로마스트의 수색",titleEn="Gyromast's Retrieval"}}
@@ -1221,13 +1254,17 @@ T[9362]={{lvl=24,qid=2945,title="꼬질꼬질한 반지",titleEn="Grime-Encruste
 T[9363]={{lvl=0,qid=2952,title="삐까뻔쩍세척기 5200!",titleEn="The Sparklematic 5200!"},{lvl=0,qid=4605,title="삐까뻔쩍세척기 5200!",titleEn="The Sparklematic 5200!"},{lvl=0,qid=4606,title="삐까뻔쩍세척기 5200!",titleEn="The Sparklematic 5200!"},{lvl=0,qid=2953,title="삐까뻔쩍세척기 재사용",titleEn="More Sparklematic Action"},{lvl=0,qid=4603,title="삐까뻔쩍세척기 재사용",titleEn="More Sparklematic Action"},{lvl=0,qid=4604,title="삐까뻔쩍세척기 재사용",titleEn="More Sparklematic Action"}}
 T[9367]={{lvl=40,qid=2758,title="대장기술의 근원",titleEn="The Origins of Smithing"}}
 T[9602]={{lvl=3,qid=2561,title="발톱의 드루이드",titleEn="Druid of the Claw"}}
+T[9622]={{lvl=35,minLevel=30,qid=81570,side="both",title="자를의 검"}}
 T[10338]={{lvl=10,qid=882,title="이샤무헤일",titleEn="Ishamuhale"}}
 T[10398]={{lvl=30,qid=3721,title="선물로 받은 OOX",titleEn="An OOX of Your Own"}}
+T[10418]={{lvl=50,minLevel=40,qid=3321,side="both",title="잃어버린 물건",titleEn="Did You Lose This?"}}
 T[10456]={{lvl=12,qid=116,title="떨어져 가는 술",titleEn="Dry Times"}}
+T[10709]={{choice=true,lvl=55,minLevel=44,qid=91531,side="horde",title="끝내 이룬 복수"}}
 T[10790]={{lvl=30,qid=3647,title="회원권 갱신",titleEn="Membership Card Renewal [A]"},{lvl=30,qid=3641,title="직접 만든 물건",titleEn="Show Your Work"},{lvl=30,qid=3645,title="회원권 갱신",titleEn="Membership Card Renewal [H]"},{lvl=30,qid=3643,title="직접 만든 물건",titleEn="Show Your Work"}}
 T[10791]={{lvl=30,qid=3646,title="회원권 갱신",titleEn="Membership Card Renewal"}}
 T[11022]={{lvl=47,qid=3781,title="여명초 연구",titleEn="Morrowgrain Research"}}
 T[11110]={{lvl=0,qid=3861,title="꼬꼬댁!!!",titleEn="CLUCK!"}}
+T[11120]={{choice=true,lvl=55,minLevel=44,qid=91531,side="horde",title="끝내 이룬 복수"}}
 T[11147]={{lvl=10,qid=3924,title="사모플랜지 설명서",titleEn="Samophlange Manual"}}
 T[11148]={{lvl=10,qid=3924,title="사모플랜지 설명서",titleEn="Samophlange Manual"}}
 T[11324]={{lvl=35,qid=626,title="코르텔로의 수수께끼",titleEn="Cortello's Riddle"}}
@@ -1240,6 +1277,7 @@ T[11914]={{lvl=48,qid=4512,title="수액괴물 견본 수집",titleEn="A Little 
 T[11948]={{lvl=48,qid=4512,title="수액괴물 견본 수집",titleEn="A Little Slime Goes a Long Way"}}
 T[11953]={{lvl=40,qid=4513,title="수액괴물 견본 수집",titleEn="A Little Slime Goes a Long Way"}}
 T[11955]={{lvl=40,qid=4513,title="수액괴물 견본 수집",titleEn="A Little Slime Goes a Long Way"}}
+T[12038]={{lvl=54,minLevel=48,qid=3911,side="both",title="마지막 원소"}}
 T[12293]={{lvl=31,qid=4785,title="고급 금빛 실타래",titleEn="Fine Gold Thread"}}
 T[12341]={{lvl=15,qid=4763,title="타락한 검은나무일족",titleEn="The Blackwood Corrupted"}}
 T[12342]={{lvl=15,qid=4763,title="타락한 검은나무일족",titleEn="The Blackwood Corrupted"}}
@@ -1248,9 +1286,12 @@ T[12347]={{lvl=15,qid=4763,title="타락한 검은나무일족",titleEn="The Bla
 T[12447]={{lvl=3,qid=916,title="나무그물거미의 독",titleEn="Webwood Venom"}}
 T[12448]={{lvl=0,qid=757,title="힘의 의식",titleEn="Rite of Strength"}}
 T[12449]={{lvl=2,qid=792,title="악마의 하수인",titleEn="Vile Familiars"}}
+T[16886]={{choice=true,lvl=30,minLevel=25,qid=909,side="horde",title="군주 아쿠아니스"}}
+T[16887]={{choice=true,lvl=30,minLevel=25,qid=909,side="horde",title="군주 아쿠아니스"}}
 T[17048]={{lvl=40,qid=580,title="위스키 슬림의 잃어버린 술병",titleEn="Whiskey Slim's Lost Grog"}}
 T[18042]={{lvl=52,qid=7342,title="화살 거래",titleEn="Arrows Are For Sissies"}}
 T[18160]={{lvl=20,qid=2478,title="미션 임파서블: 잘하면 가능",titleEn="Mission: Possible But Not Probable"},{lvl=20,qid=2359,title="클라벤의 탑",titleEn="Klaven's Tower"}}
+T[18807]={{lvl=60,minLevel=58,qid=7668,side="both",title="다크리버의 위협"}}
 T[19150]={{lvl=0,qid=7863,title="Sentinel Basic Care Package"}}
 T[19151]={{lvl=0,qid=7864,title="Sentinel Standard Care Package"}}
 T[19152]={{lvl=45,qid=7865,title="Sentinel Advanced Care Package"}}
@@ -1259,6 +1300,8 @@ T[19154]={{lvl=0,qid=7866,title="Outrider Basic Care Package"}}
 T[19155]={{lvl=0,qid=7867,title="Outrider Standard Care Package"}}
 T[19483]={{lvl=0,qid=7161,title="신병 계급장",titleEn="Proving Grounds (Horde)"}}
 T[19484]={{lvl=0,qid=7162,title="신병 계급장",titleEn="Proving Grounds (Alliance)"}}
+T[20133]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리버의 위협"},{choice=true,lvl=60,minLevel=58,qid=8258,side="both",title="다크리버의 위협",titleEn="The Darkreaver Menace"}}
+T[20134]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리버의 위협"}}
 T[20228]={{lvl=45,qid=8265,title="Defiler's Advanced Care Package"}}
 T[20229]={{lvl=0,qid=8263,title="Defiler's Basic Care Package"}}
 T[20230]={{lvl=0,qid=8264,title="Defiler's Standard Care Package"}}
@@ -1282,8 +1325,44 @@ T[22745]={{lvl=0,qid=9272,title="Dressing the Part"}}
 T[22746]={{lvl=0,qid=9272,title="Dressing the Part"}}
 T[190308]={{lvl=20,qid=65602,title="사랑이란 무얼까?",titleEn="What Is Love?"}}
 T[211527]={{lvl=14,qid=79976,title="여기가 분명해",titleEn="This Must Be The Place"}}
+T[213105]={{lvl=40,minLevel=26,qid=79678,side="both",title="시식회"}}
 T[216619]={{lvl=14,qid=79976,title="여기가 분명해",titleEn="This Must Be The Place"}}
+T[219343]={{lvl=50,minLevel=45,qid=80455,side="both",title="때를 기다리다"}}
+T[219345]={{lvl=54,minLevel=45,qid=81919,side="both",title="복종"}}
+T[221316]={{lvl=56,minLevel=48,qid=82062,side="both",title="그 뒤로 오래오래"}}
+T[221344]={{lvl=45,minLevel=42,qid=82084,side="both",title="글의 교훈"}}
 T[221498]={{lvl=14,qid=79192,title="디딤돌",titleEn="Stepping Stones"}}
+T[226775]={{choice=true,lvl=60,minLevel=58,qid=84147,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84155,side="horde",title="진지한 제안"}}
+T[226782]={{choice=true,lvl=60,minLevel=58,qid=84147,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84155,side="horde",title="진지한 제안"}}
+T[226788]={{choice=true,lvl=60,minLevel=58,qid=84147,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84155,side="horde",title="진지한 제안"}}
+T[226796]={{choice=true,lvl=60,minLevel=58,qid=84147,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84155,side="horde",title="진지한 제안"}}
+T[226826]={{lvl=60,minLevel=58,qid=84191,side="horde",title="안시온의 작별 인사"}}
+T[226827]={{lvl=60,minLevel=58,qid=84191,side="horde",title="안시온의 작별 인사"}}
+T[226828]={{lvl=60,minLevel=58,qid=84168,side="alliance",title="정당한 보상"},{lvl=60,minLevel=58,qid=84175,side="horde",title="정당한 보상"}}
+T[226830]={{lvl=60,minLevel=58,qid=84152,side="both",title="진지한 제안"},{lvl=60,minLevel=58,qid=84159,side="horde",title="진지한 제안"}}
+T[226831]={{lvl=60,minLevel=58,qid=84191,side="horde",title="안시온의 작별 인사"}}
+T[226832]={{lvl=60,minLevel=58,qid=84168,side="alliance",title="정당한 보상"},{lvl=60,minLevel=58,qid=84175,side="horde",title="정당한 보상"}}
+T[226863]={{choice=true,lvl=60,minLevel=58,qid=84154,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84162,side="horde",title="진지한 제안"}}
+T[226865]={{choice=true,lvl=60,minLevel=58,qid=84154,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84162,side="horde",title="진지한 제안"}}
+T[226885]={{lvl=60,minLevel=58,qid=84148,side="both",title="진지한 제안"},{lvl=60,minLevel=58,qid=84156,side="horde",title="진지한 제안"}}
+T[226905]={{lvl=60,minLevel=58,qid=84177,side="horde",title="정당한 보상"}}
+T[226907]={{lvl=60,minLevel=58,qid=84153,side="both",title="진지한 제안"},{lvl=60,minLevel=58,qid=84161,side="horde",title="진지한 제안"}}
+T[226911]={{lvl=60,minLevel=58,qid=84177,side="horde",title="정당한 보상"}}
+T[226929]={{lvl=60,minLevel=58,qid=84149,side="both",title="진지한 제안"},{lvl=60,minLevel=58,qid=84157,side="horde",title="진지한 제안"}}
+T[226930]={{lvl=60,minLevel=58,qid=84165,side="alliance",title="정당한 보상"},{lvl=60,minLevel=58,qid=84173,side="horde",title="정당한 보상"}}
+T[226934]={{lvl=60,minLevel=58,qid=84165,side="alliance",title="정당한 보상"},{lvl=60,minLevel=58,qid=84173,side="horde",title="정당한 보상"}}
+T[226949]={{choice=true,lvl=60,minLevel=58,qid=84158,side="horde",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84151,side="both",title="진지한 제안"}}
+T[226953]={{choice=true,lvl=60,minLevel=58,qid=84158,side="horde",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84151,side="both",title="진지한 제안"}}
+T[226970]={{choice=true,lvl=60,minLevel=58,qid=84150,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=97411,side="horde",title="진지한 제안"}}
+T[226977]={{choice=true,lvl=60,minLevel=58,qid=84150,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=97411,side="horde",title="진지한 제안"}}
+T[226985]={{choice=true,lvl=60,minLevel=58,qid=84150,side="both",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=97411,side="horde",title="진지한 제안"}}
+T[227001]={{choice=true,lvl=60,minLevel=58,qid=97447,side="alliance",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84160,side="horde",title="진지한 제안"}}
+T[227009]={{choice=true,lvl=60,minLevel=58,qid=97447,side="alliance",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84160,side="horde",title="진지한 제안"}}
+T[227017]={{choice=true,lvl=60,minLevel=58,qid=97447,side="alliance",title="진지한 제안"},{choice=true,lvl=60,minLevel=58,qid=84160,side="horde",title="진지한 제안"}}
+T[227935]={{choice=true,lvl=59,minLevel=54,qid=84332,side="both",title="산왕의 감사 표시"}}
+T[246164]={{choice=true,lvl=11,minLevel=7,qid=91285,side="horde",title="성문 앞의 멀록"}}
+T[246165]={{choice=true,lvl=11,minLevel=7,qid=91285,side="horde",title="성문 앞의 멀록"}}
+T[246265]={{choice=true,lvl=11,minLevel=8,qid=91316,side="horde",title="보수 작업"}}
 T[247824]={{lvl=7,qid=91736,title="사과주 증류기",titleEn="Applejack Still"}}
 T[247840]={{lvl=2,qid=93552,title="바람석 채취",titleEn="Harvesting Windstones"},{lvl=0,qid=234,title="눈마루 골짜기 편지 배달",titleEn="Coldridge Valley Mail Delivery"},{lvl=0,qid=91743,title="말썽쟁이 설치류",titleEn="Rascally Rodents"}}
 T[247841]={{lvl=2,qid=93552,title="바람석 채취",titleEn="Harvesting Windstones"},{lvl=0,qid=234,title="눈마루 골짜기 편지 배달",titleEn="Coldridge Valley Mail Delivery"},{lvl=0,qid=91743,title="말썽쟁이 설치류",titleEn="Rascally Rodents"}}
@@ -1330,6 +1409,41 @@ T[257345]={{lvl=6,qid=92880,title="발라나르로의 귀환",titleEn="Return to
 T[257346]={{lvl=6,qid=92880,title="발라나르로의 귀환",titleEn="Return to Valanaar"}}
 T[257943]={{lvl=4,qid=93318,title="현상 수배: 탐욕의 불가라",titleEn="WANTED: Vulgara the Insatiable"}}
 T[258882]={{lvl=2,qid=92470,title="부정한 어미",titleEn="Foul Matriarch"}}
+T[259890]={{lvl=48,minLevel=45,qid=91610,side="horde",title="겨울 변경의 어장"}}
+T[259892]={{choice=true,lvl=53,minLevel=47,qid=86777,side="both",title="군주 피어드레드"}}
+T[260166]={{choice=true,lvl=53,minLevel=47,qid=86777,side="both",title="군주 피어드레드"}}
+T[260167]={{choice=true,lvl=53,minLevel=47,qid=86777,side="both",title="군주 피어드레드"}}
+T[260168]={{choice=true,lvl=53,minLevel=47,qid=86813,side="both",title="만병통치약의 가능성"}}
+T[260169]={{choice=true,lvl=53,minLevel=47,qid=86813,side="both",title="만병통치약의 가능성"}}
+T[260171]={{choice=true,lvl=53,minLevel=47,qid=86813,side="both",title="만병통치약의 가능성"}}
+T[260172]={{choice=true,lvl=54,minLevel=45,qid=91685,side="horde",title="땅의 지맥"}}
+T[260178]={{choice=true,lvl=54,minLevel=45,qid=91685,side="horde",title="땅의 지맥"}}
+T[260179]={{choice=true,lvl=54,minLevel=45,qid=91685,side="horde",title="땅의 지맥"}}
+T[260180]={{choice=true,lvl=52,minLevel=47,qid=89037,side="alliance",title="멀록 도둑"}}
+T[260181]={{choice=true,lvl=52,minLevel=47,qid=89037,side="alliance",title="멀록 도둑"}}
+T[260182]={{choice=true,lvl=52,minLevel=47,qid=89037,side="alliance",title="멀록 도둑"}}
+T[260183]={{choice=true,lvl=55,minLevel=47,qid=86814,side="both",title="검은아귀의 역습"}}
+T[260184]={{choice=true,lvl=55,minLevel=47,qid=86814,side="both",title="검은아귀의 역습"}}
+T[260185]={{choice=true,lvl=55,minLevel=47,qid=86814,side="both",title="검은아귀의 역습"}}
+T[260186]={{choice=true,lvl=55,minLevel=44,qid=91548,side="horde",title="벡졸"}}
+T[260195]={{choice=true,lvl=55,minLevel=44,qid=91548,side="horde",title="벡졸"}}
+T[260196]={{choice=true,lvl=55,minLevel=44,qid=91548,side="horde",title="벡졸"}}
+T[260201]={{choice=true,lvl=55,minLevel=47,qid=89053,side="alliance",title="마지막 보상"}}
+T[260205]={{choice=true,lvl=55,minLevel=47,qid=89053,side="alliance",title="마지막 보상"}}
+T[260207]={{choice=true,lvl=55,minLevel=47,qid=89053,side="alliance",title="마지막 보상"}}
+T[260208]={{choice=true,lvl=55,minLevel=47,qid=88813,side="alliance",title="독사의 머리"}}
+T[260209]={{choice=true,lvl=55,minLevel=47,qid=88813,side="alliance",title="독사의 머리"}}
+T[260210]={{choice=true,lvl=56,minLevel=50,qid=91611,side="horde",title="죽음의 미끼"},{choice=true,lvl=56,minLevel=50,qid=89015,side="alliance",title="죽음의 미끼"}}
+T[260211]={{choice=true,lvl=56,minLevel=50,qid=91611,side="horde",title="죽음의 미끼"},{choice=true,lvl=56,minLevel=50,qid=89015,side="alliance",title="죽음의 미끼"}}
+T[260212]={{choice=true,lvl=56,minLevel=50,qid=91611,side="horde",title="죽음의 미끼"},{choice=true,lvl=56,minLevel=50,qid=89015,side="alliance",title="죽음의 미끼"}}
+T[260213]={{choice=true,lvl=58,minLevel=45,qid=92069,side="both",title="찢는 발톱, 꿰뚫는 엄니"}}
+T[260214]={{choice=true,lvl=58,minLevel=45,qid=92069,side="both",title="찢는 발톱, 꿰뚫는 엄니"}}
+T[260215]={{choice=true,lvl=58,minLevel=45,qid=92069,side="both",title="찢는 발톱, 꿰뚫는 엄니"}}
+T[260216]={{choice=true,lvl=60,minLevel=47,qid=92065,side="both",title="검은아귀 탈환"}}
+T[260217]={{choice=true,lvl=60,minLevel=47,qid=92065,side="both",title="검은아귀 탈환"}}
+T[260218]={{choice=true,lvl=60,minLevel=47,qid=92065,side="both",title="검은아귀 탈환"}}
+T[260219]={{choice=true,lvl=60,minLevel=47,qid=92065,side="both",title="검은아귀 탈환"}}
+T[260308]={{lvl=58,minLevel=56,qid=93269,side="both",title="우편의 정상"}}
 T[263305]={{lvl=4,qid=93746,title="단호한 대응",titleEn="A Firm Response"}}
 T[263306]={{lvl=8,qid=93165,title="자비는 닫힌 귀에 닿지 않는다",titleEn="Mercy Falls on Deaf Ears"}}
 T[263307]={{lvl=8,qid=93165,title="자비는 닫힌 귀에 닿지 않는다",titleEn="Mercy Falls on Deaf Ears"}}
@@ -1361,7 +1475,7 @@ T[263408]={{lvl=2,qid=92463,title="구름벌레 여왕",titleEn="The Cirrusfly Q
 T[263409]={{lvl=2,qid=92463,title="구름벌레 여왕",titleEn="The Cirrusfly Queen"}}
 T[263410]={{lvl=2,qid=92463,title="구름벌레 여왕",titleEn="The Cirrusfly Queen"}}
 T[263411]={{lvl=4,qid=94411,title="참견하는 마법사들",titleEn="Meddlesome Mages"}}
-T[263412]={{lvl=4,qid=94411,title="참견하는 마법사들",titleEn="Meddlesome Mages"}}
+T[263412]={{lvl=4,qid=94411,title="참견하는 마법사들",titleEn="Meddlesome Mages"},{lvl=10,minLevel=10,qid=97257,side="horde",title="불의 부름",titleEn="Call of Fire"}}
 T[263414]={{lvl=6,qid=92579,title="발라나르로",titleEn="To Valanaar"}}
 T[263415]={{lvl=5,qid=93927,title="마지막 부탁",titleEn="A Last Request"}}
 T[263417]={{lvl=6,qid=92579,title="발라나르로",titleEn="To Valanaar"}}
@@ -1382,33 +1496,114 @@ T[263512]={{lvl=4,qid=93317,title="게잡이 철",titleEn="Crab Season"}}
 T[263513]={{lvl=4,qid=93317,title="게잡이 철",titleEn="Crab Season"}}
 T[264908]={{lvl=0,qid=92460,title="성년식",titleEn="Coming of Age"}}
 T[265105]={{lvl=8,qid=94485,title="여신의 눈물",titleEn="Tears of the Lady"}}
+T[267090]={{lvl=42,minLevel=38,qid=94975,side="horde",title="복수의 증표"}}
+T[268484]={{lvl=25,minLevel=20,qid=95126,side="horde",title="달빛은 칼날"}}
+T[269741]={{lvl=58,minLevel=54,qid=91696,side="both",title="사냥철"}}
 T[270000]={{lvl=5,qid=176,title="현상 수배: \"들창코\"",titleEn="Wanted: \"Hogger\""}}
 T[270001]={{lvl=10,qid=140,title="샌더 선장의 숨겨진 보물",titleEn="Captain Sanders' Hidden Treasure"}}
 T[270002]={{lvl=10,qid=140,title="샌더 선장의 숨겨진 보물",titleEn="Captain Sanders' Hidden Treasure"}}
+T[270003]={{choice=true,lvl=16,minLevel=9,qid=5724,side="both",title="잃어버린 가방 돌려주기",titleEn="Returning the Lost Satchel"}}
+T[270004]={{choice=true,lvl=17,minLevel=13,qid=982,side="both",title="깊고 푸른 바다",titleEn="Deep Ocean, Vast Sea"}}
 T[270005]={{lvl=14,qid=214,title="붉은 비단 복면",titleEn="Red Silk Bandanas"}}
 T[270006]={{lvl=9,qid=14,title="백성의 민병대",titleEn="The People's Militia"}}
 T[270007]={{lvl=14,qid=168,title="기억을 더듬어...",titleEn="Collecting Memories"}}
 T[270008]={{lvl=14,qid=962,title="불뱀꽃",titleEn="Serpentbloom"}}
 T[270009]={{lvl=14,qid=962,title="불뱀꽃",titleEn="Serpentbloom"}}
+T[270010]={{choice=true,lvl=20,minLevel=14,qid=6481,side="both",title="토석인이여 깨어나라",titleEn="Earthen Arise"}}
+T[270011]={{choice=true,lvl=20,minLevel=13,qid=898,side="horde",title="요새 탈출",titleEn="Free From the Hold"}}
 T[270012]={{lvl=15,qid=167,title="형제여...",titleEn="Oh Brother. . ."}}
 T[270013]={{lvl=15,qid=167,title="형제여...",titleEn="Oh Brother. . ."}}
+T[270014]={{choice=true,lvl=20,minLevel=17,qid=5321,side="both",title="잠에서 깨어난 드루이드",titleEn="The Sleeper Has Awakened"}}
 T[270015]={{lvl=15,qid=2040,title="지하 공격",titleEn="Underground Assault"}}
 T[270016]={{lvl=15,qid=2040,title="지하 공격",titleEn="Underground Assault"}}
 T[270017]={{lvl=15,qid=531,title="바이린의 복수",titleEn="Vyrin's Revenge"}}
 T[270018]={{lvl=10,qid=914,title="송곳니의 드루이드 우두머리",titleEn="Leaders of the Fang"}}
 T[270019]={{lvl=17,qid=256,title="초크술 현상수배",titleEn="WANTED: Chok'sul"}}
+T[270020]={{choice=true,lvl=24,minLevel=10,qid=442,side="both",title="펜리스 섬 공격",titleEn="Assault on Fenris Isle"}}
 T[270021]={{lvl=18,qid=1275,title="타락에 대한 연구",titleEn="Researching the Corruption"}}
+T[270022]={{choice=true,lvl=24,minLevel=15,qid=943,side="both",title="정신 없는 발굴조사단장",titleEn="The Absent Minded Prospector"}}
 T[270025]={{lvl=20,qid=1199,title="황혼의망치단의 몰락",titleEn="Twilight Falls"}}
 T[270027]={{lvl=22,qid=386,title="사필귀정",titleEn="What Comes Around..."}}
+T[270028]={{choice=true,lvl=26,minLevel=18,qid=6283,side="both",title="혈폭풍일족의 혈통",titleEn="Bloodfury Bloodline"}}
 T[270031]={{lvl=18,qid=1200,title="검은심연의 음모",titleEn="Blackfathom Villainy (A)"},{lvl=18,qid=6561,title="검은심연의 음모",titleEn="Blackfathom Villainy (H)"}}
 T[270033]={{lvl=20,qid=249,title="모건스",titleEn="Morganth"}}
 T[270034]={{lvl=20,qid=249,title="모건스",titleEn="Morganth"}}
+T[270035]={{choice=true,lvl=27,minLevel=20,qid=1059,side="both",title="잿더미 계곡 복원",titleEn="Reclaiming the Charred Vale"}}
 T[270036]={{lvl=25,qid=378,title="격노",titleEn="The Fury Runs Deep"}}
+T[270037]={{choice=true,lvl=28,minLevel=24,qid=5088,side="both",title="아리카라",titleEn="Arikara"}}
+T[270038]={{choice=true,lvl=29,minLevel=15,qid=3514,side="both",title="호드의 존재",titleEn="Horde Presence"}}
 T[270039]={{lvl=22,qid=296,title="오머의 복수",titleEn="Ormer's Revenge"}}
 T[270042]={{lvl=20,qid=2904,title="곤경에 빠진 케르노비",titleEn="A Fine Mess"}}
+T[270044]={{choice=true,lvl=30,minLevel=20,qid=253,side="both",title="장의사의 신부",titleEn="Bride of the Embalmer"}}
 T[270045]={{lvl=20,qid=2928,title="회전천공식 발굴기",titleEn="Gyrodrillmatic Excavationators"}}
+T[270046]={{choice=true,lvl=30,minLevel=26,qid=547,side="both",title="험버트의 검",titleEn="Humbert's Sword"}}
+T[270048]={{choice=true,lvl=32,minLevel=24,qid=1012,side="both",title="미쳐버린 드루이드",titleEn="Insane Druids"}}
+T[270049]={{choice=true,lvl=32,minLevel=24,qid=1012,side="both",title="미쳐버린 드루이드",titleEn="Insane Druids"}}
 T[270050]={{lvl=26,qid=304,title="위험한 임무",titleEn="A Grim Task"}}
+T[270056]={{choice=true,lvl=37,minLevel=30,qid=682,side="both",title="스트롬가드 휘장",titleEn="Stromgarde Badges"}}
+T[270057]={{choice=true,lvl=37,minLevel=30,qid=682,side="both",title="스트롬가드 휘장",titleEn="Stromgarde Badges"}}
+T[270060]={{choice=true,lvl=38,minLevel=30,qid=704,side="both",title="아그몬드의 운명",titleEn="Agmond's Fate"}}
+T[270065]={{choice=true,lvl=38,minLevel=32,qid=5943,side="both",title="기젤톤 대상단",titleEn="Gizelton Caravan"}}
+T[270066]={{choice=true,lvl=39,minLevel=30,qid=697,side="both",title="멀린의 의뢰",titleEn="Malin's Request"}}
+T[270068]={{choice=true,lvl=39,minLevel=30,qid=684,side="both",title="현상 수배: 마레즈 코울",titleEn="Wanted!  Marez Cowl"}}
+T[270070]={{choice=true,lvl=40,minLevel=30,qid=202,side="both",title="대령 쿠르젠",titleEn="Colonel Kurzen"}}
+T[270071]={{choice=true,lvl=40,minLevel=30,qid=202,side="both",title="대령 쿠르젠",titleEn="Colonel Kurzen"}}
+T[270073]={{choice=true,lvl=40,minLevel=35,qid=673,side="horde",title="사악한 마법",titleEn="Foul Magics"}}
+T[270076]={{choice=true,lvl=40,minLevel=32,qid=611,side="alliance",title="해일의 저주",titleEn="The Curse of the Tides"}}
+T[270077]={{choice=true,lvl=40,minLevel=32,qid=611,side="alliance",title="해일의 저주",titleEn="The Curse of the Tides"}}
+T[270078]={{choice=true,lvl=40,minLevel=35,qid=2240,side="both",title="비밀 석실",titleEn="The Hidden Chamber"}}
+T[270079]={{choice=true,lvl=40,minLevel=30,qid=680,side="both",title="거대한 위협",titleEn="The Real Threat"}}
+T[270081]={{choice=true,lvl=42,minLevel=39,qid=3636,side="both",title="빛의 힘",titleEn="Bring the Light"},{choice=true,lvl=42,minLevel=37,qid=3341,side="both",title="암네나르 처치",titleEn="Bring the End"}}
+T[270082]={{choice=true,lvl=42,minLevel=32,qid=646,side="horde",title="트롤칼라",titleEn="Trol'kalar"}}
+T[270083]={{choice=true,lvl=42,minLevel=32,qid=646,side="horde",title="트롤칼라",titleEn="Trol'kalar"}}
+T[270084]={{choice=true,lvl=43,minLevel=28,qid=208,side="both",title="대단한 사냥꾼",titleEn="Big Game Hunter"}}
+T[270085]={{choice=true,lvl=43,minLevel=28,qid=208,side="both",title="대단한 사냥꾼",titleEn="Big Game Hunter"}}
+T[270086]={{choice=true,lvl=43,minLevel=38,qid=1166,side="both",title="대군주 모크모로크의 근심",titleEn="Overlord Mok'Morokk's Concern"}}
+T[270087]={{choice=true,lvl=43,minLevel=38,qid=1166,side="both",title="대군주 모크모로크의 근심",titleEn="Overlord Mok'Morokk's Concern"}}
+T[270088]={{choice=true,lvl=44,minLevel=35,qid=762,side="both",title="악의 사자",titleEn="An Ambassador of Evil"}}
+T[270089]={{choice=true,lvl=44,minLevel=35,qid=762,side="both",title="악의 사자",titleEn="An Ambassador of Evil"}}
+T[270092]={{choice=true,lvl=45,minLevel=37,qid=608,side="both",title="붉은해적단",titleEn="The Bloodsail Buccaneers"}}
+T[270093]={{choice=true,lvl=45,minLevel=37,qid=608,side="both",title="붉은해적단",titleEn="The Bloodsail Buccaneers"}}
+T[270094]={{choice=true,lvl=45,minLevel=38,qid=1172,side="both",title="오닉시아 일당",titleEn="The Brood of Onyxia"}}
+T[270095]={{choice=true,lvl=45,minLevel=35,qid=1139,side="both",title="잃어버린 결의의 서판",titleEn="The Lost Tablets of Will"}}
+T[270096]={{choice=true,lvl=46,minLevel=30,qid=206,side="both",title="마이조스",titleEn="Mai'Zoth"}}
+T[270097]={{choice=true,lvl=46,minLevel=30,qid=206,side="both",title="마이조스",titleEn="Mai'Zoth"}}
+T[270098]={{choice=true,lvl=46,minLevel=40,qid=2846,side="both",title="심연의 티아라",titleEn="Tiara of the Deep"}}
+T[270099]={{choice=true,lvl=47,minLevel=40,qid=2768,side="both",title="자동 탐사막대",titleEn="Divino-matic Rod"}}
+T[270100]={{choice=true,lvl=47,minLevel=35,qid=614,side="both",title="선장의 상자",titleEn="The Captain's Chest"},{choice=true,lvl=47,minLevel=35,qid=8551,side="both",title="선장의 상자",titleEn="The Captain's Chest"}}
+T[270101]={{choice=true,lvl=48,minLevel=43,qid=836,side="both",title="OOX-09/HL 구출 작전",titleEn="Rescue OOX-09/HL!"}}
+T[270102]={{choice=true,lvl=48,minLevel=43,qid=648,side="both",title="OOX-17/TN 구출",titleEn="Rescue OOX-17/TN!"}}
+T[270103]={{choice=true,lvl=48,minLevel=43,qid=648,side="both",title="OOX-17/TN 구출",titleEn="Rescue OOX-17/TN!"}}
+T[270104]={{choice=true,lvl=50,minLevel=45,qid=3062,side="both",title="검은 심장",titleEn="Dark Heart"}}
+T[270105]={{choice=true,lvl=50,minLevel=45,qid=3062,side="both",title="검은 심장",titleEn="Dark Heart"}}
+T[270106]={{choice=true,lvl=50,minLevel=46,qid=7850,side="both",title="어둠의 용기",titleEn="Dark Vessels"}}
+T[270107]={{choice=true,lvl=50,minLevel=46,qid=7850,side="both",title="어둠의 용기",titleEn="Dark Vessels"}}
+T[270108]={{choice=true,lvl=50,minLevel=46,qid=7850,side="both",title="어둠의 용기",titleEn="Dark Vessels"}}
+T[270109]={{choice=true,lvl=50,minLevel=35,qid=618,side="both",title="네골라쉬와의 대적",titleEn="Facing Negolash"},{choice=true,lvl=50,minLevel=35,qid=8554,side="both",title="네골라쉬와의 대적",titleEn="Facing Negolash"}}
+T[270110]={{choice=true,lvl=50,minLevel=35,qid=618,side="both",title="네골라쉬와의 대적",titleEn="Facing Negolash"},{choice=true,lvl=50,minLevel=35,qid=8554,side="both",title="네골라쉬와의 대적",titleEn="Facing Negolash"}}
+T[270111]={{choice=true,lvl=51,minLevel=46,qid=7847,side="both",title="주술사 쏜터스크에게로",titleEn="Return to Primal Torntusk"}}
+T[270112]={{choice=true,lvl=51,minLevel=40,qid=2994,side="both",title="뾰족부리 구출",titleEn="Saving Sharpbeak"}}
+T[270113]={{choice=true,lvl=50,minLevel=45,qid=7701,side="both",title="현상수배: 감독관 말토류스",titleEn="WANTED: Overseer Maltorius"}}
+T[270114]={{choice=true,lvl=52,minLevel=40,qid=3463,side="both",title="불 공격!",titleEn="Set Them Ablaze!"}}
+T[270115]={{choice=true,lvl=53,minLevel=38,qid=1446,side="both",title="예언자 잠말란",titleEn="Jammal'an the Prophet"}}
+T[270117]={{choice=true,lvl=53,minLevel=40,qid=3528,side="both",title="학카르의 화신",titleEn="The God Hakkar"}}
+T[270118]={{choice=true,lvl=54,minLevel=48,qid=4242,side="both",title="실망",titleEn="Abandoned Hope"}}
+T[270119]={{choice=true,lvl=54,minLevel=48,qid=7201,side="both",title="마지막 원소",titleEn="The Last Element"}}
+T[270120]={{choice=true,lvl=54,minLevel=50,qid=4201,side="both",title="사랑의 묘약",titleEn="The Love Potion"}}
+T[270121]={{choice=true,lvl=54,minLevel=50,qid=4201,side="both",title="사랑의 묘약",titleEn="The Love Potion"}}
+T[270122]={{choice=true,lvl=55,minLevel=50,qid=4491,side="both",title="내 친구의 작은 도움",titleEn="A Little Help From My Friends"}}
+T[270123]={{choice=true,lvl=55,minLevel=50,qid=4126,side="both",title="헐레이 블랙브레스",titleEn="Hurley Blackbreath"},{choice=true,lvl=55,minLevel=50,qid=4134,side="both",title="잃어버린 썬더브루 제조법",titleEn="Lost Thunderbrew Recipe"}}
+T[270124]={{choice=true,lvl=57,minLevel=54,qid=7488,side="both",title="레스텐드리스의 그물",titleEn="Lethtendris's Web"},{choice=true,lvl=57,minLevel=54,qid=7489,side="both",title="레스텐드리스의 그물",titleEn="Lethtendris's Web"}}
+T[270125]={{choice=true,lvl=57,minLevel=54,qid=7488,side="both",title="레스텐드리스의 그물",titleEn="Lethtendris's Web"},{choice=true,lvl=57,minLevel=54,qid=7489,side="both",title="레스텐드리스의 그물",titleEn="Lethtendris's Web"}}
+T[270126]={{choice=true,lvl=58,minLevel=52,qid=4132,side="both",title="앵거포지 척살 작전",titleEn="Operation: Death to Angerforge"}}
+T[270127]={{choice=true,lvl=58,minLevel=54,qid=7441,side="both",title="푸실린과 노쇠한 아즈토르딘",titleEn="Pusillin and the Elder Azj'Tordin"}}
+T[270225]={{lvl=51,minLevel=46,qid=7862,side="both",title="구인광고: 레반터스크 마을의 경비대장",titleEn="Job Opening: Guard Captain of Revantusk Village"}}
+T[270226]={{choice=true,lvl=51,minLevel=45,qid=630,side="both",title="쪽지가 든 병",titleEn="Message in a Bottle"}}
 T[270257]={{lvl=10,qid=140,title="샌더 선장의 숨겨진 보물",titleEn="Captain Sanders' Hidden Treasure"}}
+T[270275]={{lvl=51,minLevel=40,qid=2994,side="both",title="뾰족부리 구출",titleEn="Saving Sharpbeak"}}
+T[270276]={{lvl=51,minLevel=40,qid=2994,side="both",title="뾰족부리 구출",titleEn="Saving Sharpbeak"}}
+T[270334]={{lvl=40,minLevel=36,qid=95472,side="both",title="아차상 경품"}}
+T[271618]={{lvl=45,minLevel=35,qid=93606,side="both",title="가시 돋친 사랑과 전쟁"}}
 T[271664]={{lvl=24,qid=95646,title="고원의 공포",titleEn="Horrors in the Highland"}}
 T[271667]={{lvl=24,qid=95646,title="고원의 공포",titleEn="Horrors in the Highland"}}
 T[271670]={{lvl=24,qid=95646,title="고원의 공포",titleEn="Horrors in the Highland"}}
@@ -1421,23 +1616,217 @@ T[271766]={{lvl=24,qid=98823,title="대지의 메아리",titleEn="Earthen Echo"}
 T[271767]={{lvl=24,qid=98823,title="대지의 메아리",titleEn="Earthen Echo"},{lvl=24,qid=98824,title="태고의 분광경",titleEn="Prehistoric Prism"}}
 T[271768]={{lvl=24,qid=95795,title="습지의 망자",titleEn="Fallen in the Fen"}}
 T[271769]={{lvl=24,qid=95795,title="습지의 망자",titleEn="Fallen in the Fen"}}
+T[271794]={{choice=true,lvl=38,minLevel=35,qid=93045,side="both",title="이론 검증",titleEn="Test Your Theory"}}
+T[271795]={{choice=true,lvl=38,minLevel=35,qid=93045,side="both",title="이론 검증",titleEn="Test Your Theory"}}
+T[271797]={{choice=true,lvl=41,minLevel=35,qid=92873,side="both",title="가능성 입증",titleEn="Proof of Concept"}}
+T[271798]={{choice=true,lvl=41,minLevel=35,qid=92873,side="both",title="가능성 입증",titleEn="Proof of Concept"}}
+T[271805]={{choice=true,lvl=42,minLevel=35,qid=93128,side="both",title="칸 젠",titleEn="Khan Jehn"}}
+T[271810]={{choice=true,lvl=45,minLevel=35,qid=93574,side="both",title="시체먹보의 갑각"}}
+T[271811]={{choice=true,lvl=45,minLevel=35,qid=93574,side="both",title="시체먹보의 갑각"}}
+T[271812]={{choice=true,lvl=45,minLevel=35,qid=93574,side="both",title="시체먹보의 갑각"}}
+T[272179]={{choice=true,lvl=42,minLevel=35,qid=96060,side="both",title="벼려낸 기대"}}
+T[272180]={{choice=true,lvl=42,minLevel=35,qid=96060,side="both",title="벼려낸 기대"}}
+T[272181]={{choice=true,lvl=42,minLevel=35,qid=96060,side="both",title="벼려낸 기대"}}
+T[272184]={{choice=true,lvl=45,minLevel=35,qid=93609,side="both",title="쓸쓸한 목걸이"}}
+T[272185]={{choice=true,lvl=45,minLevel=35,qid=93609,side="both",title="쓸쓸한 목걸이"}}
+T[272186]={{choice=true,lvl=49,minLevel=35,qid=93404,side="both",title="부패와 회한"}}
+T[272187]={{choice=true,lvl=49,minLevel=35,qid=93404,side="both",title="부패와 회한"}}
+T[273654]={{lvl=29,minLevel=23,qid=96260,side="horde",title="강철보다 질긴 비단"}}
+T[273800]={{lvl=58,minLevel=54,qid=96077,side="alliance",title="벨르의 반지"}}
 T[273875]={{lvl=7,qid=92646,title="로르투나와 대면",titleEn="Confront Lorthuna"},{lvl=7,qid=93835,title="로르투나와 대면",titleEn="Confront Lorthuna"}}
 T[273876]={{lvl=6,qid=92640,title="절박한 시기",titleEn="Desperate Times"}}
 T[273877]={{lvl=5,qid=92528,title="신도들 사이에서",titleEn="Among the Faithful"}}
 T[273879]={{lvl=2,qid=92470,title="부정한 어미",titleEn="Foul Matriarch"}}
+T[274035]={{lvl=56,minLevel=54,qid=95611,side="both",title="경의의 의식"}}
+T[274084]={{lvl=34,minLevel=29,qid=1101,side="both",title="가시덩굴 우리의 대모",titleEn="The Crone of the Kraul"}}
+T[274265]={{choice=true,lvl=57,minLevel=54,qid=91923,side="both",title="씁쓸한 셀라스트루스"}}
+T[274270]={{choice=true,lvl=57,minLevel=54,qid=91923,side="both",title="씁쓸한 셀라스트루스"}}
+T[274271]={{choice=true,lvl=57,minLevel=54,qid=91923,side="both",title="씁쓸한 셀라스트루스"}}
+T[274383]={{choice=true,lvl=60,minLevel=56,qid=96558,side="both",title="병사의 위안"}}
+T[274384]={{choice=true,lvl=60,minLevel=56,qid=96558,side="both",title="병사의 위안"}}
+T[274386]={{choice=true,lvl=60,minLevel=56,qid=96558,side="both",title="병사의 위안"}}
+T[274718]={{lvl=57,minLevel=54,qid=92189,side="alliance",title="다시 갈고닦을 시간"}}
+T[274719]={{choice=true,lvl=57,minLevel=54,qid=90854,side="horde",title="궂은 날씨를 견딜 튼튼한 가죽"}}
+T[274720]={{choice=true,lvl=57,minLevel=54,qid=90854,side="horde",title="궂은 날씨를 견딜 튼튼한 가죽"}}
+T[274721]={{lvl=57,minLevel=54,qid=95769,side="horde",title="해결의 실마리"}}
+T[274915]={{choice=true,lvl=38,minLevel=36,qid=95615,side="alliance",title="추모"}}
+T[274916]={{choice=true,lvl=38,minLevel=36,qid=95615,side="alliance",title="추모"}}
+T[274919]={{choice=true,lvl=40,minLevel=36,qid=94877,side="alliance",title="햇살숲을 구해라"}}
+T[274920]={{choice=true,lvl=40,minLevel=36,qid=94877,side="alliance",title="햇살숲을 구해라"}}
+T[274928]={{choice=true,lvl=39,minLevel=36,qid=94861,side="alliance",title="도움의 손길"}}
+T[274929]={{choice=true,lvl=39,minLevel=36,qid=94861,side="alliance",title="도움의 손길"}}
+T[274931]={{choice=true,lvl=38,minLevel=36,qid=95913,side="alliance",title="공주님께 어울리는 것"}}
+T[274932]={{choice=true,lvl=38,minLevel=36,qid=95913,side="alliance",title="공주님께 어울리는 것"}}
+T[274938]={{choice=true,lvl=40,minLevel=36,qid=94679,side="alliance",title="스나글의 주둥이"}}
+T[274939]={{choice=true,lvl=40,minLevel=36,qid=94679,side="alliance",title="스나글의 주둥이"}}
+T[274940]={{choice=true,lvl=40,minLevel=36,qid=94679,side="alliance",title="스나글의 주둥이"}}
+T[274941]={{choice=true,lvl=40,minLevel=36,qid=94679,side="alliance",title="스나글의 주둥이"}}
+T[274942]={{choice=true,lvl=40,minLevel=36,qid=94533,side="horde",title="스나글의 주둥이"}}
+T[274943]={{choice=true,lvl=40,minLevel=36,qid=94533,side="horde",title="스나글의 주둥이"}}
+T[274944]={{choice=true,lvl=40,minLevel=36,qid=94533,side="horde",title="스나글의 주둥이"}}
+T[274946]={{choice=true,lvl=40,minLevel=36,qid=94533,side="horde",title="스나글의 주둥이"}}
+T[274948]={{lvl=42,minLevel=38,qid=95267,side="both",title="수면 위로 드러난 괴물"}}
+T[274952]={{choice=true,lvl=42,minLevel=36,qid=94556,side="horde",title="좀좀의 탈출"}}
+T[274955]={{choice=true,lvl=42,minLevel=36,qid=94556,side="horde",title="좀좀의 탈출"}}
+T[274957]={{lvl=38,minLevel=36,qid=96009,side="alliance",title="판돈 키우기"}}
+T[274959]={{choice=true,lvl=39,minLevel=36,qid=95064,side="alliance",title="예방 조치"}}
+T[274961]={{choice=true,lvl=39,minLevel=36,qid=95064,side="alliance",title="예방 조치"}}
+T[274962]={{lvl=42,minLevel=38,qid=95991,side="alliance",title="현상수배: 유령아귀"},{lvl=42,minLevel=38,qid=95992,side="horde",title="현상수배: 유령아귀"}}
+T[274963]={{lvl=42,minLevel=36,qid=95120,side="both",title="현상수배: 늙은 부식떡밥"}}
+T[275011]={{lvl=46,minLevel=36,qid=95433,side="horde",title="집행자에게 죽음을"}}
+T[275021]={{choice=true,lvl=44,minLevel=38,qid=94927,side="alliance",title="던스턴 퇴장"}}
+T[275023]={{choice=true,lvl=44,minLevel=38,qid=94927,side="alliance",title="던스턴 퇴장"}}
+T[275025]={{choice=true,lvl=44,minLevel=38,qid=94927,side="alliance",title="던스턴 퇴장"}}
+T[275028]={{lvl=43,minLevel=38,qid=96015,side="alliance",title="광부 문제"}}
+T[275036]={{lvl=45,minLevel=38,qid=94926,side="alliance",title="망치를 내려쳐라"}}
+T[275040]={{choice=true,lvl=45,minLevel=36,qid=93971,side="horde",title="파홀드 정찰 보고서"}}
+T[275041]={{choice=true,lvl=45,minLevel=36,qid=93971,side="horde",title="파홀드 정찰 보고서"}}
+T[275042]={{lvl=46,minLevel=38,qid=94891,side="alliance",title="파홀드에 전할 소식"}}
+T[275043]={{choice=true,lvl=45,minLevel=36,qid=95063,side="horde",title="피의 지배자의 투기장"}}
+T[275044]={{choice=true,lvl=45,minLevel=36,qid=95063,side="horde",title="피의 지배자의 투기장"}}
+T[275045]={{choice=true,lvl=45,minLevel=36,qid=95063,side="horde",title="피의 지배자의 투기장"}}
+T[275046]={{choice=true,lvl=46,minLevel=38,qid=94890,side="alliance",title="적의 숨통을 끊어라"}}
+T[275049]={{choice=true,lvl=46,minLevel=38,qid=94890,side="alliance",title="적의 숨통을 끊어라"}}
+T[275050]={{choice=true,lvl=46,minLevel=38,qid=94768,side="horde",title="적의 숨통을 끊어라"}}
+T[275051]={{choice=true,lvl=46,minLevel=38,qid=94768,side="horde",title="적의 숨통을 끊어라"}}
+T[275052]={{lvl=39,minLevel=36,qid=95066,side="alliance",title="로그마 사태"}}
 T[275290]={{lvl=10,qid=94003,title="하늘파괴자 보루 방패",titleEn="The Skybreaker Bulwark"}}
+T[275291]={{choice=true,lvl=58,minLevel=54,qid=95107,side="both",title="깊은포효 격퇴"}}
+T[275293]={{choice=true,lvl=58,minLevel=54,qid=95107,side="both",title="깊은포효 격퇴"}}
+T[275296]={{choice=true,lvl=58,minLevel=54,qid=95107,side="both",title="깊은포효 격퇴"}}
+T[275347]={{lvl=59,minLevel=57,qid=92592,side="horde",title="최후의 죽음"},{lvl=59,minLevel=57,qid=92591,side="alliance",title="최후의 죽음"}}
+T[275390]={{choice=true,lvl=59,minLevel=54,qid=95273,side="both",title="하이잘의 물"}}
+T[275434]={{choice=true,lvl=59,minLevel=54,qid=95273,side="both",title="하이잘의 물"}}
+T[275438]={{lvl=58,minLevel=54,qid=92449,side="alliance",title="역병은 이제 끝"}}
+T[275439]={{lvl=57,minLevel=54,qid=95027,side="alliance",title="비상하는 깃털"}}
+T[275441]={{lvl=57,minLevel=54,qid=92609,side="horde",title="비상하는 깃털"}}
+T[275630]={{lvl=60,minLevel=54,qid=96003,side="both",title="악의를 끌어내라"}}
+T[275645]={{choice=true,lvl=60,minLevel=56,qid=92533,side="both",title="뒤틀린 도구"}}
+T[275647]={{choice=true,lvl=60,minLevel=56,qid=92533,side="both",title="뒤틀린 도구"}}
+T[275648]={{choice=true,lvl=60,minLevel=56,qid=92533,side="both",title="뒤틀린 도구"}}
+T[275649]={{lvl=60,minLevel=57,qid=93547,side="both",title="가시 돋친 해결책"}}
+T[275666]={{choice=true,lvl=60,minLevel=54,qid=93127,side="both",title="정상의 파수꾼"}}
+T[275668]={{choice=true,lvl=60,minLevel=54,qid=93127,side="both",title="정상의 파수꾼"}}
+T[275669]={{choice=true,lvl=59,minLevel=54,qid=96676,side="alliance",title="검은가시 서약단의 실체"}}
+T[275671]={{lvl=59,minLevel=54,qid=96676,side="alliance",title="검은가시 서약단의 실체"}}
+T[275685]={{choice=true,lvl=59,minLevel=54,qid=96676,side="alliance",title="검은가시 서약단의 실체"}}
+T[275698]={{choice=true,lvl=60,minLevel=54,qid=92329,side="both",title="소란스러운 북소리"}}
+T[275700]={{choice=true,lvl=60,minLevel=54,qid=92329,side="both",title="소란스러운 북소리"}}
+T[275701]={{choice=true,lvl=60,minLevel=54,qid=92329,side="both",title="소란스러운 북소리"}}
+T[275708]={{choice=true,lvl=60,minLevel=56,qid=93444,side="both",title="야수 유인"}}
+T[275711]={{choice=true,lvl=60,minLevel=56,qid=93444,side="both",title="야수 유인"}}
+T[275715]={{choice=true,lvl=57,minLevel=54,qid=93383,side="alliance",title="내용물 주의"}}
+T[275721]={{choice=true,lvl=57,minLevel=54,qid=93383,side="alliance",title="내용물 주의"}}
+T[275729]={{choice=true,lvl=57,minLevel=54,qid=93383,side="alliance",title="내용물 주의"}}
+T[275736]={{choice=true,lvl=60,minLevel=54,qid=93848,side="both",title="임무 완수"}}
+T[275737]={{choice=true,lvl=60,minLevel=54,qid=93848,side="both",title="임무 완수"}}
+T[275738]={{choice=true,lvl=60,minLevel=54,qid=99670,side="both",title="제레만에게 돌아가기"}}
+T[275739]={{choice=true,lvl=60,minLevel=54,qid=93848,side="both",title="임무 완수"}}
+T[275740]={{choice=true,lvl=60,minLevel=54,qid=93848,side="both",title="임무 완수"}}
+T[275741]={{choice=true,lvl=60,minLevel=54,qid=93848,side="both",title="임무 완수"}}
+T[275742]={{choice=true,lvl=59,minLevel=54,qid=91794,side="horde",title="선조들의 깃발"}}
+T[275827]={{lvl=56,minLevel=54,qid=96674,side="alliance",title="길 잃은 양"}}
+T[275831]={{lvl=58,minLevel=55,qid=96252,side="both",title="빛바랜 보물"}}
+T[275832]={{choice=true,lvl=57,minLevel=54,qid=95316,side="both",title="실험의 정석"}}
+T[275833]={{choice=true,lvl=57,minLevel=54,qid=95316,side="both",title="실험의 정석"}}
+T[275836]={{lvl=57,minLevel=54,qid=95318,side="both",title="재의 맛"}}
+T[275837]={{choice=true,lvl=58,minLevel=54,qid=96322,side="both",title="이제는 쓰디쓴 복수"}}
+T[275838]={{choice=true,lvl=58,minLevel=54,qid=96322,side="both",title="이제는 쓰디쓴 복수"}}
+T[276102]={{choice=true,lvl=42,minLevel=38,qid=95912,side="alliance",title="현상수배: 검귀 카이조"}}
+T[276105]={{lvl=43,minLevel=38,qid=95882,side="horde",title="현상수배: 정찰대장 바르가스"}}
+T[276332]={{choice=true,lvl=57,minLevel=54,qid=97007,side="horde",title="남은 나뭇조각"}}
+T[276333]={{choice=true,lvl=57,minLevel=54,qid=97007,side="horde",title="남은 나뭇조각"}}
+T[276334]={{choice=true,lvl=57,minLevel=54,qid=97007,side="horde",title="남은 나뭇조각"}}
+T[276335]={{choice=true,lvl=60,minLevel=56,qid=96983,side="both",title="야시로의 바람걸음"}}
+T[276336]={{choice=true,lvl=60,minLevel=56,qid=96983,side="both",title="야시로의 바람걸음"}}
+T[276337]={{lvl=59,minLevel=56,qid=97010,side="both",title="눈먼 복수"}}
+T[276338]={{lvl=57,minLevel=54,qid=93615,side="both",title="어린 고양이 친구들"}}
+T[276339]={{lvl=57,minLevel=54,qid=93617,side="both",title="먹잇감과 포식자"}}
+T[276341]={{lvl=58,minLevel=54,qid=95026,side="horde",title="역병은 이제 끝"}}
 T[276685]={{lvl=0,qid=91777,title="희귀 서적",titleEn="Rare Books"}}
 T[276686]={{lvl=7,qid=46,title="멀록 현상금",titleEn="Bounty on Murlocs"}}
 T[276694]={{lvl=10,qid=140,title="샌더 선장의 숨겨진 보물",titleEn="Captain Sanders' Hidden Treasure"}}
 T[276695]={{lvl=8,qid=9,title="죽음의 땅",titleEn="The Killing Fields"}}
+T[276720]={{lvl=22,minLevel=17,qid=549,side="both",title="비밀결사대원 현상수배",titleEn="WANTED: Syndicate Personnel"}}
+T[276722]={{choice=true,lvl=24,minLevel=10,qid=442,side="both",title="펜리스 섬 공격",titleEn="Assault on Fenris Isle"}}
+T[276723]={{choice=true,lvl=18,minLevel=9,qid=451,side="both",title="죽음의 비법",titleEn="A Recipe For Death"}}
+T[276724]={{choice=true,lvl=24,minLevel=21,qid=501,side="both",title="고통의 비약",titleEn="Elixir of Pain"}}
+T[276727]={{choice=true,lvl=30,minLevel=24,qid=515,side="both",title="죽음의 비약",titleEn="Elixir of Agony"}}
+T[276754]={{lvl=56,minLevel=55,qid=92959,side="both",title="죽어 가는 고대정령들"}}
+T[276886]={{choice=true,lvl=21,minLevel=15,qid=97005,side="alliance",title="강탈자 촐라루크"},{choice=true,lvl=21,minLevel=15,qid=97003,side="horde",title="강탈자 촐라루크"}}
+T[276887]={{choice=true,lvl=21,minLevel=15,qid=97005,side="alliance",title="강탈자 촐라루크"},{choice=true,lvl=21,minLevel=15,qid=97003,side="horde",title="강탈자 촐라루크"}}
+T[276888]={{choice=true,lvl=21,minLevel=15,qid=97005,side="alliance",title="강탈자 촐라루크"},{choice=true,lvl=21,minLevel=15,qid=97003,side="horde",title="강탈자 촐라루크"}}
+T[276889]={{choice=true,lvl=21,minLevel=15,qid=97005,side="alliance",title="강탈자 촐라루크"},{choice=true,lvl=21,minLevel=15,qid=97003,side="horde",title="강탈자 촐라루크"}}
+T[276900]={{choice=true,lvl=54,minLevel=45,qid=96812,side="alliance",title="피는 물보다 진하다"}}
+T[276901]={{choice=true,lvl=54,minLevel=45,qid=96812,side="alliance",title="피는 물보다 진하다"}}
+T[276902]={{choice=true,lvl=54,minLevel=45,qid=96812,side="alliance",title="피는 물보다 진하다"}}
+T[276903]={{choice=true,lvl=52,minLevel=44,qid=96609,side="alliance",title="고향의 맛"}}
+T[276904]={{choice=true,lvl=52,minLevel=44,qid=96609,side="alliance",title="고향의 맛"}}
 T[277132]={{lvl=8,qid=92911,title="수확기를 수확하라",titleEn="Harvesting the Harvesters (Engineering 2/2)"}}
 T[277200]={{lvl=0,qid=95805,title="안쉬와 무샤의 은총",titleEn="Grace of An'she and Mu'sha"}}
+T[277202]={{choice=true,lvl=58,minLevel=50,qid=84394,side="both",title="훌륭한 도서관의 친구"}}
+T[277203]={{choice=true,lvl=20,minLevel=1,qid=78150,side="both",title="도서관의 친구"}}
+T[277204]={{choice=true,lvl=20,minLevel=1,qid=78150,side="both",title="도서관의 친구"}}
+T[277207]={{choice=true,lvl=40,minLevel=26,qid=78830,side="both",title="사막 하늘의 공포"}}
+T[277208]={{choice=true,lvl=40,minLevel=30,qid=79242,side="both",title="도둑의 명예 따윈 없다"}}
+T[277209]={{choice=true,lvl=40,minLevel=26,qid=78830,side="both",title="사막 하늘의 공포"}}
+T[277210]={{lvl=23,minLevel=1,qid=78307,side="both",title="젤토스의 뿔"}}
+T[277211]={{lvl=43,minLevel=35,qid=95385,side="both",title="찢어진 신비의 두루마리"}}
+T[277214]={{choice=true,lvl=38,minLevel=30,qid=97048,side="both",title="다시 항구로"}}
+T[277215]={{choice=true,lvl=58,minLevel=54,qid=96999,side="horde",title="돌아온 조각"}}
+T[277216]={{choice=true,lvl=43,minLevel=36,qid=92878,side="horde",title="말을 잃다"}}
 T[277218]={{lvl=15,qid=95999,title="현상 수배: 소각자 가림",titleEn="Wanted: Insinerator Gar'im"}}
+T[277220]={{choice=true,lvl=43,minLevel=36,qid=92878,side="horde",title="말을 잃다"}}
+T[277221]={{choice=true,lvl=43,minLevel=36,qid=92878,side="horde",title="말을 잃다"}}
+T[277222]={{choice=true,lvl=58,minLevel=54,qid=96999,side="horde",title="돌아온 조각"}}
+T[277223]={{choice=true,lvl=40,minLevel=30,qid=79242,side="both",title="도둑의 명예 따윈 없다"}}
+T[277224]={{choice=true,lvl=38,minLevel=30,qid=97048,side="both",title="다시 항구로"}}
 T[277226]={{lvl=15,qid=95999,title="현상 수배: 소각자 가림",titleEn="Wanted: Insinerator Gar'im"}}
+T[277232]={{choice=true,lvl=38,minLevel=30,qid=97048,side="both",title="다시 항구로"}}
 T[277234]={{lvl=15,qid=95999,title="현상 수배: 소각자 가림",titleEn="Wanted: Insinerator Gar'im"}}
+T[277235]={{choice=true,lvl=40,minLevel=30,qid=79242,side="both",title="도둑의 명예 따윈 없다"}}
+T[277236]={{lvl=40,minLevel=35,qid=79970,side="alliance",title="명예를 되찾은 자 아이오나스"}}
+T[277247]={{choice=true,lvl=12,minLevel=10,qid=98545,side="horde",title="리어니드의 편지"}}
+T[277253]={{lvl=43,minLevel=39,qid=92858,side="alliance",title="현상 수배: 오크지"}}
+T[277254]={{choice=true,lvl=45,minLevel=35,qid=82208,side="both",title="훌륭한 도서관의 친구"}}
+T[277255]={{choice=true,lvl=12,minLevel=10,qid=98545,side="horde",title="리어니드의 편지"}}
+T[277256]={{lvl=40,minLevel=32,qid=95384,side="both",title="부분적인 신비한 기록"}}
+T[277258]={{choice=true,lvl=45,minLevel=35,qid=82208,side="both",title="훌륭한 도서관의 친구"}}
+T[277260]={{choice=true,lvl=45,minLevel=35,qid=82208,side="both",title="훌륭한 도서관의 친구"}}
 T[277470]={{lvl=8,qid=92911,title="수확기를 수확하라",titleEn="Harvesting the Harvesters (Engineering 2/2)"}}
+T[277514]={{choice=true,lvl=33,minLevel=28,qid=97265,side="horde",title="서릿발분노를 증오하라"}}
+T[277515]={{choice=true,lvl=33,minLevel=28,qid=97265,side="horde",title="서릿발분노를 증오하라"}}
+T[277844]={{lvl=42,minLevel=37,qid=97821,side="both",title="신기루 거울"}}
 T[277977]={{lvl=4,qid=97277,title="그룬드와 고즈윈",titleEn="Grund and Gozwin"}}
+T[277979]={{choice=true,lvl=44,minLevel=38,qid=97405,side="alliance",title="소음 민원"},{choice=true,lvl=44,minLevel=38,qid=97386,side="horde",title="그롬골 공격"}}
+T[277980]={{choice=true,lvl=44,minLevel=38,qid=97405,side="alliance",title="소음 민원"},{choice=true,lvl=44,minLevel=38,qid=97386,side="horde",title="그롬골 공격"}}
+T[277981]={{choice=true,lvl=44,minLevel=38,qid=97405,side="alliance",title="소음 민원"},{choice=true,lvl=44,minLevel=38,qid=97386,side="horde",title="그롬골 공격"}}
+T[277988]={{choice=true,lvl=11,minLevel=4,qid=76240,side="horde",title="대지모신과의 대화"}}
+T[278002]={{choice=true,lvl=11,minLevel=4,qid=76240,side="horde",title="대지모신과의 대화"}}
+T[278017]={{choice=true,lvl=41,minLevel=36,qid=97332,side="both",title="두 번 어긋난 믿음"}}
+T[278018]={{choice=true,lvl=41,minLevel=36,qid=97332,side="both",title="두 번 어긋난 믿음"}}
+T[278019]={{choice=true,lvl=41,minLevel=36,qid=97332,side="both",title="두 번 어긋난 믿음"}}
+T[278567]={{choice=true,lvl=39,minLevel=32,qid=92867,side="both",title="지켜 낼 터전"}}
+T[279388]={{lvl=27,minLevel=23,qid=98071,side="alliance",title="양조사의 거래"}}
+T[279391]={{choice=true,lvl=23,minLevel=18,qid=98093,side="horde",title="들판을 비워라"}}
+T[279448]={{choice=true,lvl=53,minLevel=48,qid=96334,side="horde",title="핏빛 붉은 복면"}}
+T[279473]={{choice=true,lvl=53,minLevel=48,qid=96334,side="horde",title="핏빛 붉은 복면"}}
+T[279474]={{choice=true,lvl=53,minLevel=48,qid=95483,side="horde",title="스랄이 알아야 할 일"},{choice=true,lvl=53,minLevel=48,qid=95264,side="alliance",title="쇼가 알아야 할 일"}}
+T[279480]={{choice=true,lvl=45,minLevel=40,qid=94982,side="alliance",title="머그의 눈"},{choice=true,lvl=45,minLevel=40,qid=94968,side="horde",title="머그의 눈"}}
+T[279824]={{choice=true,lvl=53,minLevel=48,qid=96332,side="horde",title="작은 복수"}}
+T[279825]={{choice=true,lvl=53,minLevel=48,qid=96381,side="alliance",title="약간의 지저분한 일"}}
+T[279826]={{choice=true,lvl=53,minLevel=48,qid=96381,side="alliance",title="약간의 지저분한 일"},{choice=true,lvl=53,minLevel=48,qid=96332,side="horde",title="작은 복수"}}
+T[279829]={{choice=true,lvl=53,minLevel=48,qid=96381,side="alliance",title="약간의 지저분한 일"},{choice=true,lvl=53,minLevel=48,qid=96332,side="horde",title="작은 복수"}}
+T[279831]={{choice=true,lvl=53,minLevel=48,qid=95483,side="horde",title="스랄이 알아야 할 일"},{choice=true,lvl=53,minLevel=48,qid=95264,side="alliance",title="쇼가 알아야 할 일"}}
+T[279833]={{choice=true,lvl=53,minLevel=48,qid=95483,side="horde",title="스랄이 알아야 할 일"},{choice=true,lvl=53,minLevel=48,qid=95264,side="alliance",title="쇼가 알아야 할 일"}}
 T[279849]={{lvl=24,qid=92489,title="압도적인 힘",titleEn="Power Overwhelming"}}
+T[279850]={{choice=true,lvl=42,minLevel=38,qid=94998,side="alliance",title="호기심을 부르는 장신구"}}
+T[279852]={{choice=true,lvl=45,minLevel=40,qid=94982,side="alliance",title="머그의 눈"},{choice=true,lvl=45,minLevel=40,qid=94968,side="horde",title="머그의 눈"}}
+T[279853]={{choice=true,lvl=45,minLevel=40,qid=94982,side="alliance",title="머그의 눈"},{choice=true,lvl=45,minLevel=40,qid=94968,side="horde",title="머그의 눈"}}
+T[279854]={{choice=true,lvl=44,minLevel=39,qid=94984,side="alliance",title="황혼의 고서"}}
+T[279855]={{choice=true,lvl=44,minLevel=39,qid=94984,side="alliance",title="황혼의 고서"}}
+T[279859]={{choice=true,lvl=44,minLevel=39,qid=94972,side="horde",title="황혼의 고서"}}
+T[279860]={{choice=true,lvl=44,minLevel=39,qid=94972,side="horde",title="황혼의 고서"}}
 T[279864]={{lvl=16,qid=95250,title="흉측한 생명체",titleEn="Abominable Creatures"},{lvl=16,qid=97290,title="끝없는 고통",titleEn="Unending Torment"}}
 T[279865]={{lvl=16,qid=95250,title="흉측한 생명체",titleEn="Abominable Creatures"},{lvl=16,qid=97290,title="끝없는 고통",titleEn="Unending Torment"}}
 T[279867]={{lvl=16,qid=95250,title="흉측한 생명체",titleEn="Abominable Creatures"},{lvl=16,qid=97290,title="끝없는 고통",titleEn="Unending Torment"}}
@@ -1448,6 +1837,21 @@ T[279874]={{lvl=15,qid=92421,title="빛의 정의",titleEn="Light's Justice"}}
 T[279875]={{lvl=15,qid=92421,title="빛의 정의",titleEn="Light's Justice"}}
 T[279876]={{lvl=16,qid=95216,title="새로운 역병",titleEn="The New Plague"}}
 T[279877]={{lvl=16,qid=95216,title="새로운 역병",titleEn="The New Plague"}}
+T[279878]={{choice=true,lvl=40,minLevel=30,qid=95798,side="alliance",title="그물처럼 엉킨 마법"}}
+T[279879]={{choice=true,lvl=40,minLevel=30,qid=95798,side="alliance",title="그물처럼 엉킨 마법"}}
+T[279880]={{choice=true,lvl=40,minLevel=30,qid=95799,side="alliance",title="탐험가 연맹에 전할 연구 결과"}}
+T[279881]={{choice=true,lvl=40,minLevel=30,qid=95799,side="alliance",title="탐험가 연맹에 전할 연구 결과"}}
+T[279882]={{choice=true,lvl=40,minLevel=34,qid=95789,side="both",title="수상쩍은 소금선견자"}}
+T[279883]={{choice=true,lvl=40,minLevel=34,qid=95791,side="both",title="소금선견자 대장"}}
+T[279884]={{choice=true,lvl=40,minLevel=34,qid=95791,side="both",title="소금선견자 대장"}}
+T[279885]={{choice=true,lvl=40,minLevel=30,qid=96078,side="horde",title="불가에서 엮은 이야기"}}
+T[279886]={{choice=true,lvl=40,minLevel=30,qid=96078,side="horde",title="불가에서 엮은 이야기"}}
+T[279887]={{choice=true,lvl=40,minLevel=30,qid=96078,side="horde",title="불가에서 엮은 이야기"}}
+T[279888]={{choice=true,lvl=38,minLevel=30,qid=95776,side="horde",title="착한 소금비늘은 죽은 소금비늘뿐..."}}
+T[279889]={{choice=true,lvl=38,minLevel=30,qid=95776,side="horde",title="착한 소금비늘은 죽은 소금비늘뿐..."}}
+T[279891]={{choice=true,lvl=55,minLevel=47,qid=92066,side="both",title="쌍둥이 곰"}}
+T[279892]={{choice=true,lvl=55,minLevel=47,qid=92066,side="both",title="쌍둥이 곰"}}
+T[279893]={{choice=true,lvl=55,minLevel=47,qid=92070,side="both",title="잃어버린 기념품"}}
 T[279894]={{lvl=9,qid=96393,title="구 아이언포지 침입",titleEn="Old Ironforge Incursion"}}
 T[279895]={{lvl=9,qid=96393,title="구 아이언포지 침입",titleEn="Old Ironforge Incursion"}}
 T[279896]={{lvl=9,qid=96393,title="구 아이언포지 침입",titleEn="Old Ironforge Incursion"}}
@@ -1455,38 +1859,132 @@ T[279897]={{lvl=10,qid=96394,title="안식 없는 죽음",titleEn="The Restless 
 T[279898]={{lvl=10,qid=96403,title="중요한 가보",titleEn="Important Heirlooms"}}
 T[279899]={{lvl=10,qid=96395,title="해묵은 원한",titleEn="An Ancient Grudge"}}
 T[279900]={{lvl=10,qid=96395,title="해묵은 원한",titleEn="An Ancient Grudge"}}
+T[279901]={{choice=true,lvl=60,minLevel=55,qid=95790,side="alliance",title="먹히는 연구"}}
+T[279902]={{choice=true,lvl=60,minLevel=55,qid=97049,side="horde",title="스며 나오는 수액괴물의 정수"}}
+T[279903]={{choice=true,lvl=60,minLevel=55,qid=95924,side="alliance",title="혼란의 발굴현장"}}
+T[279904]={{choice=true,lvl=60,minLevel=55,qid=95928,side="horde",title="수정 정령"}}
+T[279905]={{choice=true,lvl=60,minLevel=55,qid=95924,side="alliance",title="혼란의 발굴현장"}}
+T[279906]={{choice=true,lvl=60,minLevel=55,qid=95928,side="horde",title="수정 정령"}}
+T[279908]={{choice=true,lvl=60,minLevel=55,qid=95926,side="horde",title="암흑 수정"},{choice=true,lvl=60,minLevel=55,qid=95925,side="alliance",title="나아갈 길을 그리다"}}
+T[279910]={{choice=true,lvl=60,minLevel=55,qid=95926,side="horde",title="암흑 수정"},{choice=true,lvl=60,minLevel=55,qid=95925,side="alliance",title="나아갈 길을 그리다"}}
+T[279912]={{choice=true,lvl=60,minLevel=55,qid=95926,side="horde",title="암흑 수정"},{choice=true,lvl=60,minLevel=55,qid=95925,side="alliance",title="나아갈 길을 그리다"}}
+T[279930]={{choice=true,lvl=40,minLevel=34,qid=95789,side="both",title="수상쩍은 소금선견자"}}
+T[279931]={{choice=true,lvl=60,minLevel=55,qid=95790,side="alliance",title="먹히는 연구"}}
+T[279932]={{choice=true,lvl=60,minLevel=55,qid=97049,side="horde",title="스며 나오는 수액괴물의 정수"}}
 T[279936]={{lvl=0,qid=91775,title="책 반납",titleEn="Book Return"}}
 T[280095]={{lvl=10,qid=96394,title="안식 없는 죽음",titleEn="The Restless Dead"}}
 T[280096]={{lvl=10,qid=96403,title="중요한 가보",titleEn="Important Heirlooms"}}
 T[280430]={{lvl=4,qid=98323,title="산 장악",titleEn="Secure the Mountain"}}
+T[280505]={{choice=true,lvl=39,minLevel=32,qid=92867,side="both",title="지켜 낼 터전"}}
 T[280567]={{lvl=15,qid=95189,title="로데론의 문장",titleEn="Crest of Lordaeron (A)"},{lvl=15,qid=95204,title="로데론의 문장",titleEn="Crest of Lordaeron (H)"}}
 T[280766]={{lvl=24,qid=95697,title="달라지는 입맛",titleEn="Changing Tastes"},{lvl=24,qid=95809,title="갈대로 엮은 마음",titleEn="Heartwoven"}}
 T[280805]={{lvl=24,qid=95697,title="달라지는 입맛",titleEn="Changing Tastes"}}
+T[281250]={{lvl=11,minLevel=6,qid=940,side="both",title="텔드랏실",titleEn="Teldrassil"}}
+T[281251]={{lvl=24,minLevel=20,qid=86574,side="alliance",title="돌발톱 보급품 조달"}}
+T[281252]={{lvl=26,minLevel=18,qid=86576,side="horde",title="혈폭풍의 장신구"}}
 T[281253]={{lvl=0,qid=86585,title="쓰러진 자의 깃발",titleEn="Banner of the Fallen"}}
 T[281254]={{lvl=0,qid=86585,title="쓰러진 자의 깃발",titleEn="Banner of the Fallen"}}
 T[281256]={{lvl=12,qid=86614,title="파도 속 은빛",titleEn="Silver of the Waves"}}
 T[281257]={{lvl=12,qid=86758,title="비수를 비틀다",titleEn="Twisting the Knife"}}
+T[281259]={{choice=true,lvl=55,minLevel=45,qid=87451,side="horde",title="록카드의 추억"}}
+T[281260]={{choice=true,lvl=55,minLevel=45,qid=87451,side="horde",title="록카드의 추억"}}
+T[281261]={{choice=true,lvl=55,minLevel=45,qid=87494,side="both",title="미세 수정 오염"}}
+T[281262]={{choice=true,lvl=55,minLevel=45,qid=87494,side="both",title="미세 수정 오염"}}
+T[281265]={{lvl=20,minLevel=10,qid=95981,side="horde",title="길목의 파수꾼"}}
+T[281266]={{lvl=5,minLevel=4,qid=96130,side="horde",title="차쿠야크"}}
+T[281267]={{lvl=9,minLevel=5,qid=97223,side="both",title="붉은발톱랩터 어미"}}
+T[281268]={{lvl=9,minLevel=4,qid=97225,side="both",title="잊힌 로아 우상"}}
+T[281269]={{choice=true,lvl=15,minLevel=5,qid=97326,side="horde",title="바위 쉼터"}}
+T[281270]={{choice=true,lvl=15,minLevel=5,qid=97326,side="horde",title="바위 쉼터"}}
+T[281271]={{choice=true,lvl=15,minLevel=5,qid=97326,side="horde",title="바위 쉼터"}}
+T[281272]={{choice=true,lvl=15,minLevel=5,qid=97326,side="horde",title="바위 쉼터"}}
+T[281273]={{choice=true,lvl=15,minLevel=5,qid=97326,side="horde",title="바위 쉼터"}}
+T[281274]={{choice=true,lvl=10,minLevel=6,qid=97282,side="both",title="폭풍을 품은 잠재력"}}
+T[281275]={{choice=true,lvl=50,minLevel=45,qid=97378,side="both",title="거울비늘"}}
+T[281276]={{choice=true,lvl=50,minLevel=45,qid=97378,side="both",title="거울비늘"}}
+T[281277]={{choice=true,lvl=50,minLevel=45,qid=97378,side="both",title="거울비늘"}}
+T[281278]={{choice=true,lvl=50,minLevel=45,qid=97378,side="both",title="거울비늘"}}
+T[281279]={{choice=true,lvl=60,minLevel=56,qid=97490,side="both",title="우박원한을 잠재워라"}}
+T[281280]={{choice=true,lvl=60,minLevel=56,qid=97490,side="both",title="우박원한을 잠재워라"}}
+T[281281]={{choice=true,lvl=60,minLevel=56,qid=97490,side="both",title="우박원한을 잠재워라"}}
+T[281283]={{choice=true,lvl=11,minLevel=6,qid=97558,side="both",title="포세이큰을 위한 가죽"}}
+T[281284]={{choice=true,lvl=11,minLevel=6,qid=97558,side="both",title="포세이큰을 위한 가죽"}}
+T[281285]={{choice=true,lvl=11,minLevel=6,qid=97558,side="both",title="포세이큰을 위한 가죽"}}
+T[281286]={{choice=true,lvl=57,minLevel=53,qid=97987,side="alliance",title="스톰윈드 고등 마법원"}}
+T[281287]={{choice=true,lvl=57,minLevel=53,qid=97988,side="horde",title="오그리마의 바람구체자"}}
+T[281288]={{choice=true,lvl=57,minLevel=53,qid=97988,side="horde",title="오그리마의 바람구체자"},{choice=true,lvl=57,minLevel=53,qid=97987,side="alliance",title="스톰윈드 고등 마법원"}}
+T[281289]={{choice=true,lvl=13,minLevel=10,qid=98025,side="alliance",title="현상 수배: 자이바넬"}}
+T[281291]={{choice=true,lvl=21,minLevel=17,qid=98028,side="alliance",title="남작 마리노스"}}
+T[281292]={{choice=true,lvl=21,minLevel=17,qid=98028,side="alliance",title="남작 마리노스"}}
+T[281293]={{choice=true,lvl=25,minLevel=19,qid=98095,side="horde",title="승패의 고지"}}
+T[281294]={{choice=true,lvl=25,minLevel=19,qid=98095,side="horde",title="승패의 고지"}}
 T[281296]={{lvl=20,qid=98191,title="가족의 벗",titleEn="A Friend of the Family"}}
 T[281297]={{lvl=20,qid=98191,title="가족의 벗",titleEn="A Friend of the Family"}}
+T[281298]={{choice=true,lvl=49,minLevel=45,qid=98203,side="horde",title="의술사 티이크"}}
+T[281299]={{choice=true,lvl=49,minLevel=45,qid=98203,side="horde",title="의술사 티이크"}}
+T[281301]={{choice=true,lvl=49,minLevel=45,qid=98203,side="horde",title="의술사 티이크"}}
+T[281302]={{choice=true,lvl=44,minLevel=39,qid=98205,side="both",title="새끼용은 최악이야!"}}
+T[281303]={{choice=true,lvl=44,minLevel=39,qid=98205,side="both",title="새끼용은 최악이야!"}}
 T[281304]={{lvl=23,qid=98216,title="현재를 이해하려면",titleEn="Understanding Our Present"}}
 T[281305]={{lvl=23,qid=98216,title="현재를 이해하려면",titleEn="Understanding Our Present"}}
 T[281306]={{lvl=23,qid=98223,title="버릇은 못 버린다",titleEn="Old Habits"}}
 T[281307]={{lvl=23,qid=98223,title="버릇은 못 버린다",titleEn="Old Habits"}}
+T[281308]={{lvl=42,minLevel=36,qid=98233,side="alliance",title="점액 속의 검"}}
+T[281309]={{choice=true,lvl=30,minLevel=22,qid=98283,side="both",title="살육자"}}
+T[281310]={{choice=true,lvl=30,minLevel=22,qid=98283,side="both",title="살육자"}}
 T[281312]={{lvl=24,qid=98297,title="악순환을 끊어라",titleEn="Stopping the Cycle"}}
 T[281313]={{lvl=24,qid=98297,title="악순환을 끊어라",titleEn="Stopping the Cycle"}}
 T[281314]={{lvl=24,qid=98297,title="악순환을 끊어라",titleEn="Stopping the Cycle"}}
+T[281315]={{lvl=16,minLevel=9,qid=98298,side="both",title="아루갈의 계략"}}
 T[281318]={{lvl=22,qid=98208,title="천상의 꽃송이",titleEn="Bloom of the Heavens"}}
 T[281319]={{lvl=24,qid=98310,title="미래를 엿보다",titleEn="Gleaning Our Future"}}
 T[281320]={{lvl=24,qid=98310,title="미래를 엿보다",titleEn="Gleaning Our Future"}}
 T[281321]={{lvl=24,qid=98310,title="미래를 엿보다",titleEn="Gleaning Our Future"}}
 T[281322]={{lvl=5,qid=98326,title="서리울음",titleEn="Frosthowl"}}
+T[281538]={{choice=true,lvl=59,minLevel=55,qid=97404,side="horde",title="곰도 견디기 힘든 시기"}}
+T[281539]={{choice=true,lvl=59,minLevel=55,qid=97404,side="horde",title="곰도 견디기 힘든 시기"}}
+T[281586]={{choice=true,lvl=60,minLevel=54,qid=92446,side="horde",title="머리 갉작이"}}
+T[281587]={{choice=true,lvl=60,minLevel=54,qid=92446,side="horde",title="머리 갉작이"}}
+T[281588]={{choice=true,lvl=60,minLevel=54,qid=92446,side="horde",title="머리 갉작이"}}
+T[281634]={{choice=true,lvl=35,minLevel=20,qid=79536,side="both",title="훌륭한 도서관의 친구"}}
+T[281635]={{choice=true,lvl=35,minLevel=20,qid=79536,side="both",title="훌륭한 도서관의 친구"}}
+T[281636]={{choice=true,lvl=58,minLevel=50,qid=84394,side="both",title="훌륭한 도서관의 친구"}}
+T[281637]={{choice=true,lvl=58,minLevel=50,qid=84394,side="both",title="훌륭한 도서관의 친구"}}
+T[281673]={{lvl=23,minLevel=20,qid=95885,side="both",title="피의 공물"}}
+T[282064]={{choice=true,lvl=12,minLevel=10,qid=98545,side="horde",title="리어니드의 편지"}}
+T[282284]={{lvl=12,minLevel=4,qid=98403,side="both",title="뒤틀린 증오"}}
 T[282416]={{lvl=2,qid=92481,title="비전의 학생",titleEn="A Student of the Arcane"}}
+T[286408]={{choice=true,lvl=58,minLevel=50,qid=99187,side="horde",title="티르의 성물함"}}
 T[286426]={{lvl=7,qid=93739,title="호드 연합 둘러보기",titleEn="Exploring the Horde"}}
 T[286427]={{lvl=7,qid=93963,title="얼라이언스 연합 둘러보기",titleEn="Exploring the Alliance"}}
+T[286728]={{choice=true,lvl=8,minLevel=4,qid=99123,side="horde",title="어둠 속 방황"}}
+T[286729]={{choice=true,lvl=8,minLevel=4,qid=99123,side="horde",title="어둠 속 방황"}}
+T[286730]={{choice=true,lvl=11,minLevel=8,qid=99052,side="horde",title="저 아래에서 온 위협"}}
+T[286731]={{choice=true,lvl=11,minLevel=8,qid=99052,side="horde",title="저 아래에서 온 위협"}}
 T[286733]={{lvl=4,qid=99130,title="구미가 당기는 제안",titleEn="An Enticing Offer"}}
+T[286735]={{choice=true,lvl=10,minLevel=4,qid=99053,side="alliance",title="바네실 탈출"}}
 T[286737]={{lvl=5,qid=99161,title="서리의 분노",titleEn="Rime's Wrath"}}
 T[286740]={{lvl=4,qid=99082,title="대부족장",titleEn="The High Chieftain"}}
 T[286741]={{lvl=4,qid=99082,title="대부족장",titleEn="The High Chieftain"}}
+T[286742]={{choice=true,lvl=13,minLevel=10,qid=99156,side="horde",title="후방 경비"}}
+T[286743]={{choice=true,lvl=13,minLevel=10,qid=99156,side="horde",title="후방 경비"}}
+T[286744]={{choice=true,lvl=13,minLevel=10,qid=99156,side="horde",title="후방 경비"}}
+T[287059]={{choice=true,lvl=10,minLevel=6,qid=11,side="both",title="갈퀴발 놀 현상금",titleEn="Riverpaw Gnoll Bounty"}}
+T[287060]={{choice=true,lvl=10,minLevel=6,qid=97282,side="both",title="폭풍을 품은 잠재력"}}
+T[287061]={{lvl=12,minLevel=10,qid=224,side="both",title="왕국 수호",titleEn="In Defense of the King's Lands"}}
+T[287062]={{choice=true,lvl=13,minLevel=10,qid=98025,side="alliance",title="현상 수배: 자이바넬"}}
+T[287064]={{choice=true,lvl=23,minLevel=18,qid=98093,side="horde",title="들판을 비워라"}}
+T[287066]={{choice=true,lvl=30,minLevel=24,qid=5151,side="both",title="초전도 장치",titleEn="Hypercapacitor Gizmo"}}
+T[287067]={{choice=true,lvl=32,minLevel=23,qid=474,side="both",title="네크로쉬 처치",titleEn="Defeat Nek'rosh"}}
+T[287069]={{choice=true,lvl=34,minLevel=29,qid=565,side="both",title="바르톨로의 설인 모피 망토",titleEn="Bartolo's Yeti Fur Cloak"}}
+T[287071]={{choice=true,lvl=41,minLevel=30,qid=600,side="both",title="투자개발회사 채광",titleEn="Venture Company Mining"}}
+T[287072]={{choice=true,lvl=42,minLevel=38,qid=95912,side="alliance",title="현상수배: 검귀 카이조"}}
+T[287073]={{choice=true,lvl=43,minLevel=38,qid=2987,side="both",title="골두니 코발트",titleEn="Gordunni Cobalt"}}
+T[287074]={{lvl=49,minLevel=44,qid=7840,side="both",title="잃어버린 라드의 점심",titleEn="Lard Lost His Lunch"}}
+T[287075]={{choice=true,lvl=55,minLevel=44,qid=91531,side="horde",title="끝내 이룬 복수"}}
+T[287076]={{lvl=58,minLevel=54,qid=8282,side="both",title="노글의 잃어버린 가방",titleEn="Noggle's Lost Satchel"}}
+T[287077]={{choice=true,lvl=59,minLevel=54,qid=91794,side="horde",title="선조들의 깃발"}}
+T[290333]={{lvl=48,minLevel=45,qid=91608,side="horde",title="윙윙거리는 벌집"},{lvl=48,minLevel=45,qid=89013,side="alliance",title="윙윙거리는 벌집"}}
 T = EzWoW_Data._Table("Gear", "foreverVendors")
 T[117]={{boss="Sognar Cliffbeard",npc=5124,zone="Ironforge"}}
 T[159]={{boss="Gwenna Firebrew",npc=5112,zone="Ironforge"}}
@@ -2074,824 +2572,3 @@ T[19513]={{boss="Kelm Hargunth",npc=14754,zone=""}}
 T[19514]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
 T[19515]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
 T[19516]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19517]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19518]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19519]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19520]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19521]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19522]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19523]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19524]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19525]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19526]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19527]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19528]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19529]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19530]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19531]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19532]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19533]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19534]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19535]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19536]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19537]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19538]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19539]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19540]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19541]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19542]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19543]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19544]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19545]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19546]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19547]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19548]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19549]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19550]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19551]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19552]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19553]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19554]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19555]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19556]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19557]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19558]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19559]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19560]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19561]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19562]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19563]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19564]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19565]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19566]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19567]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19568]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19569]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19570]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19571]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19572]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19573]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19578]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19580]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19581]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19582]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19583]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19584]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19587]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19589]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19590]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19595]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19596]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19597]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20041]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20042]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20043]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20044]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20045]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20046]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20047]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20048]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20049]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20050]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20051]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20052]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20053]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20054]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20055]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20056]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20057]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20058]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20059]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20060]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20061]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20068]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20069]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20070]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20071]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20072]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20073]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20088]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20089]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20090]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20091]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20092]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20093]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20094]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20095]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20096]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20097]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20098]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20099]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20100]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20101]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20102]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20103]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20104]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20105]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20106]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20107]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20108]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20109]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20110]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20111]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20112]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20113]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20114]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20115]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20116]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20117]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20118]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20119]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20120]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20121]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20122]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20123]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20124]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20125]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20126]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20127]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20128]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20129]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[20150]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20151]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20152]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20153]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20154]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20155]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20156]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20157]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20158]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20159]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20160]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20161]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20162]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20163]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20164]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20165]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20166]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20167]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20168]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20169]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20170]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20171]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20172]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20173]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20174]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20175]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20176]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20177]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20178]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20179]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20180]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20181]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20182]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20183]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20184]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20185]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20186]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20187]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20188]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20189]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20190]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20191]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20192]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20193]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20194]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20195]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20196]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20197]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20198]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20199]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20200]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20201]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20202]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20203]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20204]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20205]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20206]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20207]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20208]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20209]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20210]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20211]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20212]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20214]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20220]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[20425]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20426]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20427]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20428]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20429]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20430]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20431]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20434]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20437]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20438]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20439]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20440]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20441]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20442]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[20443]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20444]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[20576]={{boss="Amy Davenport",npc=777,zone="Redridge Mountains"}}
-T[21099]={{boss="Fimbo Greasemitz",npc=251905,zone="Zephras Isle"},{boss="Fyldan [TBC+] / Fyldan",npc=4223,zone="Darnassus"},{boss="Nyoma",npc=4265,zone="Teldrassil"},{boss="Tarban Hearthgrain",npc=8307,zone="The Barrens"},{boss="Emrul Riknussun",npc=5160,zone="Ironforge"},{boss="Erika Tate",npc=5483,zone="Stormwind City"},{boss="Gloria Femmel",npc=3085,zone="Redridge Mountains"},{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"},{boss="Fimbo Greasemitz",npc=259962,zone="Riverglades"},{boss="Miranda Turner",npc=272646,zone="Riverglades"},{boss="Kelsey Yance",npc=2664,zone="Stranglethorn Vale"}}
-T[21115]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[21116]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[21117]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[21118]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[21119]={{boss="Samuel Hawke",npc=15127,zone=""}}
-T[21120]={{boss="Rutherford Twing",npc=15126,zone=""}}
-T[21219]={{boss="Fimbo Greasemitz",npc=251905,zone="Zephras Isle"},{boss="Fyldan [TBC+] / Fyldan",npc=4223,zone="Darnassus"},{boss="Nyoma",npc=4265,zone="Teldrassil"},{boss="Tarban Hearthgrain",npc=8307,zone="The Barrens"},{boss="Emrul Riknussun",npc=5160,zone="Ironforge"},{boss="Erika Tate",npc=5483,zone="Stormwind City"},{boss="Gloria Femmel",npc=3085,zone="Redridge Mountains"},{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"},{boss="Fimbo Greasemitz",npc=259962,zone="Riverglades"},{boss="Miranda Turner",npc=272646,zone="Riverglades"},{boss="Kelsey Yance",npc=2664,zone="Stranglethorn Vale"}}
-T[21358]={{boss="Vizzklick",npc=6568,zone="Riverglades"}}
-T[21552]={{boss="Kilxx",npc=3497,zone="The Barrens"}}
-T[21563]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[21565]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[21566]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[21567]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[21568]={{boss="Kelm Hargunth",npc=14754,zone=""},{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[22250]={{boss="Chardryn",npc=4216,zone="Darnassus"}}
-T[22651]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[22672]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[22673]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[22676]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[22740]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[22741]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[22747]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[22748]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[22749]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[22750]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[22752]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[22753]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[30497]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[30498]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[248819]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[248820]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[248822]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249274]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249391]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249399]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249424]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249425]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249426]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249427]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249428]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249429]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[249885]={{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"}}
-T[249886]={{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"}}
-T[249887]={{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"}}
-T[249888]={{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"}}
-T[249889]={{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"}}
-T[249890]={{boss="Kalsey Sanden",npc=256731,zone="Redridge Mountains"}}
-T[251460]={{boss="Martha Wellsworth",npc=259860,zone="Riverglades"}}
-T[251468]={{boss="Pexmit",npc=266901,zone="Mount Hyjal"}}
-T[252761]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252762]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252763]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252764]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252765]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252767]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252768]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252769]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252770]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252777]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252778]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252779]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252780]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252781]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252782]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252783]={{boss="Bombus Finespindle",npc=5128,zone="Ironforge"}}
-T[252784]={{boss="Bombus Finespindle",npc=5128,zone="Ironforge"}}
-T[252786]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252787]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252788]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252789]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252790]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252798]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252799]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252800]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252801]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252802]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252803]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252805]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252806]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252807]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252808]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252809]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252810]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252820]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252821]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252822]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252823]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252824]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252825]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252826]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252827]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252828]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252829]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252830]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252831]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252832]={{boss="Granny Finespindle",npc=258306,zone="Ironforge"}}
-T[252834]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252836]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252837]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252838]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252839]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252840]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252841]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252842]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252848]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252849]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252850]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252851]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252852]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252853]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252854]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252855]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252856]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252857]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252860]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252861]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252862]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252863]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252864]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252872]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252873]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252874]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252875]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252876]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252877]={{boss="Pexmit",npc=266901,zone="Mount Hyjal"}}
-T[252900]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252901]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252902]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252903]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252904]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252905]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252906]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252907]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252910]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252911]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252912]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252913]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252922]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252923]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252924]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252925]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[252933]={{boss="Pexmit",npc=266901,zone="Mount Hyjal"}}
-T[252941]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[253665]={{boss="Taleen Shimmerthread",npc=251991,zone="Zephras Isle"},{boss="Antonio Bolero",npc=258568,zone="Stormwind City"},{boss="Franklin Hamar",npc=3091,zone="Redridge Mountains"},{boss="Vizzklick",npc=6568,zone="Riverglades"}}
-T[253668]={{boss="Taleen Shimmerthread",npc=251991,zone="Zephras Isle"},{boss="Antonio Bolero",npc=258568,zone="Stormwind City"},{boss="Franklin Hamar",npc=3091,zone="Redridge Mountains"},{boss="Vizzklick",npc=6568,zone="Riverglades"}}
-T[253890]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253892]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253894]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253896]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253898]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253900]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253914]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253916]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253918]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253920]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253922]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253924]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253926]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253928]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253930]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253932]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253934]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253936]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253950]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253952]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253954]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253956]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253958]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253960]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253962]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253964]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253966]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253968]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253970]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253972]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253988]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253990]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253992]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253994]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253996]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[253998]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254024]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254026]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254028]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254030]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254032]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254036]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254050]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254052]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254054]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254056]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254058]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254060]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254062]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254064]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254066]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254068]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254070]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254072]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254080]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254082]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254084]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254086]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254088]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254090]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254092]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254108]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254110]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254112]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254114]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254116]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254118]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[254124]={{boss="Pexmit",npc=266901,zone="Mount Hyjal"}}
-T[255729]={{boss="Pexmit",npc=266901,zone="Mount Hyjal"}}
-T[262765]={{boss="Tamelyn Aldridge",npc=256389,zone="Redridge Mountains"}}
-T[264233]={{boss="Pexmit",npc=266901,zone="Mount Hyjal"}}
-T[269671]={{boss="Genn Fairweather",npc=265756,zone="Zephras Isle"}}
-T[269678]={{boss="Genn Fairweather",npc=265756,zone="Zephras Isle"}}
-T[269681]={{boss="Genn Fairweather",npc=265756,zone="Zephras Isle"}}
-T[269683]={{boss="Genn Fairweather",npc=265756,zone="Zephras Isle"}}
-T[270888]={{boss="Tamelyn Aldridge",npc=256389,zone="Redridge Mountains"}}
-T[271626]={{boss="Daniel Stitchsong",npc=256734,zone="Redridge Mountains"}}
-T[271627]={{boss="Mivin Shadowweave",npc=256735,zone="Redridge Mountains"}}
-T[271654]={{boss="Fimbo Greasemitz",npc=260560,zone="Riverglades"}}
-T[271657]={{boss="Gritta Chumwater",npc=260487,zone="Riverglades"}}
-T[271871]={{boss="Mister Graphed",npc=263384,zone="Riverglades"}}
-T[272693]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272694]={{boss="Master Sergeant Biggins",npc=12781,zone="Stormwind City"}}
-T[272695]={{boss="Master Sergeant Biggins",npc=12781,zone="Stormwind City"}}
-T[272698]={{boss="Master Sergeant Biggins",npc=12781,zone="Stormwind City"}}
-T[272699]={{boss="Master Sergeant Biggins",npc=12781,zone="Stormwind City"}}
-T[272716]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272717]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272738]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272739]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272740]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272741]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272828]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[272838]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272839]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272840]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272841]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272842]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272843]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272844]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272845]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272846]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272847]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272848]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272849]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272850]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272851]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272856]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272857]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272858]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[272859]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[273325]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[273812]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[273813]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[273814]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[273976]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273977]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273978]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273979]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273980]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273981]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273982]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273983]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273984]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273985]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273986]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[273987]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274012]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274013]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274014]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274015]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274016]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274017]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274018]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274019]={{boss="Aisarra Nightmeadow",npc=264797,zone="Mount Hyjal"}}
-T[274022]={{boss="Gezzy Gunkgear",npc=265575,zone="Stranglethorn Vale"}}
-T[274445]={{boss="Master Sergeant Biggins",npc=12781,zone="Stormwind City"}}
-T[274745]={{boss="Gezzy Gunkgear",npc=265575,zone="Stranglethorn Vale"}}
-T[274746]={{boss="Gezzy Gunkgear",npc=265575,zone="Stranglethorn Vale"}}
-T[274747]={{boss="Gezzy Gunkgear",npc=265575,zone="Stranglethorn Vale"}}
-T[274748]={{boss="Gezzy Gunkgear",npc=265575,zone="Stranglethorn Vale"}}
-T[274749]={{boss="Gezzy Gunkgear",npc=265575,zone="Stranglethorn Vale"}}
-T[274930]={{boss="Genn Fairweather",npc=265756,zone="Zephras Isle"}}
-T[274933]={{boss="Genn Fairweather",npc=265756,zone="Zephras Isle"}}
-T[274969]={{boss="Master Sergeant Biggins",npc=12781,zone="Stormwind City"}}
-T[274977]={{boss="Martha Wellsworth",npc=259860,zone="Riverglades"}}
-T[275229]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275238]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275239]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275240]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275241]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275242]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275243]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[275244]={{boss="Captain Dirgehammer",npc=12777,zone="Stormwind City"}}
-T[276199]={{boss="Friz Frazzlespark",npc=255897,zone="Riverglades"}}
-T[276200]={{boss="Friz Frazzlespark",npc=255897,zone="Riverglades"}}
-T[276201]={{boss="Friz Frazzlespark",npc=255897,zone="Riverglades"}}
-T[276202]={{boss="Friz Frazzlespark",npc=255897,zone="Riverglades"}}
-T[276203]={{boss="Friz Frazzlespark",npc=255897,zone="Riverglades"}}
-T[276204]={{boss="Friz Frazzlespark",npc=255897,zone="Riverglades"}}
-T[276928]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276929]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276930]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276931]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276932]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276933]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276934]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276935]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276936]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276937]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276938]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276939]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276940]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276941]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276942]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276943]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276944]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276945]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276946]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276947]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276948]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276949]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276950]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276951]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276952]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276953]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276954]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276955]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276956]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276957]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276958]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276959]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276960]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276961]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276962]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276963]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276964]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276965]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276966]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276967]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276968]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276969]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276970]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276971]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276972]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276973]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276974]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276975]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[276976]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276977]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276978]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276979]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276980]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276981]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276982]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276983]={{boss="Sutara Plainstalker",npc=264078,zone="Mulgore"}}
-T[276984]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276985]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276986]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276987]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276988]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276989]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276990]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[276991]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T[277056]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277057]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277058]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277059]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277060]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277061]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277062]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277063]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277064]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277065]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277066]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277067]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277068]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277069]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277070]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277071]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277072]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277073]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277074]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277075]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277076]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277077]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277078]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277079]={{boss="Brother Zendraas",npc=272045,zone="Zephras Isle"}}
-T[277080]={{boss="Elaria Anvilwind",npc=271478,zone="Zephras Isle"}}
-T[277081]={{boss="Elaria Anvilwind",npc=271478,zone="Zephras Isle"}}
-T[277082]={{boss="Elaria Anvilwind",npc=271478,zone="Zephras Isle"}}
-T[277083]={{boss="Elaria Anvilwind",npc=271478,zone="Zephras Isle"}}
-T[277084]={{boss="Elaria Anvilwind",npc=271478,zone="Zephras Isle"}}
-T[277085]={{boss="Elaria Anvilwind",npc=271478,zone="Zephras Isle"}}
-T[277086]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277087]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277088]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277089]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277090]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277091]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277092]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277093]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277094]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277095]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277096]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277097]={{boss="Ergaan Eastwind",npc=271483,zone="Zephras Isle"}}
-T[277098]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[277099]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[277100]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[277101]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[277102]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[277103]={{boss="Taliaa Brightsky",npc=271480,zone="Zephras Isle"}}
-T[277104]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277105]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277106]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277107]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277108]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277109]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277110]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[277111]={{boss="Falfaan Halfwind",npc=271465,zone="Zephras Isle"}}
-T[278157]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[278158]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[278468]={{boss="Captain O'Neal",npc=12782,zone="Stormwind City"}}
-T[280347]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[280363]={{boss="Vayn Moongaze",npc=254151,zone="Zephras Isle"}}
-T[280797]={{boss="Yarlyn Amberstill",npc=1263,zone="Dun Morogh"}}
-T[280801]={{boss="Yarlyn Amberstill",npc=1263,zone="Dun Morogh"}}
-T[284664]={{boss="Tamelyn Aldridge",npc=256389,zone="Redridge Mountains"}}
-T[285327]={{boss="Archmage Alvareaux",npc=32287,zone="Alterac Mountains"}}
-T = EzWoW_Data._Table("Gear", "worldDrops")
-T[6641]={{boss="Lordaeron Captain",inst="?",npc=255699}}
-T[263930]={{boss="",inst="Riverglades"}}
-T[266427]={{boss="",inst="Riverglades"}}
-T[277213]={{boss="Dro'zem the Blasphemous",inst="Redridge Mountains",npc=214456}}
-T[279275]={{boss="Baron Marinous",inst="Darkshore",npc=270294}}
-T[279537]={{boss="Nightveiled Rotheap",inst="Wetlands",npc=270589}}
-T[284386]={{boss="Taskmaster Whipfang",inst="Stonetalon Mountains",npc=5932}}
-T[285190]={{boss="Heartrazor",inst="Thousand Needles",npc=5934}}
-T[285329]={{boss="Takk the Leaper",inst="The Barrens",npc=5842}}
-T[285330]={{boss="Swiftmane",inst="The Barrens",npc=5831}}
-T[285331]={{boss="Humar the Pridelord",inst="The Barrens",npc=5828}}
-T[285347]={{boss="Aean Swiftriver",inst="The Barrens",npc=5797}}
-T = EzWoW_Data._Table("Gear", "worldVendors")
-T[12363]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[13468]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[248819]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[248820]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[248822]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249274]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249391]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249399]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249424]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249425]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249426]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249427]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249428]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249429]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[249486]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[249489]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[250979]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[250985]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[251390]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[251458]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[252833]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[253974]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[254432]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[254682]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[255663]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[263439]={{boss="Reputation items",zone="Mount Hyjal"}}
-T[269025]={{boss="Reputation items",zone="Mount Hyjal"}}
-T[269901]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[269903]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[271871]={{boss="Powderfuse Port",zone="Riverglades"}}
-T[273952]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273953]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273954]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273955]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273956]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273957]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273958]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273959]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273960]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273961]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273962]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273963]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273964]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273965]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273966]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273967]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273968]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273969]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273970]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273971]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273972]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273973]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273974]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273975]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273976]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273977]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273978]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273979]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273980]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273981]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273982]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273983]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273984]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273985]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273986]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273987]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273988]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273989]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273990]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273991]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273992]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273993]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273994]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273995]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273996]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273997]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273998]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[273999]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274000]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274001]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274002]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274003]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274004]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274005]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274006]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274007]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274008]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274009]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274010]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274011]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274012]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274013]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274014]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274015]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274016]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274017]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274018]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274019]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274025]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274030]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274379]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[274491]={{boss="Desolace",zone="Shen&#x27;dralas"}}
-T[276542]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[276543]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[276544]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[276545]={{boss="Mount Hyjal",zone="Mount Hyjal"}}
-T[277056]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277057]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277058]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277059]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277060]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277061]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277062]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277063]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277064]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277065]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277066]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277067]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277068]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277069]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277070]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277071]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277072]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277073]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277074]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277075]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277076]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277077]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277078]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T[277079]={{boss="Shrine of Akir",zone="Zephras Isle"}}
-T = EzWoW_Data._Table("Gear", "worldQuests")
-T[247840]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[247841]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[247846]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[252032]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[256935]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[257255]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[257943]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263404]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263405]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263406]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263407]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263411]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263412]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263428]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263430]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263511]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[263513]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[264908]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[273875]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[275290]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}
-T[282416]={{lvl=0,qid=0,title="Zephras Isle 지역 퀘스트",titleEn="Zephras Isle quest"}}

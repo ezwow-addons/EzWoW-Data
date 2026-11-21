@@ -35,6 +35,7 @@ One download installs several folders. Only `EzWoW-Data` loads at login; the oth
 | `EzWoW-Data-Rares` | rare monsters and where they appear |
 | `EzWoW-Data-Names-<language>` | names of items, NPCs, objects and quests, NPC subtitles, for koKR, enUS, deDE, frFR, esES, ruRU, zhCN, zhTW. Only the languages an addon needs are loaded. |
 | `EzWoW-Data-NameExtras` | spell names, English-to-Korean titles |
+| `EzWoW-Data-ShareSeed` | records EzWoW players shared (drops, vendors, spots, flight times); loaded by the core itself when EzWoW - Map Finder (which ships the same records) is not installed |
 
 ### Installation
 
@@ -87,6 +88,7 @@ EzWoW 애드온들이 함께 쓰는 게임 자료입니다. 한 곳에 모아 �
 | `EzWoW-Data-Rares` | 희귀 몬스터와 나오는 곳 |
 | `EzWoW-Data-Names-<언어>` | 아이템·NPC·물체·퀘스트 이름, NPC 부제(koKR, enUS, deDE, frFR, esES, ruRU, zhCN, zhTW). 애드온에 필요한 언어만 읽습니다. |
 | `EzWoW-Data-NameExtras` | 주문 이름, 영어→한국어 제목 |
+| `EzWoW-Data-ShareSeed` | EzWoW 사용자들이 공유한 기록(드롭, 상점, 위치, 비행 시간). EzWoW - Map Finder(같은 기록을 담고 있음)가 없을 때 핵심 부분이 직접 읽습니다 |
 
 ### 설치
 

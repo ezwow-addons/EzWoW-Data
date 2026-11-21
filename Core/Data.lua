@@ -16,6 +16,8 @@
 --   EzWoW-Data-Names-<locale> item, NPC, object, quest names and NPC subtitles
 --                           (koKR, enUS, deDE, frFR, esES, ruRU, zhCN, zhTW)
 --   EzWoW-Data-NameExtras   spell names, English-to-Korean titles
+--   EzWoW-Data-ShareSeed    records EzWoW players shared (drops, vendors, spots, flight times); loaded by
+--                           this core on its own when EzWoW-MapFinder (which ships the same records) is absent
 -- The table shapes are documented at the top of each data file.
 --
 -- Usage from another addon (add "## OptionalDeps: EzWoW-Data" to its .toc):
@@ -40,7 +42,7 @@ D.modules = D.modules or {}
 
 local MODULES = {
     Spawns = true, QuestMap = true, QuestLevels = true, ItemSources = true, NpcInfo = true, Crafting = true,
-    Recipes = true, Gear = true, Dungeons = true, Rares = true, NameExtras = true,
+    Recipes = true, Gear = true, Dungeons = true, Rares = true, NameExtras = true, ShareSeed = true,
 }
 local NAME_LOCALES = { koKR = true, enUS = true, deDE = true, frFR = true, esES = true, ruRU = true, zhCN = true, zhTW = true }
 local LOCALE_ALIAS = { enGB = "enUS", esMX = "esES" }
@@ -539,4 +541,60 @@ end
 
 function D.GetQuestTurnIn(questID)
     return D.Get("QuestMap", "turnIns", questID)
+end
+
+-- ---------------------------------------------------------------------------
+-- Shared-record seed
+-- ---------------------------------------------------------------------------
+-- Every addon's share library (Libs/EzWoWShare, lib.Seed) reads the global EzWoW_ShareSeed, which
+-- EzWoW-MapFinder sets from its Database/ShareSeed.lua. Without Map Finder (Tooltip, Gear Finder,
+-- Profession Recipes, Flight Map ... alone) the ShareSeed module gives the same tables. Map Finder's own
+-- copy always wins: this only fills the global when nothing set it.
+local function provideSeed(_, m)
+    if _G.EzWoW_ShareSeed ~= nil or type(m) ~= "table" then return end
+    local seed = {}
+    for k, v in pairs(m) do
+        if type(v) == "table" then seed[k] = v end
+    end
+    _G.EzWoW_ShareSeed = seed
+    -- a drop index built before the seed was there would miss its records
+    local share = _G.EzWoW_Share
+    if type(share) == "table" and share.reverseDrops then share.reverseDrops = nil end
+end
+
+local function mapFinderWillLoad()
+    local A = C_AddOns
+    if type(A) ~= "table" then return false end
+    if type(A.IsAddOnLoaded) == "function" then
+        local ok, loaded = pcall(A.IsAddOnLoaded, "EzWoW-MapFinder")
+        if ok and loaded then return true end
+    end
+    if type(A.GetAddOnEnableState) ~= "function" then return false end
+    local who = type(UnitName) == "function" and UnitName("player") or nil
+    local ok, state = pcall(A.GetAddOnEnableState, "EzWoW-MapFinder", who)
+    if not ok or type(state) ~= "number" or state == 0 then return false end
+    if type(A.IsAddOnLoadable) == "function" then
+        local okL, loadable = pcall(A.IsAddOnLoadable, "EzWoW-MapFinder", who)
+        if okL and loadable == false then return false end
+    end
+    return true
+end
+
+D.OnModuleLoaded("ShareSeed", provideSeed)
+-- Right after this addon finished loading (a module is not loaded while its parent's files still run), before
+-- the addons after it in load order; and after login when Map Finder was enabled but its seed never came.
+if type(CreateFrame) == "function" then
+    local f = CreateFrame("Frame")
+    pcall(f.RegisterEvent, f, "ADDON_LOADED")
+    pcall(f.RegisterEvent, f, "PLAYER_LOGIN")
+    f:SetScript("OnEvent", function(self, event, addon)
+        if event == "ADDON_LOADED" then
+            if addon ~= "EzWoW-Data" then return end
+            self:UnregisterEvent("ADDON_LOADED")
+            if _G.EzWoW_ShareSeed == nil and not mapFinderWillLoad() then D.Load("ShareSeed") end
+        else
+            self:UnregisterEvent("PLAYER_LOGIN")
+            if _G.EzWoW_ShareSeed == nil then D.Load("ShareSeed") end
+        end
+    end)
 end

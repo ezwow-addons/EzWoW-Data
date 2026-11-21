@@ -4,6 +4,500 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "gearDrops")
+T[18310]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18311]={{boss="Lethtendris",chance=10,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18312]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18313]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18314]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18315]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18317]={{boss="Hydrospawn",chance=20,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18318]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18319]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18321]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18322]={{boss="Hydrospawn",chance=20,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18323]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18324]={{boss="Hydrospawn",chance=10,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18325]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18326]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18327]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18328]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
+T[18337]={{boss="Arcane Torrent 외 3",chance=0.8,creature=14399,inst="혈투의 전장",map=429,minLvl=57,n=4}}
+T[18338]={{boss="Arcane Aberration 외 3",chance=0.8,creature=11480,inst="혈투의 전장",map=429,minLvl=57,n=4}}
+T[18339]={{boss="Eldreth Spectre 외 3",chance=1.25,creature=11473,inst="혈투의 전장",map=429,minLvl=57,n=4}}
+T[18340]={{boss="Eldreth Apparition 외 3",chance=0.6,creature=11471,inst="혈투의 전장",map=429,minLvl=57,n=4}}
+T[18343]={{boss="Ironbark Protector 외 2",chance=1,creature=11459,inst="혈투의 전장",map=429,minLvl=57,n=3}}
+T[18344]={{boss="Petrified Treant 외 2",chance=0.5,creature=11458,inst="혈투의 전장",map=429,minLvl=57,n=3}}
+T[18345]={{boss="Tsu'zee",chance=33.333,creature=11467,inst="혈투의 전장",map=429,minLvl=59,n=1}}
+T[18346]={{boss="Tsu'zee",chance=33.333,creature=11467,inst="혈투의 전장",map=429,minLvl=59,n=1}}
+T[18347]={{boss="Illyanna Ravenoak",chance=25,creature=11488,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18349]={{boss="Illyanna Ravenoak",chance=25,creature=11488,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18350]={{boss="Magister Kalendris",chance=20,creature=11487,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18351]={{boss="Magister Kalendris",chance=20,creature=11487,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18352]={{boss="Tendris Warpwood",chance=25,creature=11489,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18353]={{boss="Tendris Warpwood",chance=25,creature=11489,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18354]={{boss="Pimgib",chance=14,creature=14349,inst="혈투의 전장",map=429,minLvl=56,n=1}}
+T[18370]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18371]={{boss="Magister Kalendris",chance=20,creature=11487,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18372]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18373]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18374]={{boss="Magister Kalendris",chance=20,creature=11487,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18375]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18376]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18377]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18378]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18379]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18380]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18381]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18382]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18383]={{boss="Illyanna Ravenoak",chance=25,creature=11488,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18384]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18385]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18386]={{boss="Illyanna Ravenoak",chance=25,creature=11488,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18387]={{boss="Tsu'zee",chance=33.333,creature=11467,inst="혈투의 전장",map=429,minLvl=59,n=1}}
+T[18388]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18389]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18390]={{boss="Tendris Warpwood",chance=25,creature=11489,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18391]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18392]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18393]={{boss="Tendris Warpwood",chance=25,creature=11489,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18394]={{boss="Immol'thar",chance=20,creature=11496,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18395]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18396]={{boss="Prince Tortheldrin",chance=20,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18397]={{boss="Magister Kalendris",chance=20,creature=11487,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18425]={{boss="Stomper Kreeg",chance=40,creature=14322,inst="혈투의 전장",map=429,minLvl=59,n=1}}
+T[18450]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18451]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18458]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18459]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18460]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18462]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18463]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18464]={{boss="Guard Fengus 외 2",chance=12.5,creature=14321,inst="혈투의 전장",map=429,minLvl=59,n=3}}
+T[18475]={{boss="상자: Gordok Tribute 외 1",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=57,n=2}}
+T[18476]={{boss="상자: Gordok Tribute",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18477]={{boss="상자: Gordok Tribute 외 1",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=57,n=2}}
+T[18478]={{boss="상자: Gordok Tribute",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18479]={{boss="상자: Gordok Tribute 외 1",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=57,n=2}}
+T[18480]={{boss="상자: Gordok Tribute",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18481]={{boss="상자: Gordok Tribute",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18482]={{boss="상자: Gordok Tribute",chance=25,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18483]={{boss="Cho'Rush the Observer",chance=25,creature=14324,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18484]={{boss="Cho'Rush the Observer",chance=25,creature=14324,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18485]={{boss="Cho'Rush the Observer",chance=25,creature=14324,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18490]={{boss="Cho'Rush the Observer",chance=25,creature=14324,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[18493]={{boss="Guard Slip'kik 외 1",chance=7.692,creature=14323,inst="혈투의 전장",map=429,minLvl=59,n=2}}
+T[18494]={{boss="Guard Slip'kik 외 1",chance=7.692,creature=14323,inst="혈투의 전장",map=429,minLvl=59,n=2}}
+T[18495]={{boss="상자: Gordok Tribute",chance=24.75,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18496]={{boss="Guard Slip'kik 외 1",chance=7.692,creature=14323,inst="혈투의 전장",map=429,minLvl=59,n=2}}
+T[18497]={{boss="Guard Slip'kik 외 1",chance=7.692,creature=14323,inst="혈투의 전장",map=429,minLvl=59,n=2}}
+T[18498]={{boss="Guard Slip'kik 외 1",chance=7.692,creature=14323,inst="혈투의 전장",map=429,minLvl=59,n=2}}
+T[18499]={{boss="상자: Gordok Tribute",chance=20,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18500]={{boss="상자: Gordok Tribute",chance=33.333,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18502]={{boss="Captain Kromcrush",chance=25,creature=14325,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18503]={{boss="Captain Kromcrush",chance=25,creature=14325,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18505]={{boss="Captain Kromcrush",chance=25,creature=14325,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18507]={{boss="Captain Kromcrush",chance=25,creature=14325,inst="혈투의 전장",map=429,minLvl=61,n=1}}
+T[18520]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18521]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18522]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18523]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18524]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18525]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18526]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18527]={{boss="King Gordok",chance=25,creature=11501,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18528]={{boss="상자: Gordok Tribute 외 1",chance=33.333,creature=-179564,inst="혈투의 전장",map=429,minLvl=57,n=2}}
+T[18529]={{boss="상자: Gordok Tribute",chance=33.333,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18530]={{boss="상자: Gordok Tribute 외 1",chance=20,creature=-179564,inst="혈투의 전장",map=429,minLvl=57,n=2}}
+T[18531]={{boss="상자: Gordok Tribute",chance=20,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18532]={{boss="상자: Gordok Tribute",chance=20,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18533]={{boss="상자: Gordok Tribute 외 1",chance=24.75,creature=-179564,inst="혈투의 전장",map=429,minLvl=57,n=2}}
+T[18534]={{boss="상자: Gordok Tribute",chance=24.75,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18537]={{boss="상자: Gordok Tribute",chance=24.75,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18538]={{boss="상자: Gordok Tribute",chance=1,creature=-179564,inst="혈투의 전장",map=429,minLvl=0,n=1}}
+T[18541]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18542]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18543]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18544]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18545]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18546]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18547]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18646]={{boss="상자: Cache of the Firelord 외 1",chance=50,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18665]={{boss="Lord Kazzak",chance=100,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18680]={{boss="Lord Alexei Barov 외 5",chance=3.704,creature=10504,inst="스칼로맨스",map=289,minLvl=60,n=6}}
+T[18681]={{boss="Lord Alexei Barov 외 5",chance=3.704,creature=10504,inst="스칼로맨스",map=289,minLvl=60,n=6}}
+T[18682]={{boss="Lord Alexei Barov 외 5",chance=3.704,creature=10504,inst="스칼로맨스",map=289,minLvl=60,n=6}}
+T[18683]={{boss="Lord Alexei Barov 외 5",chance=3.704,creature=10504,inst="스칼로맨스",map=289,minLvl=60,n=6}}
+T[18684]={{boss="Lord Alexei Barov 외 5",chance=3.704,creature=10504,inst="스칼로맨스",map=289,minLvl=60,n=6}}
+T[18686]={{boss="Rattlegore",chance=14,creature=11622,inst="스칼로맨스",map=289,minLvl=61,n=1}}
+T[18689]={{boss="Jandice Barov",chance=11.857,creature=10503,inst="스칼로맨스",map=289,minLvl=61,n=1}}
+T[18690]={{boss="Jandice Barov",chance=11.857,creature=10503,inst="스칼로맨스",map=289,minLvl=61,n=1}}
+T[18691]={{boss="Vectus",chance=7,creature=10432,inst="스칼로맨스",map=289,minLvl=60,n=1}}
+T[18692]={{boss="Marduk Blackpool",chance=7,creature=10433,inst="스칼로맨스",map=289,minLvl=58,n=1}}
+T[18693]={{boss="Ras Frostwhisper",chance=16.667,creature=10508,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18694]={{boss="Ras Frostwhisper",chance=16.667,creature=10508,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18695]={{boss="Ras Frostwhisper",chance=16.667,creature=10508,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18696]={{boss="Ras Frostwhisper",chance=16.667,creature=10508,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18697]={{boss="상자: Old Treasure Chest 외 18",chance=0.4,creature=-176944,inst="스칼로맨스",map=289,minLvl=57,n=19}}
+T[18698]={{boss="Lord Blackwood 외 18",chance=0.1,creature=14695,inst="스칼로맨스",map=289,minLvl=57,n=19}}
+T[18699]={{boss="Scholomance Handler 외 16",chance=0.053,creature=11257,inst="스칼로맨스",map=289,minLvl=57,n=17}}
+T[18700]={{boss="상자: Old Treasure Chest 외 18",chance=0.4,creature=-176944,inst="스칼로맨스",map=289,minLvl=57,n=19}}
+T[18701]={{boss="Scholomance Handler 외 18",chance=0.06,creature=11257,inst="스칼로맨스",map=289,minLvl=57,n=19}}
+T[18702]={{boss="Scholomance Adept 외 17",chance=0.02,creature=10469,inst="스칼로맨스",map=289,minLvl=57,n=18}}
+T[18716]={{boss="Archivist Galford",chance=22,creature=10811,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[18717]={{boss="Grand Crusader Dathrohan 외 1",creature=10812,inst="스트라솔름",map=329,minLvl=62,n=2}}
+T[18718]={{boss="Grand Crusader Dathrohan 외 1",creature=10812,inst="스트라솔름",map=329,minLvl=62,n=2}}
+T[18720]={{boss="Grand Crusader Dathrohan 외 1",creature=10812,inst="스트라솔름",map=329,minLvl=62,n=2}}
+T[18721]={{boss="Cannon Master Willey",chance=20,creature=10997,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[18722]={{boss="Magistrate Barthilas",chance=16.667,creature=10435,inst="스트라솔름",map=329,minLvl=58,n=1}}
+T[18723]={{boss="Ramstein the Gorger",chance=14.667,creature=10439,inst="스트라솔름",map=329,minLvl=61,n=1}}
+T[18725]={{boss="Magistrate Barthilas",chance=16.667,creature=10435,inst="스트라솔름",map=329,minLvl=58,n=1}}
+T[18726]={{boss="Magistrate Barthilas",chance=16.667,creature=10435,inst="스트라솔름",map=329,minLvl=58,n=1}}
+T[18727]={{boss="Magistrate Barthilas",chance=16.667,creature=10435,inst="스트라솔름",map=329,minLvl=58,n=1}}
+T[18728]={{boss="Baroness Anastari",chance=20,creature=10436,inst="스트라솔름",map=329,minLvl=59,n=1}}
+T[18729]={{boss="Baroness Anastari",chance=20,creature=10436,inst="스트라솔름",map=329,minLvl=59,n=1}}
+T[18730]={{boss="Baroness Anastari",chance=20,creature=10436,inst="스트라솔름",map=329,minLvl=59,n=1}}
+T[18734]={{boss="Maleki the Pallid",chance=20,creature=10438,inst="스트라솔름",map=329,minLvl=61,n=1}}
+T[18735]={{boss="Maleki the Pallid",chance=20,creature=10438,inst="스트라솔름",map=329,minLvl=61,n=1}}
+T[18736]={{boss="Fleshflayer Ghoul 외 15",chance=0.046,creature=10407,inst="스트라솔름",map=329,minLvl=58,n=16}}
+T[18737]={{boss="Maleki the Pallid",chance=20,creature=10438,inst="스트라솔름",map=329,minLvl=61,n=1}}
+T[18738]={{boss="Nerub'enkan",chance=20,creature=10437,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[18739]={{boss="Nerub'enkan",chance=20,creature=10437,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[18740]={{boss="Nerub'enkan",chance=20,creature=10437,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[18741]={{boss="Thuzadin Necromancer 외 22",chance=0.04,creature=10400,inst="스트라솔름",map=329,minLvl=57,n=23}}
+T[18742]={{boss="Balzaphon 외 28",chance=0.1,creature=14684,inst="스트라솔름",map=329,minLvl=56,n=29}}
+T[18743]={{boss="Ghostly Citizen 외 28",chance=0.093,creature=10385,inst="스트라솔름",map=329,minLvl=55,n=29}}
+T[18744]={{boss="Ravaged Cadaver 외 29",chance=0.04,creature=10381,inst="스트라솔름",map=329,minLvl=55,n=30}}
+T[18745]={{boss="Crimson Conjuror 외 29",chance=0.08,creature=10419,inst="스트라솔름",map=329,minLvl=55,n=30}}
+T[18754]={{boss="Lord Hel'nurath",chance=25,creature=14506,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18755]={{boss="Lord Hel'nurath",chance=25,creature=14506,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18756]={{boss="Lord Hel'nurath",chance=25,creature=14506,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18757]={{boss="Lord Hel'nurath",chance=25,creature=14506,inst="혈투의 전장",map=429,minLvl=62,n=1}}
+T[18758]={{boss="Death Knight Darkreaver",chance=25,creature=14516,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18759]={{boss="Death Knight Darkreaver",chance=25,creature=14516,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18760]={{boss="Death Knight Darkreaver",chance=25,creature=14516,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18761]={{boss="Death Knight Darkreaver",chance=25,creature=14516,inst="스칼로맨스",map=289,minLvl=62,n=1}}
+T[18803]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18805]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18806]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18808]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18809]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18810]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18811]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18812]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[18813]={{boss="Onyxia",chance=25,creature=10184,inst="오닉시아의 둥지",map=249,minLvl=63,n=1}}
+T[18814]={{boss="Ragnaros",chance=20,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18815]={{boss="Ragnaros",chance=20,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18816]={{boss="Ragnaros",chance=20,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18817]={{boss="Ragnaros",chance=20,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18820]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18821]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18822]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18823]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18824]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18829]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18832]={{boss="Garr",chance=20,creature=12057,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18842]={{boss="Golemagg the Incinerator",chance=25,creature=11988,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18861]={{boss="Magmadar 외 7",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=8}}
+T[18870]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18872]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18875]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18878]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[18879]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19130]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[19131]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[19132]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[19133]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[19134]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[19135]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[19136]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19137]={{boss="Ragnaros",chance=20,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[19138]={{boss="Ragnaros",chance=20,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[19139]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[19140]={{boss="상자: Cache of the Firelord 외 1",chance=20,creature=-179703,inst="화산 심장부",map=409,minLvl=60,n=2}}
+T[19142]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19143]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19144]={{boss="Magmadar 외 3",chance=5.455,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19145]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19146]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19147]={{boss="Gehennas 외 3",chance=5,creature=12259,inst="화산 심장부",map=409,minLvl=63,n=4}}
+T[19334]={{boss="Razorgore the Untamed",chance=16.667,creature=12435,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19335]={{boss="Razorgore the Untamed",chance=16.667,creature=12435,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19336]={{boss="Razorgore the Untamed",chance=16.667,creature=12435,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19337]={{boss="Razorgore the Untamed",chance=16.667,creature=12435,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19339]={{boss="Vaelastrasz the Corrupt",chance=16.667,creature=13020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19340]={{boss="Vaelastrasz the Corrupt",chance=16.667,creature=13020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19341]={{boss="Broodlord Lashlayer",chance=16.667,creature=12017,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19342]={{boss="Broodlord Lashlayer",chance=16.667,creature=12017,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19343]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19344]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19345]={{boss="Ebonroc",chance=18,creature=14601,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19346]={{boss="Vaelastrasz the Corrupt",chance=16.667,creature=13020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19347]={{boss="Chromaggus",chance=10,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19348]={{boss="Vaelastrasz the Corrupt",chance=16.667,creature=13020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19349]={{boss="Chromaggus",chance=10,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19350]={{boss="Broodlord Lashlayer",chance=16.667,creature=12017,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19351]={{boss="Broodlord Lashlayer",chance=16.667,creature=12017,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19352]={{boss="Chromaggus",chance=10,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19353]={{boss="Flamegor 외 2",chance=4,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=3}}
+T[19354]={{boss="Death Talon Wyrmguard",chance=13.22,creature=12460,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19355]={{boss="Flamegor 외 2",chance=4,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=3}}
+T[19356]={{boss="Nefarian",chance=10,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19357]={{boss="Flamegor",chance=10,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19358]={{boss="Death Talon Captain 외 3",chance=8.62,creature=12467,inst="검은날개 둥지",map=469,minLvl=61,n=4}}
+T[19360]={{boss="Nefarian",chance=10,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19361]={{boss="Chromaggus",chance=10,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19362]={{boss="Blackwing Warlock 외 2",chance=4.64,creature=12459,inst="검은날개 둥지",map=469,minLvl=61,n=3}}
+T[19363]={{boss="Nefarian",chance=10,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19364]={{boss="Nefarian",chance=10,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19365]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19367]={{boss="Flamegor",chance=10,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19368]={{boss="Ebonroc",chance=10,creature=14601,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19369]={{boss="Razorgore the Untamed",chance=16.667,creature=12435,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19370]={{boss="Razorgore the Untamed",chance=16.667,creature=12435,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19371]={{boss="Vaelastrasz the Corrupt",chance=16.667,creature=13020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19372]={{boss="Vaelastrasz the Corrupt",chance=16.667,creature=13020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19373]={{boss="Broodlord Lashlayer",chance=16.667,creature=12017,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19374]={{boss="Broodlord Lashlayer",chance=16.667,creature=12017,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19375]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19376]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19377]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19378]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19379]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19380]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19381]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19382]={{boss="Nefarian",chance=20,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19385]={{boss="Chromaggus",chance=20,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19386]={{boss="Chromaggus",chance=16,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19387]={{boss="Chromaggus",chance=20,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19388]={{boss="Chromaggus",chance=20,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19389]={{boss="Chromaggus",chance=20,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19390]={{boss="Chromaggus",chance=16,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19391]={{boss="Chromaggus",chance=16,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19392]={{boss="Chromaggus",chance=16,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19393]={{boss="Chromaggus",chance=16,creature=14020,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19394]={{boss="Flamegor 외 2",chance=14,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=3}}
+T[19395]={{boss="Flamegor 외 2",chance=14,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=3}}
+T[19396]={{boss="Flamegor 외 2",chance=14,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=3}}
+T[19397]={{boss="Flamegor 외 2",chance=14,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=3}}
+T[19398]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19399]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19400]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19401]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19402]={{boss="Firemaw",chance=12.5,creature=11983,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19403]={{boss="Ebonroc",chance=18,creature=14601,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19405]={{boss="Ebonroc",chance=18,creature=14601,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19406]={{boss="Ebonroc",chance=18,creature=14601,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19407]={{boss="Ebonroc",chance=18,creature=14601,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19430]={{boss="Flamegor",chance=20,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19431]={{boss="Flamegor",chance=20,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19432]={{boss="Flamegor",chance=20,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19433]={{boss="Flamegor",chance=20,creature=11981,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19434]={{boss="Blackwing Warlock 외 2",chance=2.612,creature=12459,inst="검은날개 둥지",map=469,minLvl=61,n=3}}
+T[19435]={{boss="Blackwing Warlock 외 2",chance=4.26,creature=12459,inst="검은날개 둥지",map=469,minLvl=61,n=3}}
+T[19436]={{boss="Death Talon Captain 외 3",chance=7.836,creature=12467,inst="검은날개 둥지",map=469,minLvl=61,n=4}}
+T[19437]={{boss="Death Talon Wyrmkin 외 3",chance=4.054,creature=12465,inst="검은날개 둥지",map=469,minLvl=61,n=4}}
+T[19438]={{boss="Death Talon Wyrmguard",chance=9.4,creature=12460,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19439]={{boss="Death Talon Wyrmguard",chance=6.716,creature=12460,inst="검은날개 둥지",map=469,minLvl=63,n=1}}
+T[19507]={{boss="High Inquisitor Fairbanks",chance=33.333,creature=4542,inst="붉은십자군 수도원",map=189,minLvl=40,n=1}}
+T[19508]={{boss="High Inquisitor Fairbanks",chance=33.333,creature=4542,inst="붉은십자군 수도원",map=189,minLvl=40,n=1}}
+T[19509]={{boss="High Inquisitor Fairbanks",chance=33.333,creature=4542,inst="붉은십자군 수도원",map=189,minLvl=40,n=1}}
+T[19852]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19853]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19854]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19855]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19856]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19857]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19859]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19861]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19862]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19863]={{boss="Bloodlord Mandokir",chance=16.667,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19864]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19865]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19866]={{boss="Bloodlord Mandokir",chance=16.667,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19867]={{boss="Bloodlord Mandokir",chance=16.667,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19869]={{boss="Bloodlord Mandokir",chance=16.333,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19870]={{boss="Bloodlord Mandokir",chance=16.667,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19871]={{boss="High Priestess Mar'li",chance=16.667,creature=14510,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19873]={{boss="Bloodlord Mandokir",chance=16.333,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19874]={{boss="Bloodlord Mandokir",chance=16.333,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19875]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19876]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19877]={{boss="Bloodlord Mandokir",chance=16.667,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19878]={{boss="Bloodlord Mandokir",chance=16.333,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19884]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19885]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19886]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19887]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19888]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19889]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19890]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19891]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19892]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19893]={{boss="Bloodlord Mandokir",chance=16.667,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19894]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19895]={{boss="Bloodlord Mandokir",chance=16.333,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19896]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19897]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19898]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19899]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19900]={{boss="High Priest Venoxis",chance=16.667,creature=14507,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19901]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19903]={{boss="High Priest Venoxis",chance=16.667,creature=14507,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19904]={{boss="High Priest Venoxis",chance=16.667,creature=14507,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19905]={{boss="High Priest Venoxis",chance=16.667,creature=14507,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19906]={{boss="High Priest Venoxis",chance=16.667,creature=14507,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19907]={{boss="High Priest Venoxis",chance=16.667,creature=14507,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19908]={{boss="Gurubashi Blood Drinker 외 11",chance=0.12,creature=11353,inst="줄구룹",map=309,minLvl=60,n=12}}
+T[19915]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19918]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19919]={{boss="High Priestess Mar'li",chance=16.667,creature=14510,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19920]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19921]={{boss="Hakkari Shadow Hunter 외 10",chance=0.08,creature=11339,inst="줄구룹",map=309,minLvl=60,n=11}}
+T[19923]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19925]={{boss="High Priestess Mar'li",chance=16.667,creature=14510,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19927]={{boss="High Priestess Mar'li",chance=16.667,creature=14510,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19928]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19929]={{boss="Jin'do the Hexxer",chance=16.667,creature=11380,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19930]={{boss="High Priestess Mar'li",chance=16.667,creature=14510,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19944]={{boss="Gahz'ranka",chance=10,creature=15114,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19945]={{boss="Gahz'ranka",chance=10,creature=15114,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19946]={{boss="Gahz'ranka",chance=40,creature=15114,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19947]={{boss="Gahz'ranka",chance=40,creature=15114,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19961]={{boss="Gri'lek",chance=50,creature=15082,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19962]={{boss="Gri'lek",chance=50,creature=15082,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19963]={{boss="Renataki",chance=50,creature=15084,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19964]={{boss="Renataki",chance=50,creature=15084,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19965]={{boss="Wushoolay",chance=50,creature=15085,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19967]={{boss="Hazza'rah",chance=50,creature=15083,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19968]={{boss="Hazza'rah",chance=50,creature=15083,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[19993]={{boss="Wushoolay",chance=50,creature=15085,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20032]={{boss="High Priestess Mar'li",chance=16.667,creature=14510,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20038]={{boss="Bloodlord Mandokir",chance=16.333,creature=11382,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20257]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20258]={{boss="Hakkari Shadow Hunter 외 10",chance=0.08,creature=11339,inst="줄구룹",map=309,minLvl=60,n=11}}
+T[20259]={{boss="Gurubashi Blood Drinker 외 9",chance=0.08,creature=11353,inst="줄구룹",map=309,minLvl=60,n=10}}
+T[20260]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20261]={{boss="Hakkari Shadow Hunter 외 10",chance=0.08,creature=11339,inst="줄구룹",map=309,minLvl=60,n=11}}
+T[20262]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20263]={{boss="Atal'ai Mistress 외 10",chance=0.08,creature=14882,inst="줄구룹",map=309,minLvl=60,n=11}}
+T[20264]={{boss="Hakkar",chance=14.286,creature=14834,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20265]={{boss="High Priestess Jeklik",chance=14.286,creature=14517,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20266]={{boss="High Priest Thekal",chance=14,creature=14509,inst="줄구룹",map=309,minLvl=63,n=1}}
+T[20577]={{boss="Taerar",chance=14.286,creature=14890,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20578]={{boss="Ysondre",chance=13.333,creature=14887,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20579]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20580]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20581]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20582]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20599]={{boss="Emeriss",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20615]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20616]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20617]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20618]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20619]={{boss="Emeriss 외 3",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=4}}
+T[20621]={{boss="Emeriss",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20622]={{boss="Emeriss",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20623]={{boss="Emeriss",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20624]={{boss="Emeriss",chance=14.286,creature=14889,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20625]={{boss="Lethon",chance=13.333,creature=14888,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20626]={{boss="Lethon",chance=13.333,creature=14888,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20627]={{boss="Lethon",chance=13.333,creature=14888,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20628]={{boss="Lethon",chance=13.333,creature=14888,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20629]={{boss="Lethon",chance=13.333,creature=14888,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20630]={{boss="Lethon",chance=13.333,creature=14888,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20631]={{boss="Taerar",chance=14.286,creature=14890,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20632]={{boss="Taerar",chance=14.286,creature=14890,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20633]={{boss="Taerar",chance=14.286,creature=14890,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20634]={{boss="Taerar",chance=14.286,creature=14890,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20635]={{boss="Ysondre",chance=13.333,creature=14887,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20636]={{boss="Ysondre",chance=13.333,creature=14887,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20637]={{boss="Ysondre",chance=13.333,creature=14887,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20638]={{boss="Ysondre",chance=13.333,creature=14887,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[20639]={{boss="Ysondre",chance=13.333,creature=14887,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[21126]={{boss="C'Thun",chance=8,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21128]={{boss="The Prophet Skeram",chance=10,creature=15263,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21134]={{boss="C'Thun",chance=8,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21452]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21453]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21454]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21455]={{boss="Moam",chance=20,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21456]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21458]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21459]={{boss="Ossirian the Unscarred",chance=10,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21460]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21461]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21462]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21463]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21464]={{boss="Ossirian the Unscarred",chance=18,creature=15339,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21466]={{boss="Ayamiss the Hunter",chance=5,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21467]={{boss="Moam",chance=10,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21468]={{boss="Moam",chance=20,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21469]={{boss="Moam",chance=20,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21470]={{boss="Moam",chance=20,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21471]={{boss="Moam",chance=10,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21472]={{boss="Moam",chance=10,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21473]={{boss="Moam",chance=16,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21474]={{boss="Moam",chance=16,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21475]={{boss="Moam",chance=16,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21476]={{boss="Moam",chance=16,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21477]={{boss="Moam",chance=16,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21478]={{boss="Ayamiss the Hunter",chance=10,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21479]={{boss="Moam 외 1",chance=10,creature=15340,inst="안퀴라즈 폐허",map=509,minLvl=63,n=2}}
+T[21480]={{boss="Ayamiss the Hunter",chance=16,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21481]={{boss="Ayamiss the Hunter",chance=16,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21482]={{boss="Ayamiss the Hunter",chance=16,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21483]={{boss="Ayamiss the Hunter",chance=16,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21484]={{boss="Ayamiss the Hunter",chance=16,creature=15369,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21485]={{boss="Buru the Gorger",chance=10,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21486]={{boss="Buru the Gorger",chance=10,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21487]={{boss="Buru the Gorger",chance=10,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21488]={{boss="Buru the Gorger",chance=17.5,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21489]={{boss="Buru the Gorger",chance=17.5,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21490]={{boss="Buru the Gorger",chance=17.5,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21491]={{boss="Buru the Gorger",chance=17.5,creature=15370,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21492]={{boss="General Rajaxx",chance=10,creature=15341,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21493]={{boss="General Rajaxx",chance=10,creature=15341,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21494]={{boss="General Rajaxx",chance=20,creature=15341,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21495]={{boss="General Rajaxx",chance=20,creature=15341,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21496]={{boss="General Rajaxx",chance=20,creature=15341,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21497]={{boss="General Rajaxx",chance=20,creature=15341,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21498]={{boss="Kurinnaxx",chance=10,creature=15348,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21499]={{boss="Kurinnaxx",chance=10,creature=15348,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21500]={{boss="Kurinnaxx",chance=20,creature=15348,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21501]={{boss="Kurinnaxx",chance=20,creature=15348,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21502]={{boss="Kurinnaxx",chance=20,creature=15348,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21503]={{boss="Kurinnaxx",chance=20,creature=15348,inst="안퀴라즈 폐허",map=509,minLvl=63,n=1}}
+T[21524]={{boss="War Master Voone",chance=100,creature=9237,inst="검은바위 첨탑",map=229,minLvl=59,n=1},{boss="Emperor Dagran Thaurissan",chance=100,creature=9019,inst="검은바위 나락",map=230,minLvl=59,n=1},{boss="Cannon Master Willey",chance=100,creature=10997,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[21525]={{boss="Goraluk Anvilcrack",chance=100,creature=10899,inst="검은바위 첨탑",map=229,minLvl=61,n=1},{boss="Darkmaster Gandling",chance=100,creature=1853,inst="스칼로맨스",map=289,minLvl=61,n=1},{boss="Prince Tortheldrin",chance=100,creature=11486,inst="혈투의 전장",map=429,minLvl=60,n=1}}
+T[21579]={{boss="C'Thun",chance=15,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21581]={{boss="C'Thun",chance=21,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21582]={{boss="C'Thun",chance=21,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21583]={{boss="C'Thun",chance=21,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21585]={{boss="C'Thun",chance=18.4,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21586]={{boss="C'Thun",chance=18.4,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21596]={{boss="C'Thun",chance=18.4,creature=15727,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21597]={{boss="Emperor Vek'lor",chance=16.667,creature=15276,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21598]={{boss="Emperor Vek'lor",chance=16.667,creature=15276,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21599]={{boss="Emperor Vek'lor",chance=16.667,creature=15276,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21600]={{boss="Emperor Vek'lor",chance=16.667,creature=15276,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21601]={{boss="Emperor Vek'lor",chance=16.667,creature=15276,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21602]={{boss="Emperor Vek'lor",chance=16.667,creature=15276,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21603]={{boss="Lord Kri",chance=25,creature=15511,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21604]={{boss="Emperor Vek'nilash",chance=14.286,creature=15275,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21605]={{boss="Emperor Vek'nilash",chance=14.286,creature=15275,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21606]={{boss="Emperor Vek'nilash",chance=14.286,creature=15275,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21607]={{boss="Emperor Vek'nilash",chance=14.286,creature=15275,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21608]={{boss="Emperor Vek'nilash",chance=14.286,creature=15275,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21609]={{boss="Emperor Vek'nilash",chance=14.286,creature=15275,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21610]={{boss="Ouro",chance=16.667,creature=15517,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21611]={{boss="Ouro",chance=16.667,creature=15517,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21615]={{boss="Ouro",chance=16.667,creature=15517,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21616]={{boss="Princess Huhuran",chance=16.667,creature=15509,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21617]={{boss="Princess Huhuran",chance=16.667,creature=15509,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21618]={{boss="Princess Huhuran",chance=16.667,creature=15509,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21619]={{boss="Princess Huhuran",chance=16.667,creature=15509,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21620]={{boss="Princess Huhuran",chance=16.667,creature=15509,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
+T[21621]={{boss="Princess Huhuran",chance=16.667,creature=15509,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
 T[21622]={{boss="Viscidus",chance=14.286,creature=15299,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
 T[21623]={{boss="Viscidus",chance=14.286,creature=15299,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
 T[21624]={{boss="Viscidus",chance=14.286,creature=15299,inst="안퀴라즈 사원",map=531,minLvl=63,n=1}}
@@ -344,6 +838,7 @@ T[271215]={{boss="Rath'mael",creature=250657,inst="로데론의 폐허",map=2999
 T[271216]={{boss="The Abandoned",creature=250631,inst="로데론의 폐허",map=2999,minLvl=15,n=1}}
 T[271217]={{boss="Bjork",creature=256097,inst="로데론의 폐허",map=2999,minLvl=15,n=1}}
 T[271218]={{boss="Viktor the Vile",creature=256035,inst="로데론의 폐허",map=2999,minLvl=15,n=1}}
+T[271718]={{boss="Var'Taka 외 2",creature=258924,inst="가라앉은 도시",map=2970,minLvl=35,n=3}}
 T[272996]={{boss="Oggleflint",creature=11517,inst="성난불길 협곡",map=389,minLvl=16,n=1}}
 T[272998]={{boss="Oggleflint",creature=11517,inst="성난불길 협곡",map=389,minLvl=16,n=1}}
 T[272999]={{boss="Oggleflint",creature=11517,inst="성난불길 협곡",map=389,minLvl=16,n=1}}
@@ -434,8 +929,152 @@ T[274290]={{boss="Interrogator Vishas",creature=3983,inst="붉은십자군 수�
 T[274291]={{boss="Bloodmage Thalnos",creature=4543,inst="붉은십자군 수도원",map=189,minLvl=34,n=1}}
 T[274292]={{boss="Houndmaster Loksey",creature=3974,inst="붉은십자군 수도원",map=189,minLvl=34,n=1}}
 T[274293]={{boss="Arcanist Doan",creature=6487,inst="붉은십자군 수도원",map=189,minLvl=37,n=1}}
+T[274294]={{boss="Arcanist Doan",creature=6487,inst="붉은십자군 수도원",map=189,minLvl=37,n=1}}
+T[274295]={{boss="Herod",creature=3975,inst="붉은십자군 수도원",map=189,minLvl=40,n=1}}
+T[274380]={{boss="Plaguemaw the Rotting",creature=7356,inst="가시덩굴 구릉",map=129,minLvl=40,n=1}}
+T[274381]={{boss="Amnennar the Coldbringer",creature=7358,inst="가시덩굴 구릉",map=129,minLvl=41,n=1}}
+T[274385]={{boss="Glutton",creature=8567,inst="가시덩굴 구릉",map=129,minLvl=40,n=1}}
+T[274425]={{boss="Obsidian Sentinel",creature=7023,inst="울다만",map=70,minLvl=42,n=1}}
+T[274428]={{boss="Obsidian Sentinel",creature=7023,inst="울다만",map=70,minLvl=42,n=1}}
+T[274430]={{boss="Obsidian Sentinel",creature=7023,inst="울다만",map=70,minLvl=42,n=1}}
+T[274431]={{boss="Ancient Stone Keeper",creature=7206,inst="울다만",map=70,minLvl=44,n=1}}
+T[274432]={{boss="Archaedas",creature=2748,inst="울다만",map=70,minLvl=47,n=1}}
+T[274484]={{boss="Ironaya",creature=7228,inst="울다만",map=70,minLvl=40,n=1}}
+T[274485]={{boss="Obsidian Sentinel",creature=7023,inst="울다만",map=70,minLvl=42,n=1}}
+T[274598]={{boss="Zul'Alai",creature=258905,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274599]={{boss="Zul'Alai",creature=258905,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274600]={{boss="Zul'Alai",creature=258905,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274601]={{boss="Var'Taka",creature=258924,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274602]={{boss="Var'Taka",creature=258924,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274603]={{boss="Captain Dreadrise",creature=260042,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274604]={{boss="Captain Dreadrise",creature=260042,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274605]={{boss="Captain Dreadrise",creature=260042,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274606]={{boss="Deathless Marrow",creature=260202,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274607]={{boss="Deathless Marrow",creature=260202,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274608]={{boss="Min'loth the Serpent 외 1",creature=260243,inst="가라앉은 도시",map=2970,minLvl=35,n=2}}
+T[274609]={{boss="Min'loth the Serpent 외 1",creature=260243,inst="가라앉은 도시",map=2970,minLvl=35,n=2}}
+T[274610]={{boss="Min'loth the Serpent 외 1",creature=260243,inst="가라앉은 도시",map=2970,minLvl=35,n=2}}
+T[274611]={{boss="Primeval Elemental 외 1",creature=263886,inst="가라앉은 도시",map=2970,minLvl=35,n=2}}
+T[274612]={{boss="Primeval Elemental 외 1",creature=263886,inst="가라앉은 도시",map=2970,minLvl=35,n=2}}
+T[274613]={{boss="Var'Taka",creature=258924,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274614]={{boss="Deathless Marrow",creature=260202,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[274615]={{boss="Primeval Elemental 외 1",creature=263886,inst="가라앉은 도시",map=2970,minLvl=35,n=2}}
+T[274638]={{boss="Theka the Martyr",creature=7272,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274639]={{boss="Theka the Martyr",creature=7272,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274641]={{boss="Theka the Martyr",creature=7272,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274642]={{boss="Witch Doctor Zum'rah",creature=7271,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274643]={{boss="Nekrum Gutchewer",creature=7796,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274644]={{boss="Nekrum Gutchewer",creature=7796,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274645]={{boss="Nekrum Gutchewer",creature=7796,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274646]={{boss="Sergeant Bly",creature=7604,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274647]={{boss="Sergeant Bly",creature=7604,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274648]={{boss="Sergeant Bly",creature=7604,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274651]={{boss="Hydromancer Velratha",creature=7795,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274652]={{boss="Hydromancer Velratha",creature=7795,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274653]={{boss="Hydromancer Velratha",creature=7795,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274654]={{boss="Ruuzlu",creature=7797,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274655]={{boss="Ruuzlu",creature=7797,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274657]={{boss="Gahz'rilla",creature=7273,inst="줄파락",map=209,minLvl=46,n=1}}
+T[274658]={{boss="Zerillis",creature=10082,inst="줄파락",map=209,minLvl=45,n=1}}
+T[274995]={{boss="Slavecrusher Grox",creature=258966,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[274996]={{boss="Slavecrusher Grox",creature=258966,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[274997]={{boss="Slavecrusher Grox",creature=258966,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[274998]={{boss="Twilight Commander Zarmok",creature=258972,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[274999]={{boss="Twilight Commander Zarmok",creature=258972,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275000]={{boss="Twilight Commander Zarmok",creature=258972,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275001]={{boss="War Handler Ashka",creature=259281,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275002]={{boss="War Handler Ashka",creature=259281,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275003]={{boss="War Handler Ashka",creature=259281,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275004]={{boss="Nar'gurk",creature=258964,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275005]={{boss="Nar'gurk",creature=258964,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275006]={{boss="Nar'gurk",creature=258964,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275007]={{boss="Overlord Mugg",creature=258968,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275008]={{boss="Overlord Mugg",creature=258968,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275009]={{boss="Overlord Mugg",creature=258968,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275010]={{boss="Overlord Mugg",creature=258968,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[275864]={{boss="Lord Vyletongue",creature=12236,inst="마라우돈",map=349,minLvl=47,n=1}}
+T[276397]={{boss="Malor the Zealous",creature=11032,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[276398]={{boss="Malor the Zealous",creature=11032,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[276399]={{boss="Malor the Zealous",creature=11032,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[276404]={{boss="Crimson Hammersmith",creature=11120,inst="스트라솔름",map=329,minLvl=60,n=1}}
+T[276732]={{boss="Overseer Wrex",creature=255391,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276733]={{boss="Overseer Wrex",creature=255391,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276734]={{boss="Overseer Wrex",creature=255391,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276735]={{boss="Tidemistress Ca'zass",creature=255997,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276736]={{boss="Tidemistress Ca'zass",creature=255997,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276737]={{boss="Tidemistress Ca'zass",creature=255997,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276738]={{boss="Katerina the Cleaner",creature=257016,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276739]={{boss="Katerina the Cleaner",creature=257016,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276740]={{boss="Katerina the Cleaner",creature=257016,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276741]={{boss="The Questioner",creature=256236,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276742]={{boss="The Questioner",creature=256236,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276743]={{boss="The Questioner",creature=256236,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276744]={{boss="Blazeroar",creature=255702,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276745]={{boss="Blazeroar",creature=255702,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276746]={{boss="Blazeroar",creature=255702,inst="알카즈 감옥",map=2994,minLvl=48,n=1}}
+T[276877]={{boss="Plugger Spazzring",creature=9499,inst="검은바위 나락",map=230,minLvl=55,n=1}}
+T[280009]={{boss="Titanosaur",creature=253201,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280010]={{boss="Titanosaur",creature=253201,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280011]={{boss="Titanosaur",creature=253201,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280012]={{boss="Ravasaur Hunters 외 1",creature=253214,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280013]={{boss="Ravasaur Hunters 외 1",creature=253214,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280014]={{boss="Ravasaur Hunters 외 1",creature=253214,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280015]={{boss="Venomridge",creature=261813,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280016]={{boss="Venomridge",creature=261813,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280017]={{boss="Venomridge",creature=261813,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280018]={{boss="Thunderhoof",creature=261812,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280019]={{boss="Thunderhoof",creature=261812,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280020]={{boss="Thunderhoof",creature=261812,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280021]={{boss="Direhorn Matriarch",creature=262127,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280022]={{boss="Direhorn Matriarch",creature=262127,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280023]={{boss="Nanaya",creature=261809,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280024]={{boss="Nanaya",creature=261809,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280025]={{boss="Nanaya",creature=261809,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280026]={{boss="King Op 외 2",creature=261993,inst="구체자의 정원",map=3001,minLvl=58,n=3}}
+T[280027]={{boss="King Op 외 1",creature=261993,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280028]={{boss="Cinder 외 1",creature=261974,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280029]={{boss="Cinder 외 1",creature=261974,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280031]={{boss="Bolt 외 1",creature=262081,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280032]={{boss="Bolt 외 1",creature=262081,inst="구체자의 정원",map=3001,minLvl=58,n=2}}
+T[280045]={{boss="Direhorn Matriarch",creature=262127,inst="구체자의 정원",map=3001,minLvl=58,n=1}}
+T[280056]={{boss="Impaan the Imprisoner",creature=247206,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280057]={{boss="Impaan the Imprisoner",creature=247206,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280058]={{boss="Impaan the Imprisoner",creature=247206,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280059]={{boss="Bonesnout the Unbroken",creature=247198,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280060]={{boss="Bonesnout the Unbroken",creature=247198,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280061]={{boss="Bonesnout the Unbroken",creature=247198,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280062]={{boss="Withermaw",creature=247195,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280063]={{boss="Withermaw",creature=247195,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280064]={{boss="Withermaw",creature=247195,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280065]={{boss="Blackmaw Behemoth",creature=247207,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280066]={{boss="Blackmaw Behemoth",creature=247207,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280067]={{boss="Blackmaw Behemoth",creature=247207,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280068]={{boss="Elder Shaman Bloodmane",creature=247209,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280069]={{boss="Elder Shaman Bloodmane",creature=247209,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280070]={{boss="Elder Shaman Bloodmane",creature=247209,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280071]={{boss="Unbound Spirit",creature=247231,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280072]={{boss="Unbound Spirit",creature=247231,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280073]={{boss="Unbound Spirit",creature=247231,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280074]={{boss="Varrox Bleakhoof",creature=247234,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280075]={{boss="Varrox Bleakhoof",creature=247234,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280076]={{boss="Varrox Bleakhoof",creature=247234,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280077]={{boss="Gortek the Apprentice",creature=269111,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280078]={{boss="Gortek the Apprentice",creature=269111,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280079]={{boss="Moontouched Wanderer",creature=269104,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280080]={{boss="Moontouched Wanderer",creature=269104,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280085]={{boss="Tunnelweb Matriarch",creature=250034,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
+T[280086]={{boss="Tunnelweb Matriarch",creature=250034,inst="검은아귀 요새",map=2974,minLvl=55,n=1}}
 T[284715]={{boss="Mr. Smite",creature=646,inst="죽음의 폐광",map=36,minLvl=20,n=1}}
 T[285292]={{boss="Sneed's Shredder",creature=642,inst="죽음의 폐광",map=36,minLvl=20,n=1}}
+T[286428]={{boss="Bossman Toof",creature=264773,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[286429]={{boss="Bossman Toof",creature=264773,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[286430]={{boss="Bossman Toof",creature=264773,inst="크롤도크 보루",map=3039,minLvl=40,n=1}}
+T[286646]={{boss="Gill",creature=264177,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[286649]={{boss="Gill",creature=264177,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[286650]={{boss="\"Pyromancer\" Braxton",creature=260468,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[286651]={{boss="\"Pyromancer\" Braxton",creature=260468,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[286658]={{boss="Umbra",creature=264172,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
+T[286662]={{boss="Umbra",creature=264172,inst="가라앉은 도시",map=2970,minLvl=35,n=1}}
 T[286977]={{boss="Trash mobs",creature=0,inst="로데론의 폐허",map=2999,minLvl=0,n=1}}
 T[286978]={{boss="Trash mobs",creature=0,inst="로데론의 폐허",map=2999,minLvl=0,n=1}}
 T[286979]={{boss="Trash mobs",creature=0,inst="로데론의 폐허",map=2999,minLvl=0,n=1}}

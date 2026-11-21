@@ -15,3 +15,4 @@
 ## X-Credits: spawn, vendor and item drop data from CMaNGOS Classic-DB (GPL v3)
 
 Dungeons_001.lua
+Dungeons_002.lua
