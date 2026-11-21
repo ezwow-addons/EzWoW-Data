@@ -4,6 +4,8 @@
 --   subname : [npcID] = subtitle
 local T
 T = EzWoW_Data._Table("Names-koKR", "quest")
+T[8467]="나피엔을 위한 깃털"
+T[8469]="살파에게 정기의 구슬 가져다주기"
 T[8470]="마른가지일족 의식의 토템"
 T[8471]="눈사태일족 의식의 토템"
 T[8481]="모든 악의 근원"
