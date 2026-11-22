@@ -1,7 +1,7 @@
-# v1.0.15
+# v1.0.16
 
 ### 한국어
-- 공유 기록과 퀘스트·이름 데이터를 최신으로 반영했습니다.
+- 퀘스트·위치·이름·장비 정보를 갱신했습니다.
 
 ### English
-- Updated the shared records, quest and name data.
+- Updated quest, location, name and gear data.
