@@ -1,7 +1,7 @@
-# v1.0.16
+# v1.0.17
 
 ### 한국어
-- 퀘스트·위치·이름·장비 정보를 갱신했습니다.
+- 퀘스트·위치 정보를 갱신했습니다.
 
 ### English
-- Updated quest, location, name and gear data.
+- Updated quest and location data.
