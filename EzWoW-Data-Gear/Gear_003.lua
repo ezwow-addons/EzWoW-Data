@@ -1310,14 +1310,14 @@ T[20233]={{lvl=0,qid=8260,title="Arathor Basic Care Package"}}
 T[20236]={{lvl=0,qid=8261,title="Arathor Standard Care Package"}}
 T[20709]={{lvl=13,qid=97237,title="서가에서 골라 담기",titleEn="Shelf Picked"}}
 T[21946]={{lvl=58,qid=8921,title="심령체 추출기",titleEn="The Ectoplasmic Distiller"}}
-T[22057]={{lvl=58,qid=8996,title="Return to Bodley"}}
+T[22057]={{lvl=58,qid=8996,title="보들리에게 돌아가기",titleEn="Return to Bodley"}}
 T[22137]={{lvl=58,qid=8945,title="죽은 자의 부탁",titleEn="Dead Man's Plea"}}
-T[22192]={{lvl=58,qid=8985,title="또 다른 중요한 요소",titleEn="More Components of Importance [WARRIOR, ROGUE]"},{lvl=58,qid=8986,title="More Components of Importance [DRUID, PALADIN, SHAMAN]"},{lvl=58,qid=8987,title="또 다른 중요한 요소",titleEn="More Components of Importance [PRIEST, MAGE]"},{lvl=58,qid=8988,title="More Components of Importance [HUNTER, WARLOCK]"}}
-T[22193]={{lvl=58,qid=8985,title="또 다른 중요한 요소",titleEn="More Components of Importance [WARRIOR, ROGUE]"},{lvl=58,qid=8986,title="More Components of Importance [DRUID, PALADIN, SHAMAN]"},{lvl=58,qid=8987,title="또 다른 중요한 요소",titleEn="More Components of Importance [PRIEST, MAGE]"},{lvl=58,qid=8988,title="More Components of Importance [HUNTER, WARLOCK]"}}
+T[22192]={{lvl=58,qid=8985,title="또 다른 중요한 요소",titleEn="More Components of Importance [WARRIOR, ROGUE]"},{lvl=58,qid=8986,title="또 다른 중요한 요소",titleEn="More Components of Importance [DRUID, PALADIN, SHAMAN]"},{lvl=58,qid=8987,title="또 다른 중요한 요소",titleEn="More Components of Importance [PRIEST, MAGE]"},{lvl=58,qid=8988,title="또 다른 중요한 요소",titleEn="More Components of Importance [HUNTER, WARLOCK]"}}
+T[22193]={{lvl=58,qid=8985,title="또 다른 중요한 요소",titleEn="More Components of Importance [WARRIOR, ROGUE]"},{lvl=58,qid=8986,title="또 다른 중요한 요소",titleEn="More Components of Importance [DRUID, PALADIN, SHAMAN]"},{lvl=58,qid=8987,title="또 다른 중요한 요소",titleEn="More Components of Importance [PRIEST, MAGE]"},{lvl=58,qid=8988,title="또 다른 중요한 요소",titleEn="More Components of Importance [HUNTER, WARLOCK]"}}
 T[22243]={{lvl=20,qid=65603,title="결속",titleEn="The Binding (Incubus) [Stormwind City]"},{lvl=20,qid=1739,title="결속",titleEn="The Binding (Succubus) [Stormwind City]"}}
 T[22244]={{lvl=30,qid=1795,title="결속",titleEn="The Binding (Felhunter)"}}
 T[22320]={{lvl=58,qid=8921,title="심령체 추출기",titleEn="The Ectoplasmic Distiller"}}
-T[22344]={{lvl=58,qid=8996,title="Return to Bodley"}}
+T[22344]={{lvl=58,qid=8996,title="보들리에게 돌아가기",titleEn="Return to Bodley"}}
 T[22742]={{lvl=0,qid=9272,title="Dressing the Part"}}
 T[22743]={{lvl=0,qid=9272,title="Dressing the Part"}}
 T[22744]={{lvl=0,qid=9272,title="Dressing the Part"}}
@@ -2568,7 +2568,3 @@ T[19506]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
 T[19510]={{boss="Kelm Hargunth",npc=14754,zone=""}}
 T[19511]={{boss="Kelm Hargunth",npc=14754,zone=""}}
 T[19512]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19513]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19514]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19515]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19516]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}

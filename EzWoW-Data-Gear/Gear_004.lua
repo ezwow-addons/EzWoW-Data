@@ -11,6 +11,10 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "foreverVendors")
+T[19513]={{boss="Kelm Hargunth",npc=14754,zone=""}}
+T[19514]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
+T[19515]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
+T[19516]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
 T[19517]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
 T[19518]={{boss="Kelm Hargunth",npc=14754,zone=""}}
 T[19519]={{boss="Kelm Hargunth",npc=14754,zone=""}}
@@ -1233,4 +1237,3 @@ T[5215]={{boss="상자: Ancient Treasure 외 22",chance=2.4,creature=-141979,ins
 T[5216]={{boss="상자: Ancient Treasure 외 6",chance=2,creature=-141979,inst="울다만",map=70,minLvl=42,n=7},{boss="Slime Maggot 외 1",chance=0.006,creature=8311,inst="가라앉은 사원",map=109,minLvl=45,n=2},{boss="Sandarr Dunereaver 외 21",chance=0.288,creature=10080,inst="줄파락",map=209,minLvl=43,n=22},{boss="Constrictor Vine 외 21",chance=0.015,creature=12220,inst="마라우돈",map=349,minLvl=42,n=22}}
 T[5243]={{boss="Deviate Faerie Dragon",chance=50,creature=5912,inst="통곡의 동굴",map=43,minLvl=20,n=1}}
 T[5254]={{boss="Rethilgore",chance=100,creature=3914,inst="그림자송곳니 성채",map=33,minLvl=20,n=1}}
-T[5266]={{boss="Azuregos 외 5",chance=3.797,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=6},{boss="Spawn of Hakkar 외 18",chance=0.004,creature=5708,inst="가라앉은 사원",map=109,minLvl=49,n=19},{boss="Spirestone Mystic 외 22",chance=0.003,creature=9198,inst="검은바위 첨탑",map=229,minLvl=52,n=23},{boss="Twilight Bodyguard 외 43",chance=0.004,creature=8914,inst="검은바위 나락",map=230,minLvl=48,n=44},{boss="Onyxia",chance=2.532,creature=10184,inst="오닉시아의 둥지",map=249,minLvl=63,n=1},{boss="Mangled Cadaver 외 7",chance=0.003,creature=10382,inst="스트라솔름",map=329,minLvl=55,n=8},{boss="Princess Theradras",chance=0.004,creature=12201,inst="마라우돈",map=349,minLvl=51,n=1},{boss="Ragnaros",chance=3.797,creature=11502,inst="화산 심장부",map=409,minLvl=63,n=1},{boss="Whip Lasher 외 9",chance=0.003,creature=13022,inst="혈투의 전장",map=429,minLvl=54,n=10},{boss="Nefarian",chance=2.532,creature=11583,inst="검은날개 둥지",map=469,minLvl=63,n=1},{boss="Silicate Feeder",chance=0.003,creature=15333,inst="안퀴라즈 폐허",map=509,minLvl=55,n=1}}

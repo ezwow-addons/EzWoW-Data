@@ -4,6 +4,10 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "gearDrops")
+T[18306]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18307]={{boss="Hydrospawn",chance=25,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18308]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18309]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
 T[18310]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}
 T[18311]={{boss="Lethtendris",chance=10,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
 T[18312]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}

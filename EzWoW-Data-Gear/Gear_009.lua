@@ -4,6 +4,7 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "gearDrops")
+T[15222]={{boss="Bleak Worg 외 14",chance=0.045,creature=3861,inst="그림자송곳니 성채",map=33,minLvl=18,n=15},{boss="상자: Large Battered Chest 외 16",chance=1.25,creature=-75293,inst="죽음의 폐광",map=36,minLvl=16,n=17},{boss="상자: Large Battered Chest 외 12",chance=1.25,creature=-75293,inst="통곡의 동굴",map=43,minLvl=17,n=13},{boss="Oggleflint 외 3",chance=0.014,creature=11517,inst="성난불길 협곡",map=389,minLvl=16,n=4}}
 T[15223]={{boss="Son of Arugal 외 9",creature=2529,inst="그림자송곳니 성채",map=33,minLvl=20,n=10},{boss="Targorr the Dread 외 6",chance=0.011,creature=1696,inst="스톰윈드 지하감옥",map=34,minLvl=23,n=7},{boss="Edwin VanCleef",chance=0.02,creature=639,inst="죽음의 폐광",map=36,minLvl=21,n=1},{boss="Deviate Dreadfang 외 1",chance=0.011,creature=5056,inst="통곡의 동굴",map=43,minLvl=20,n=2},{boss="Razorfen Geomancer 외 6",chance=0.011,creature=4520,inst="가시덩굴 우리",map=47,minLvl=24,n=7},{boss="Murkshallow Snapclaw 외 18",chance=0.014,creature=4815,inst="검은심연의 나락",map=48,minLvl=22,n=19},{boss="Mobile Alert System 외 1",chance=0.011,creature=7849,inst="놈리건",map=90,minLvl=25,n=2},{boss="Suffering Victim",chance=0.011,creature=6547,inst="붉은십자군 수도원",map=189,minLvl=25,n=1}}
 T[15224]={{boss="Son of Arugal 외 6",creature=2529,inst="그림자송곳니 성채",map=33,minLvl=21,n=7},{boss="Targorr the Dread 외 7",chance=0.011,creature=1696,inst="스톰윈드 지하감옥",map=34,minLvl=23,n=8},{boss="Razorfen Geomancer 외 8",chance=0.011,creature=4520,inst="가시덩굴 우리",map=47,minLvl=24,n=9},{boss="Murkshallow Snapclaw 외 21",chance=0.014,creature=4815,inst="검은심연의 나락",map=48,minLvl=22,n=22},{boss="Mobile Alert System 외 3",chance=0.011,creature=7849,inst="놈리건",map=90,minLvl=25,n=4},{boss="Suffering Victim",chance=0.011,creature=6547,inst="붉은십자군 수도원",map=189,minLvl=25,n=1}}
 T[15225]={{boss="Ward Guardian 외 7",chance=0.009,creature=4427,inst="가시덩굴 우리",map=47,minLvl=29,n=8},{boss="Mekgineer Thermaplugg 외 15",chance=0.433,creature=7800,inst="놈리건",map=90,minLvl=29,n=16},{boss="Withered Battle Boar 외 2",chance=0.009,creature=7333,inst="가시덩굴 구릉",map=129,minLvl=34,n=3},{boss="Scarlet Tracking Hound 외 12",chance=0.022,creature=4304,inst="붉은십자군 수도원",map=189,minLvl=30,n=13}}
@@ -731,7 +732,3 @@ T[18301]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",m
 T[18302]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
 T[18303]={{boss="Pusillin",creature=14354,inst="혈투의 전장",map=429,minLvl=57,n=1}}
 T[18305]={{boss="Hydrospawn",chance=25,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18306]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18307]={{boss="Hydrospawn",chance=25,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18308]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18309]={{boss="Alzzin the Wildshaper",chance=20,creature=11492,inst="혈투의 전장",map=429,minLvl=58,n=1}}

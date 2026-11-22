@@ -16,3 +16,4 @@
 
 QuestMap_001.lua
 QuestMap_002.lua
+QuestMap_003.lua
