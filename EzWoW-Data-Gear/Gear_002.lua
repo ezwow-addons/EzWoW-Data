@@ -1591,7 +1591,7 @@ T[249473]={reag={{11382,1},{7080,1},{14343,3}},src="",srcEn=""}
 T[249726]={reag={{249426,2},{3857,1}},src="",srcEn=""}
 T[249865]={reag={{159,1},{2447,2}},src="조리법 · 던 모로 드랍",srcEn="Recipe · drops in Dun Morogh"}
 T[249866]={reag={{1179,1},{785,2}},src="조리법 · 돌발톱 산맥 드랍",srcEn="Recipe · drops in Stonetalon Mountains"}
-T[249867]={reag={{1205,1},{3357,2}},src="",srcEn=""}
+T[249867]={reag={{1205,1},{3357,2}},src="조리법 · 힐스브래드 구릉지 드랍",srcEn="Recipe · drops in Hillsbrad Foothills"}
 T[249868]={reag={{1708,1},{3818,2}},src="",srcEn=""}
 T[249869]={reag={{1645,1},{8838,2}},src="",srcEn=""}
 T[249870]={reag={{8766,1},{13465,2}},src="",srcEn=""}
@@ -1601,7 +1601,7 @@ T[249873]={reag={{1205,1},{2692,2},{1468,1}},src="조리법 · 칼시 샌든 (�
 T[249874]={reag={{1708,1},{2692,3},{5637,1}},src="조리법 · 칼시 샌든 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n조리법 · 아자베크 (불모의 땅 49.6, 29.2) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Recipe · sold by Kalsey Sanden (Redridge Mountains 10.8, 72.5) · Merchant's Favor 60, Friendly\nRecipe · sold by Aza'bek (The Barrens 49.6, 29.2) · Merchant's Favor 60, Friendly"}
 T[249875]={reag={{1645,1},{3713,3},{4402,1}},src="조리법 · 칼시 샌든 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n조리법 · 아자베크 (불모의 땅 49.6, 29.2) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Recipe · sold by Kalsey Sanden (Redridge Mountains 10.8, 72.5) · Merchant's Favor 60, Friendly\nRecipe · sold by Aza'bek (The Barrens 49.6, 29.2) · Merchant's Favor 60, Friendly"}
 T[249876]={reag={{8766,1},{3713,4},{8146,1}},src="조리법 · 칼시 샌든 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 90, 우호적\n조리법 · 아자베크 (불모의 땅 49.6, 29.2) 판매 · 상인의 호의 90, 우호적",srcEn="Recipe · sold by Kalsey Sanden (Redridge Mountains 10.8, 72.5) · Merchant's Favor 90, Honored\nRecipe · sold by Aza'bek (The Barrens 49.6, 29.2) · Merchant's Favor 90, Honored"}
-T[250065]={reag={{5471,2},{2692,3}},src="",srcEn=""}
+T[250065]={reag={{5471,2},{2692,3}},src="조리법 · 퀴아 (여명의 설원 61.2, 37.2) 판매",srcEn="Recipe · sold by Qia (Winterspring 61.2, 37.2)"}
 T[250066]={reag={{3404,3},{3713,3}},src="",srcEn=""}
 T[250067]={reag={{12223,3},{3713,2}},src="",srcEn=""}
 T[250068]={reag={{3712,3},{3713,3}},src="",srcEn=""}
@@ -1781,8 +1781,8 @@ T[250613]={reag={{12359,30},{251291,4},{7076,4},{249726,10},{12644,2}},src="도�
 T[250614]={reag={{12359,20},{251291,8},{7082,4},{249726,10},{12644,1}},src="도면 · 스톤드리 다크해머 (붉은마루 산맥 10.4, 74.5) 판매 · 상인의 호의 90, 우호적\n도면 · 고르마크 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 90, 우호적",srcEn="Plans · sold by Stondry Darkhammer (Redridge Mountains 10.4, 74.5) · Merchant's Favor 90, Honored\nPlans · sold by Gor'mak (The Barrens 49.8, 29.6) · Merchant's Favor 90, Honored"}
 T[250615]={reag={{12359,20},{251291,6},{249726,10},{12803,4},{8170,4}},src="",srcEn=""}
 T[250616]={reag={{12359,30},{7082,4},{249726,10},{8170,4}},src="도면 · Pexmit (하이잘 산 59.2, 45.5) 판매",srcEn="Plans · sold by Pexmit (Mount Hyjal 59.2, 45.5)"}
-T[250617]={reag={{251290,20},{249726,10},{12644,2}},src="",srcEn=""}
-T[250618]={reag={{251290,10},{251291,10},{249726,10},{7910,4},{12361,4}},src="",srcEn=""}
+T[250617]={reag={{251290,20},{249726,10},{12644,2}},src="도면 · 메일로쉬 (악령의 숲 65.7, 2.8) 판매",srcEn="Plans · sold by Meilosh (Felwood 65.7, 2.8)"}
+T[250618]={reag={{251290,10},{251291,10},{249726,10},{7910,4},{12361,4}},src="도면 · 메일로쉬 (악령의 숲 65.7, 2.8) 판매",srcEn="Plans · sold by Meilosh (Felwood 65.7, 2.8)"}
 T[250619]={reag={{251290,15},{251291,8},{249726,10},{248820,4},{248822,1}},src="도면 · 스톤드리 다크해머 (붉은마루 산맥 10.4, 74.5) 판매 · 상인의 호의 120, 우호적\n도면 · 고르마크 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 120, 우호적",srcEn="Plans · sold by Stondry Darkhammer (Redridge Mountains 10.4, 74.5) · Merchant's Favor 120, Honored\nPlans · sold by Gor'mak (The Barrens 49.8, 29.6) · Merchant's Favor 120, Honored"}
 T[250620]={reag={{2840,2},{818,2},{774,2},{2318,4}},src="",srcEn=""}
 T[250621]={reag={{2840,2},{10940,4},{2318,2}},src="",srcEn=""}
@@ -1808,7 +1808,7 @@ T[250950]={reag={{8846,3},{13466,2},{8925,1}},src="조제법 · 니나 슈어파
 T[250951]={reag={{8845,2},{3369,2},{8925,1}},src="조제법 · 니나 슈어파이어 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 180, 우호적\n조제법 · 연금술사 두렐 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 우호적",srcEn="Recipe · sold by Nina Surefire (Redridge Mountains 10.8, 72.5) · Merchant's Favor 180, Honored\nRecipe · sold by Apothecary Durelle (The Barrens 49.8, 29.6) · Merchant's Favor 180, Honored"}
 T[250953]={reag={{13465,2},{4625,2},{8925,1}},src="조제법 · 니나 슈어파이어 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 120, 약간 우호적\n조제법 · 연금술사 두렐 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 120, 약간 우호적",srcEn="Recipe · sold by Nina Surefire (Redridge Mountains 10.8, 72.5) · Merchant's Favor 120, Friendly\nRecipe · sold by Apothecary Durelle (The Barrens 49.8, 29.6) · Merchant's Favor 120, Friendly"}
 T[250954]={reag={{4625,2},{3819,2},{8925,1}},src="조제법 · 니나 슈어파이어 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 180, 우호적\n조제법 · 연금술사 두렐 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 우호적",srcEn="Recipe · sold by Nina Surefire (Redridge Mountains 10.8, 72.5) · Merchant's Favor 180, Honored\nRecipe · sold by Apothecary Durelle (The Barrens 49.8, 29.6) · Merchant's Favor 180, Honored"}
-T[250955]={reag={{8846,2},{13466,2},{18256,1}},src="",srcEn=""}
+T[250955]={reag={{8846,2},{13466,2},{18256,1}},src="@A 조제법 · 마리아 루메르 (스톰윈드 55.9, 85.6) 판매\n@H 조제법 · 알게르논 (언더시티 51.7, 74.7) 판매",srcEn="@A Recipe · sold by Maria Lumere (Stormwind City 55.9, 85.6)\n@H Recipe · sold by Algernon (Undercity 51.7, 74.7)"}
 T[251290]={reag={{251291,1},{248819,1}},src="",srcEn=""}
 T[251291]={reag={{248815,1}},src="",srcEn=""}
 T[251525]={reag={{251524,1},{2678,1}},src="조리법 · 붉은마루 산맥 · 서부 몰락지대 · 엘윈 숲 드랍",srcEn="Recipe · drops in Redridge Mountains · Westfall · Elwynn Forest"}
@@ -1953,4 +1953,3 @@ T[252565]={reag={{4234,8},{4233,2},{5500,2}},src="",srcEn=""}
 T[252566]={reag={{4304,10},{4236,3},{249428,4},{4291,2},{7069,3},{249427,2}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 60, Friendly\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 60, Friendly"}
 T[252567]={reag={{4304,10},{4236,3},{249428,4},{4291,2},{7070,3},{249427,2}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 60, Friendly\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 60, Friendly"}
 T[252568]={reag={{4304,10},{4236,3},{249428,4},{4291,2},{3864,3},{249427,2}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 60, Friendly\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 60, Friendly"}
-T[252569]={reag={{4304,10},{4236,3},{249428,4},{4291,2},{5500,3},{249427,2}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 60, Friendly\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 60, Friendly"}

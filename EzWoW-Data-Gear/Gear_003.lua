@@ -8,6 +8,7 @@
 --   foreverVendors : [itemID] = { {zone, boss=vendor name, npc=npcID, side?}, ... } side "alliance"/"horde"/"both"
 local T
 T = EzWoW_Data._Table("Gear", "craftInfo")
+T[252569]={reag={{4304,10},{4236,3},{249428,4},{4291,2},{5500,3},{249427,2}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 60, 약간 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 60, 약간 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 60, Friendly\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 60, Friendly"}
 T[252570]={reag={{4304,12},{4236,4},{249428,6},{8343,2},{7069,4},{249427,3}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 90, 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 90, 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 90, Honored\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 90, Honored"}
 T[252571]={reag={{4304,12},{4236,4},{249428,6},{8343,2},{7070,4},{249427,3}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 90, 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 90, 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 90, Honored\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 90, Honored"}
 T[252572]={reag={{4304,12},{4236,4},{249428,6},{8343,2},{3864,4},{249427,3}},src="도안 · 대니얼 스티치송 (붉은마루 산맥 10, 72.5) 판매 · 상인의 호의 90, 우호적\n도안 · 파와니 (불모의 땅 49.6, 29.6) 판매 · 상인의 호의 90, 우호적",srcEn="Pattern · sold by Daniel Stitchsong (Redridge Mountains 10, 72.5) · Merchant's Favor 90, Honored\nPattern · sold by Pawani (The Barrens 49.6, 29.6) · Merchant's Favor 90, Honored"}
@@ -298,14 +299,14 @@ T[273948]={reag={{274030,5},{12360,4},{251291,18},{18567,1}},src="도면 · Aisa
 T[273949]={reag={{274030,3},{12360,2},{251291,12},{18567,1}},src="도면 · Aisarra Nightmeadow (하이잘 산 71, 51.2) 판매 · 유연한 자연의 정수 ×6",srcEn="Plans · sold by Aisarra Nightmeadow (Mount Hyjal 71, 51.2) · Malleable Essence of Nature ×6"}
 T[273950]={reag={{274030,3},{12360,2},{251291,12},{18567,1}},src="도면 · Aisarra Nightmeadow (하이잘 산 71, 51.2) 판매 · 유연한 자연의 정수 ×6",srcEn="Plans · sold by Aisarra Nightmeadow (Mount Hyjal 71, 51.2) · Malleable Essence of Nature ×6"}
 T[273951]={reag={{274030,3},{12360,2},{251291,12},{18567,1}},src="도면 · Aisarra Nightmeadow (하이잘 산 71, 51.2) 판매 · 유연한 자연의 정수 ×6",srcEn="Plans · sold by Aisarra Nightmeadow (Mount Hyjal 71, 51.2) · Malleable Essence of Nature ×6"}
-T[274048]={reag={{249409,1},{249391,1},{3575,1}},src="",srcEn=""}
+T[274048]={reag={{249409,1},{249391,1},{3575,1}},src="설계도 · 놈리건 드랍",srcEn="Schematic · drops in Gnomeregan"}
 T[274273]={reag={{248822,1},{248821,12},{13464,9},{18256,1}},src="",srcEn=""}
 T[274274]={reag={{248822,1},{248821,18},{13465,6},{18256,1}},src="",srcEn=""}
 T[274275]={reag={{248822,1},{248823,12},{13463,9},{18256,1}},src="",srcEn=""}
 T[274276]={reag={{248822,1},{248823,18},{13467,6},{18256,1}},src="",srcEn=""}
 T[274387]={reag={{251291,8},{17056,5},{7069,1}},src="",srcEn=""}
 T[274388]={reag={{251291,8},{12365,8},{7067,1}},src="",srcEn=""}
-T[274971]={reag={{730,2},{12206,1},{2692,1}},src="",srcEn=""}
+T[274971]={reag={{730,2},{12206,1},{2692,1}},src="조리법 · Fimbo Greasemitz (강물터 78.8, 54) 판매",srcEn="Recipe · sold by Fimbo Greasemitz (Riverglades 78.8, 54)"}
 T[274976]={reag={{769,2},{2678,1}},src="조리법 · Martha Wellsworth (강물터 64.2, 84) 판매",srcEn="Recipe · sold by Martha Wellsworth (Riverglades 64.2, 84)"}
 T[275604]={reag={{14048,4},{14343,1},{7082,3},{14341,6}},src="도안 · 미쉬타 (실리더스 49.9, 36.3) 판매",srcEn="Pattern · sold by Mishta (Silithus 49.9, 36.3)"}
 T[275605]={reag={{14048,6},{14343,1},{7082,3},{14341,6}},src="도안 · 미쉬타 (실리더스 49.9, 36.3) 판매",srcEn="Pattern · sold by Mishta (Silithus 49.9, 36.3)"}
@@ -432,7 +433,7 @@ T[279272]={reag={{251290,1},{251291,12}},src="",srcEn=""}
 T[279273]={reag={{274030,4},{251290,2},{251291,10},{12800,1}},src="",srcEn=""}
 T[279940]={reag={{6452,1},{8544,2},{4470,2}},src="도면 · 그림자송곳니 성채 드랍",srcEn="Blueprint · drops in Shadowfang Keep"}
 T[279941]={reag={{2319,5},{2321,3},{4470,2}},src="도면 · 그림자송곳니 성채 드랍",srcEn="Blueprint · drops in Shadowfang Keep"}
-T[279943]={reag={{4470,2},{4305,5},{2321,3}},src="",srcEn=""}
+T[279943]={reag={{4470,2},{4305,5},{2321,3}},src="도면 · 달라란 드랍",srcEn="Blueprint · drops in Dalaran"}
 T[279944]={reag={{2835,1},{2840,1}},src="",srcEn=""}
 T[279945]={reag={{273130,1},{8170,5},{14341,1}},src="",srcEn=""}
 T[279948]={reag={{2838,2},{2772,1},{2842,1}},src="도면 · 발굴 현장: 저습지 드랍",srcEn="Blueprint · drops in Excavation Site: Wetlands"}
@@ -459,7 +460,7 @@ T[279985]={reag={{11137,2},{11174,1}},src="도면 · 로데론의 폐허 · 가�
 T[279987]={reag={{273128,1},{14344,2},{16203,4}},src="",srcEn=""}
 T[279988]={reag={{2841,5},{3478,2},{2319,2}},src="도면 · 죽음의 폐광 드랍",srcEn="Blueprint · drops in The Deadmines"}
 T[279989]={reag={{273129,1},{15994,2}},src="",srcEn=""}
-T[279990]={reag={{273125,1},{8925,1},{13463,2}},src="",srcEn=""}
+T[279990]={reag={{273125,1},{8925,1},{13463,2}},src="도면 · 스칼로맨스 드랍",srcEn="Blueprint · drops in Scholomance"}
 T[280306]={reag={{4382,2},{4375,1},{4305,2}},src="설계도 · 프리츠 피즐 (붉은마루 산맥 10.4, 74.2) 판매 · 상인의 호의 180, 약간 우호적\n설계도 · 피즐퓨즈 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 약간 우호적",srcEn="Schematic · sold by Fritz Fizzle (Redridge Mountains 10.4, 74.2) · Merchant's Favor 180, Friendly\nSchematic · sold by Fizzlefuse (The Barrens 49.8, 29.6) · Merchant's Favor 180, Friendly"}
 T[280307]={reag={{4375,2},{4382,1},{2319,4}},src="설계도 · 프리츠 피즐 (붉은마루 산맥 10.4, 74.2) 판매 · 상인의 호의 180, 약간 우호적\n설계도 · 피즐퓨즈 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 약간 우호적",srcEn="Schematic · sold by Fritz Fizzle (Redridge Mountains 10.4, 74.2) · Merchant's Favor 180, Friendly\nSchematic · sold by Fizzlefuse (The Barrens 49.8, 29.6) · Merchant's Favor 180, Friendly"}
 T[280308]={reag={{4371,2},{4363,1},{2319,4}},src="설계도 · 프리츠 피즐 (붉은마루 산맥 10.4, 74.2) 판매 · 상인의 호의 180, 약간 우호적\n설계도 · 피즐퓨즈 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 약간 우호적",srcEn="Schematic · sold by Fritz Fizzle (Redridge Mountains 10.4, 74.2) · Merchant's Favor 180, Friendly\nSchematic · sold by Fizzlefuse (The Barrens 49.8, 29.6) · Merchant's Favor 180, Friendly"}
@@ -1302,7 +1303,7 @@ T[19483]={{lvl=0,qid=7161,title="신병 계급장",titleEn="Proving Grounds (Hor
 T[19484]={{lvl=0,qid=7162,title="신병 계급장",titleEn="Proving Grounds (Alliance)"}}
 T[20133]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리버의 위협"},{choice=true,lvl=60,minLevel=58,qid=8258,side="both",title="다크리버의 위협",titleEn="The Darkreaver Menace"}}
 T[20134]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리버의 위협"}}
-T[20228]={{lvl=45,qid=8265,title="Defiler's Advanced Care Package"}}
+T[20228]={{lvl=45,qid=8265,title="고급 파멸단 구급품",titleEn="Defiler's Advanced Care Package"}}
 T[20229]={{lvl=0,qid=8263,title="Defiler's Basic Care Package"}}
 T[20230]={{lvl=0,qid=8264,title="Defiler's Standard Care Package"}}
 T[20231]={{lvl=45,qid=8262,title="Arathor Advanced Care Package"}}
@@ -2557,14 +2558,3 @@ T[19315]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfhear
 T[19316]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19317]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19318]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19319]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19320]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19321]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19323]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19324]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19325]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19505]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19506]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
-T[19510]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19511]={{boss="Kelm Hargunth",npc=14754,zone=""}}
-T[19512]={{boss="Kelm Hargunth",npc=14754,zone=""}}

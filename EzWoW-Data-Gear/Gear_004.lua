@@ -11,6 +11,17 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "foreverVendors")
+T[19319]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
+T[19320]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
+T[19321]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
+T[19323]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
+T[19324]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
+T[19325]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
+T[19505]={{boss="Kelm Hargunth",npc=14754,zone=""}}
+T[19506]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
+T[19510]={{boss="Kelm Hargunth",npc=14754,zone=""}}
+T[19511]={{boss="Kelm Hargunth",npc=14754,zone=""}}
+T[19512]={{boss="Kelm Hargunth",npc=14754,zone=""}}
 T[19513]={{boss="Kelm Hargunth",npc=14754,zone=""}}
 T[19514]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}
 T[19515]={{boss="Illiyana Moonblaze",npc=14753,zone=""}}

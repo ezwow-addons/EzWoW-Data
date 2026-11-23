@@ -2997,7 +2997,9 @@ T[7142]={lvl=60,min=58,sort=2597}
 T[7161]={lvl=60,min=51,obj={{"item",17850,1}},sort=2597}
 T[7162]={lvl=60,min=51,obj={{"item",17849,1}},sort=2597}
 T[7163]={lvl=60,min=51,obj={{"item",17690,1}},sort=2597}
+T[7164]={lvl=60,min=51,obj={{"item",17905,1}},sort=2597}
 T[7168]={lvl=60,min=51,obj={{"item",17691,1}},sort=2597}
+T[7169]={lvl=60,min=51,obj={{"item",17900,1}},sort=2597}
 T[7181]={lvl=60,min=51,obj={{"monster",12159,1}},sort=2597}
 T[7201]={lvl=54,min=48,obj={{"item",11129,10}},sort=1584}
 T[7202]={lvl=60,min=51,obj={{"monster",12159,1}},sort=2597}
@@ -3263,6 +3265,7 @@ T[8079]={lvl=60,min=58,obj={{"item",19723,1},{"min_reputation",270,21000}},sort=
 T[8080]={lvl=55,min=50,obj={{"item",20559,1}},sort=3358}
 T[8105]={lvl=55,min=50,obj={{"monster",15005,1},{"monster",15004,1},{"monster",15002,1},{"monster",15003,1}},sort=3358}
 T[8120]={lvl=55,min=50,obj={{"monster",15005,1},{"monster",15004,1},{"monster",15002,1},{"monster",15001,1}},sort=3358}
+T[8121]={lvl=60,min=50,sort=3358}
 T[8123]={lvl=55,min=50,obj={{"item",20559,1}},sort=3358}
 T[8149]={lvl=60,min=30,sort=-22}
 T[8150]={lvl=60,min=30,sort=-22}
@@ -3317,6 +3320,7 @@ T[8256]={lvl=52,min=50,next=8257,obj={{"item",7972,1}},sort=-262}
 T[8257]={lvl=52,min=50,obj={{"item",20025,1}},sort=-262}
 T[8258]={lvl=60,min=58,obj={{"item",18880,1}},sort=-82}
 T[8259]={lvl=60,min=58,sort=-82}
+T[8265]={lvl=60,min=45,obj={{"min_reputation",510,3000}},sort=3358}
 T[8266]={lvl=60,min=10,obj={{"item",20256,1}},sort=3277}
 T[8268]={lvl=60,min=10,obj={{"item",20256,1}},sort=3277}
 T[8270]={lvl=0,min=0,sort=0}
@@ -3376,6 +3380,7 @@ T[8375]={lvl=60,min=51,obj={{"item",20560,3}},sort=2839}
 T[8383]={lvl=60,min=51,obj={{"item",20560,3}},sort=2839}
 T[8385]={lvl=60,min=51,obj={{"item",20560,3},{"item",20559,3},{"item",20558,3},{"item",274895,3}},sort=1537}
 T[8387]={lvl=60,min=51,obj={{"item",20560,3}},sort=2839}
+T[8388]={lvl=60,min=51,obj={{"item",20560,3},{"item",20559,3},{"item",20558,3},{"item",274895,3}},sort=1637}
 T[8389]={lvl=19,min=10,obj={{"item",20558,3}},sort=3277}
 T[8393]={lvl=39,min=30,obj={{"item",20559,3}},sort=3358}
 T[8394]={lvl=49,min=40,obj={{"item",20559,3}},sort=3358}
@@ -3415,6 +3420,7 @@ T[8430]={lvl=60,min=60,obj={{"item",20558,3}},sort=3277}
 T[8431]={lvl=29,min=20,obj={{"item",20558,3}},sort=3277}
 T[8432]={lvl=39,min=30,obj={{"item",20558,3}},sort=3277}
 T[8433]={lvl=49,min=40,obj={{"item",20558,3}},sort=3277}
+T[8434]={lvl=59,min=50,obj={{"item",20558,3}},sort=3277}
 T[8435]={lvl=60,min=60,obj={{"item",20558,3}},sort=3277}
 T[8436]={lvl=39,min=30,obj={{"item",20559,3}},sort=3358}
 T[8437]={lvl=49,min=40,obj={{"item",20559,3}},sort=3358}
@@ -4029,6 +4035,7 @@ T[82657]={lvl=45,min=30,obj={{"item",217268,2},{"item",217270,2},{"item",8153,1}
 T[82662]={lvl=40,min=40,obj={{"item",217281,4},{"item",3855,4},{"item",7941,2},{"item",7945,2}},sort=-121}
 T[82665]={lvl=40,min=40,obj={{"item",217281,4},{"item",3855,4},{"item",7941,2},{"item",7945,2}},sort=-121}
 T[83934]={lvl=60,min=55,obj={{"obtain_currency",3469,1}},sort=35}
+T[84124]={lvl=60,min=55,obj={{"criteria_tree",166786,1}},sort=-81}
 T[84135]={lvl=60,min=55,sort=987}
 T[84137]={lvl=60,min=55,next=84138,sort=2317}
 T[84138]={lvl=60,min=55,sort=2317}
@@ -4075,15 +4082,20 @@ T[84186]={lvl=60,min=58,next=8960,obj={{"item",16734,1},{"item",16732,1},{"item"
 T[84187]={lvl=60,min=58,next=8960,obj={{"item",16715,1},{"item",16719,1},{"item",16718,1}},races=1309324210,sort=1637}
 T[84188]={lvl=60,min=58,next=8960,obj={{"item",16675,1},{"item",16678,1},{"item",16679,1}},races=1309324210,sort=1637}
 T[84189]={lvl=60,min=58,next=8960,obj={{"item",16682,1},{"item",16687,1},{"item",16689,1}},races=1309324210,sort=1637}
+T[84190]={lvl=60,min=58,next=8960,obj={{"item",16691,1},{"item",16694,1},{"item",16695,1}},races=1309324210,sort=1637}
 T[84191]={lvl=60,min=58,next=8960,obj={{"item",16711,1},{"item",16709,1},{"item",16708,1}},races=1309324210,sort=1637}
 T[84192]={lvl=60,min=58,next=8960,obj={{"item",16670,1},{"item",16668,1},{"item",16669,1}},races=1309324210,sort=1637}
+T[84193]={lvl=60,min=58,next=8960,obj={{"item",16704,1},{"item",16699,1},{"item",16701,1}},races=1309324210,sort=1637}
 T[84194]={lvl=60,min=58,next=8960,obj={{"item",16734,1},{"item",16732,1},{"item",16733,1}},races=1309324210,sort=1637}
 T[84196]={lvl=60,min=58,obj={{"item",16677,1},{"item",16674,1}},races=2973060173,sort=1537}
 T[84197]={lvl=60,min=58,obj={{"item",16686,1},{"item",16688,1}},races=2973060173,sort=1537}
 T[84198]={lvl=60,min=58,obj={{"item",16727,1},{"item",16726,1}},races=2973060173,sort=1537}
 T[84200]={lvl=60,min=58,obj={{"item",16707,1},{"item",16721,1}},races=2973060173,sort=1537}
+T[84203]={lvl=60,min=58,obj={{"item",16720,1},{"item",16706,1}},races=1309324210,sort=1637}
+T[84205]={lvl=60,min=58,obj={{"item",16686,1},{"item",16688,1}},races=1309324210,sort=1637}
 T[84206]={lvl=60,min=58,obj={{"item",16693,1},{"item",16690,1}},races=1309324210,sort=1637}
 T[84207]={lvl=60,min=58,obj={{"item",16707,1},{"item",16721,1}},races=1309324210,sort=1637}
+T[84208]={lvl=60,min=58,obj={{"item",16667,1},{"item",16666,1}},races=1309324210,sort=1637}
 T[84210]={lvl=60,min=58,obj={{"item",16731,1},{"item",16730,1}},races=1309324210,sort=1637}
 T[84211]={lvl=60,min=58,obj={{"item",226698,5},{"item",226699,5}},sort=46}
 T[84212]={lvl=60,min=58,obj={{"item",227285,1}},sort=618}
@@ -4103,6 +4115,7 @@ T[84400]={lvl=60,min=1,obj={{"item",228138,1}},sort=-284}
 T[84401]={lvl=60,min=1,obj={{"item",228140,1}},sort=-284}
 T[84402]={lvl=60,min=1,obj={{"item",228141,1}},sort=-284}
 T[84414]={lvl=59,min=54,next=84332,obj={{"monster",229037,1},{"item",227687,1}},sort=-141}
+T[84549]={lvl=60,min=54,obj={{"item",228693,1}},sort=2557}
 T[84555]={lvl=60,min=60,obj={{"item",228680,1}},sort=2557}
 T[85442]={lvl=60,min=60,next=85441,obj={{"item",19016,1}},sort=-344}
 T[85712]={lvl=40,min=40,obj={{"item",7937,4},{"item",7936,2},{"item",7935,1}},sort=-121}
@@ -4751,17 +4764,3 @@ T[94502]={lvl=23,min=20,next=94503,obj={{"item",7812,1},{"item",7811,1}},races=2
 T[94503]={lvl=23,min=20,next=94505,races=2973060173,sort=-82}
 T[94504]={lvl=57,min=54,obj={{"min_reputation",2747,0}},sort=616}
 T[94505]={lvl=23,min=20,obj={{"item",7813,1}},races=2973060173,sort=-82}
-T[94532]={lvl=38,min=36,obj={{"monster",255770,8},{"monster",255772,8},{"monster",255769,6}},races=1309324210,sort=16591}
-T[94533]={lvl=40,min=36,obj={{"item",265357,1}},races=1309324210,sort=16591}
-T[94535]={lvl=38,min=36,obj={{"item",265358,40}},races=1309324210,sort=16591}
-T[94556]={lvl=42,min=36,races=1309324210,sort=16591}
-T[94559]={lvl=11,min=6,obj={{"monster",258049,1}},sort=16593}
-T[94568]={lvl=11,min=6,next=92640,obj={{"monster",264712,1}},sort=16593}
-T[94613]={lvl=38,min=36,next=94615,races=2973060173,sort=16591}
-T[94614]={lvl=38,min=36,obj={{"monster",258574,8},{"monster",258573,8}},races=2973060173,sort=16591}
-T[94615]={lvl=38,min=36,next=94617,obj={{"item",267223,1}},races=2973060173,sort=16591}
-T[94616]={lvl=20,min=20,sort=-82}
-T[94617]={lvl=38,min=36,obj={{"item",265738,1}},races=2973060173,sort=16591}
-T[94618]={lvl=38,min=36,obj={{"item",267178,1}},races=2973060173,sort=16591}
-T[94638]={lvl=10,min=10,obj={{"monster",258443,1}},races=0,sort=-263}
-T[94668]={lvl=41,min=36,next=94669,races=1309324210,sort=16591}
