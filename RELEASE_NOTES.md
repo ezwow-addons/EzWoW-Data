@@ -1,3 +1,7 @@
-# v1.0.18
+# v1.0.19
 
-- 정식 서버에 맞게 표시 내용을 갱신했습니다. / Updated displayed text for the live realm.
+### 한국어
+- 함께 쓰는 데이터(이름·출처·퀘스트 정보)를 최신 게임 기록으로 갱신했습니다.
+
+### English
+- Updated the shared data (names, sources, quest info) to the latest game records.
