@@ -1296,7 +1296,7 @@ T[18807]={{lvl=60,minLevel=58,qid=7668,side="both",title="다크리버의 위협
 T[19150]={{lvl=0,qid=7863,title="Sentinel Basic Care Package"}}
 T[19151]={{lvl=0,qid=7864,title="Sentinel Standard Care Package"}}
 T[19152]={{lvl=45,qid=7865,title="Sentinel Advanced Care Package"}}
-T[19153]={{lvl=45,qid=7868,title="Outrider Advanced Care Package"}}
+T[19153]={{lvl=45,qid=7868,title="고급 정찰대 구급품",titleEn="Outrider Advanced Care Package"}}
 T[19154]={{lvl=0,qid=7866,title="Outrider Basic Care Package"}}
 T[19155]={{lvl=0,qid=7867,title="Outrider Standard Care Package"}}
 T[19483]={{lvl=0,qid=7161,title="신병 계급장",titleEn="Proving Grounds (Horde)"}}
