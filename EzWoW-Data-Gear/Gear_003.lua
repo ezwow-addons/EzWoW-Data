@@ -1306,7 +1306,7 @@ T[20134]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리
 T[20228]={{lvl=45,qid=8265,title="고급 파멸단 구급품",titleEn="Defiler's Advanced Care Package"}}
 T[20229]={{lvl=0,qid=8263,title="Defiler's Basic Care Package"}}
 T[20230]={{lvl=0,qid=8264,title="Defiler's Standard Care Package"}}
-T[20231]={{lvl=45,qid=8262,title="Arathor Advanced Care Package"}}
+T[20231]={{lvl=45,qid=8262,title="고급 아라소르 구급품",titleEn="Arathor Advanced Care Package"}}
 T[20233]={{lvl=0,qid=8260,title="Arathor Basic Care Package"}}
 T[20236]={{lvl=0,qid=8261,title="Arathor Standard Care Package"}}
 T[20709]={{lvl=13,qid=97237,title="서가에서 골라 담기",titleEn="Shelf Picked"}}
