@@ -4,6 +4,8 @@
 --   eventSpots : [questID] = { [objective index] = {continent, x, y} }
 local T
 T = EzWoW_Data._Table("QuestMap", "givers")
+T[92595]={"npc",251902,2991,3294.8,1806.2}
+T[92598]={"npc",251487,2991,4052,1859.6}
 T[92609]={"npc",244511,1,5039.4,-1403.5}
 T[92612]={"npc",256222,1,4412.4,-3468}
 T[92640]={"npc",252476,2991,2117.3,548.6}
