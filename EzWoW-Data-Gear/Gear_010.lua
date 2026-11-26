@@ -4,6 +4,27 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "gearDrops")
+T[18044]={{boss="Hurley Blackbreath",chance=30.333,creature=9537,inst="검은바위 나락",map=230,minLvl=55,n=1}}
+T[18047]={{boss="Goraluk Anvilcrack",chance=14.286,creature=10899,inst="검은바위 첨탑",map=229,minLvl=61,n=1}}
+T[18048]={{boss="Goraluk Anvilcrack",chance=14.286,creature=10899,inst="검은바위 첨탑",map=229,minLvl=61,n=1}}
+T[18082]={{boss="Witch Doctor Zum'rah",chance=20,creature=7271,inst="줄파락",map=209,minLvl=46,n=1}}
+T[18083]={{boss="Witch Doctor Zum'rah",chance=40,creature=7271,inst="줄파락",map=209,minLvl=46,n=1}}
+T[18102]={{boss="Warchief Rend Blackhand",chance=19.8,creature=10429,inst="검은바위 첨탑",map=229,minLvl=62,n=1}}
+T[18103]={{boss="Warchief Rend Blackhand",chance=16.667,creature=10429,inst="검은바위 첨탑",map=229,minLvl=62,n=1}}
+T[18104]={{boss="Warchief Rend Blackhand",chance=16.667,creature=10429,inst="검은바위 첨탑",map=229,minLvl=62,n=1}}
+T[18202]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18203]={{boss="Magmadar",chance=20,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=1}}
+T[18204]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18205]={{boss="Onyxia",chance=25,creature=10184,inst="오닉시아의 둥지",map=249,minLvl=63,n=1}}
+T[18208]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
+T[18289]={{boss="Warpwood Guardian 외 4",chance=0.8,creature=11461,inst="혈투의 전장",map=429,minLvl=54,n=5}}
+T[18295]={{boss="Phase Lasher",chance=1.2,creature=13196,inst="혈투의 전장",map=429,minLvl=54,n=1}}
+T[18296]={{boss="Wildspawn Satyr 외 5",chance=0.6,creature=11451,inst="혈투의 전장",map=429,minLvl=55,n=6}}
+T[18298]={{boss="Wildspawn Satyr 외 5",chance=0.6,creature=11451,inst="혈투의 전장",map=429,minLvl=55,n=6}}
+T[18301]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18302]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18303]={{boss="Pusillin",creature=14354,inst="혈투의 전장",map=429,minLvl=57,n=1}}
+T[18305]={{boss="Hydrospawn",chance=25,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
 T[18306]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}
 T[18307]={{boss="Hydrospawn",chance=25,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}
 T[18308]={{boss="Zevrim Thornhoof",chance=20,creature=11490,inst="혈투의 전장",map=429,minLvl=57,n=1}}

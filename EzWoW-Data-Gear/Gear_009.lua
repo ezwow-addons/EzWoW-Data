@@ -4,6 +4,8 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "gearDrops")
+T[15220]={{boss="Rage Talon Captain 외 15",chance=0.011,creature=10371,inst="검은바위 첨탑",map=229,minLvl=58,n=16},{boss="Onyxian Warder",chance=0.011,creature=12129,inst="오닉시아의 둥지",map=249,minLvl=60,n=1},{boss="Jandice Barov 외 21",chance=0.469,creature=10503,inst="스칼로맨스",map=289,minLvl=57,n=22},{boss="Gurubashi Berserker 외 29",chance=0.011,creature=11352,inst="줄구룹",map=309,minLvl=60,n=30},{boss="Ramstein the Gorger 외 21",chance=0.188,creature=10439,inst="스트라솔름",map=329,minLvl=58,n=22},{boss="Molten Giant 외 13",chance=0.011,creature=11658,inst="화산 심장부",map=409,minLvl=60,n=14},{boss="Arcane Aberration 외 18",chance=0.017,creature=11480,inst="혈투의 전장",map=429,minLvl=57,n=19},{boss="Blackwing Spellbinder 외 9",chance=0.011,creature=12457,inst="검은날개 둥지",map=469,minLvl=60,n=10},{boss="Flesh Hunter 외 20",chance=0.011,creature=15335,inst="안퀴라즈 폐허",map=509,minLvl=60,n=21},{boss="Vekniss Stinger 외 15",chance=0.011,creature=15235,inst="안퀴라즈 사원",map=531,minLvl=60,n=16},{boss="Living Monstrosity 외 34",chance=0.011,creature=16021,inst="낙스라마스",map=533,minLvl=60,n=35}}
+T[15221]={{boss="Azuregos 외 5",chance=1.653,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=6},{boss="Rage Talon Captain",chance=0.011,creature=10371,inst="검은바위 첨탑",map=229,minLvl=62,n=1},{boss="Onyxia 외 1",chance=0.826,creature=10184,inst="오닉시아의 둥지",map=249,minLvl=60,n=2},{boss="Ras Frostwhisper",chance=0.011,creature=10508,inst="스칼로맨스",map=289,minLvl=62,n=1},{boss="Gahz'ranka 외 1",chance=0.826,creature=15114,inst="줄구룹",map=309,minLvl=62,n=2},{boss="Molten Giant 외 12",chance=0.011,creature=11658,inst="화산 심장부",map=409,minLvl=61,n=13},{boss="Nefarian 외 6",chance=0.826,creature=11583,inst="검은날개 둥지",map=469,minLvl=62,n=7},{boss="Flesh Hunter 외 8",chance=0.011,creature=15335,inst="안퀴라즈 폐허",map=509,minLvl=62,n=9},{boss="Vekniss Stinger 외 4",chance=0.011,creature=15235,inst="안퀴라즈 사원",map=531,minLvl=62,n=5},{boss="Living Monstrosity 외 5",chance=0.011,creature=16021,inst="낙스라마스",map=533,minLvl=62,n=6}}
 T[15222]={{boss="Bleak Worg 외 14",chance=0.045,creature=3861,inst="그림자송곳니 성채",map=33,minLvl=18,n=15},{boss="상자: Large Battered Chest 외 16",chance=1.25,creature=-75293,inst="죽음의 폐광",map=36,minLvl=16,n=17},{boss="상자: Large Battered Chest 외 12",chance=1.25,creature=-75293,inst="통곡의 동굴",map=43,minLvl=17,n=13},{boss="Oggleflint 외 3",chance=0.014,creature=11517,inst="성난불길 협곡",map=389,minLvl=16,n=4}}
 T[15223]={{boss="Son of Arugal 외 9",creature=2529,inst="그림자송곳니 성채",map=33,minLvl=20,n=10},{boss="Targorr the Dread 외 6",chance=0.011,creature=1696,inst="스톰윈드 지하감옥",map=34,minLvl=23,n=7},{boss="Edwin VanCleef",chance=0.02,creature=639,inst="죽음의 폐광",map=36,minLvl=21,n=1},{boss="Deviate Dreadfang 외 1",chance=0.011,creature=5056,inst="통곡의 동굴",map=43,minLvl=20,n=2},{boss="Razorfen Geomancer 외 6",chance=0.011,creature=4520,inst="가시덩굴 우리",map=47,minLvl=24,n=7},{boss="Murkshallow Snapclaw 외 18",chance=0.014,creature=4815,inst="검은심연의 나락",map=48,minLvl=22,n=19},{boss="Mobile Alert System 외 1",chance=0.011,creature=7849,inst="놈리건",map=90,minLvl=25,n=2},{boss="Suffering Victim",chance=0.011,creature=6547,inst="붉은십자군 수도원",map=189,minLvl=25,n=1}}
 T[15224]={{boss="Son of Arugal 외 6",creature=2529,inst="그림자송곳니 성채",map=33,minLvl=21,n=7},{boss="Targorr the Dread 외 7",chance=0.011,creature=1696,inst="스톰윈드 지하감옥",map=34,minLvl=23,n=8},{boss="Razorfen Geomancer 외 8",chance=0.011,creature=4520,inst="가시덩굴 우리",map=47,minLvl=24,n=9},{boss="Murkshallow Snapclaw 외 21",chance=0.014,creature=4815,inst="검은심연의 나락",map=48,minLvl=22,n=22},{boss="Mobile Alert System 외 3",chance=0.011,creature=7849,inst="놈리건",map=90,minLvl=25,n=4},{boss="Suffering Victim",chance=0.011,creature=6547,inst="붉은십자군 수도원",map=189,minLvl=25,n=1}}
@@ -711,24 +713,3 @@ T[17767]={{boss="Meshlok the Harvester",chance=33.333,creature=12237,inst="마�
 T[17780]={{boss="Princess Theradras",chance=0.5,creature=12201,inst="마라우돈",map=349,minLvl=51,n=1}}
 T[17943]={{boss="Landslide",chance=25,creature=12203,inst="마라우돈",map=349,minLvl=50,n=1}}
 T[18043]={{boss="Hurley Blackbreath",chance=30.333,creature=9537,inst="검은바위 나락",map=230,minLvl=55,n=1}}
-T[18044]={{boss="Hurley Blackbreath",chance=30.333,creature=9537,inst="검은바위 나락",map=230,minLvl=55,n=1}}
-T[18047]={{boss="Goraluk Anvilcrack",chance=14.286,creature=10899,inst="검은바위 첨탑",map=229,minLvl=61,n=1}}
-T[18048]={{boss="Goraluk Anvilcrack",chance=14.286,creature=10899,inst="검은바위 첨탑",map=229,minLvl=61,n=1}}
-T[18082]={{boss="Witch Doctor Zum'rah",chance=20,creature=7271,inst="줄파락",map=209,minLvl=46,n=1}}
-T[18083]={{boss="Witch Doctor Zum'rah",chance=40,creature=7271,inst="줄파락",map=209,minLvl=46,n=1}}
-T[18102]={{boss="Warchief Rend Blackhand",chance=19.8,creature=10429,inst="검은바위 첨탑",map=229,minLvl=62,n=1}}
-T[18103]={{boss="Warchief Rend Blackhand",chance=16.667,creature=10429,inst="검은바위 첨탑",map=229,minLvl=62,n=1}}
-T[18104]={{boss="Warchief Rend Blackhand",chance=16.667,creature=10429,inst="검은바위 첨탑",map=229,minLvl=62,n=1}}
-T[18202]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
-T[18203]={{boss="Magmadar",chance=20,creature=11982,inst="화산 심장부",map=409,minLvl=63,n=1}}
-T[18204]={{boss="Lord Kazzak",chance=20,creature=12397,inst="월드 보스",map=-1,minLvl=63,n=1}}
-T[18205]={{boss="Onyxia",chance=25,creature=10184,inst="오닉시아의 둥지",map=249,minLvl=63,n=1}}
-T[18208]={{boss="Azuregos",chance=20,creature=6109,inst="월드 보스",map=-1,minLvl=63,n=1}}
-T[18289]={{boss="Warpwood Guardian 외 4",chance=0.8,creature=11461,inst="혈투의 전장",map=429,minLvl=54,n=5}}
-T[18295]={{boss="Phase Lasher",chance=1.2,creature=13196,inst="혈투의 전장",map=429,minLvl=54,n=1}}
-T[18296]={{boss="Wildspawn Satyr 외 5",chance=0.6,creature=11451,inst="혈투의 전장",map=429,minLvl=55,n=6}}
-T[18298]={{boss="Wildspawn Satyr 외 5",chance=0.6,creature=11451,inst="혈투의 전장",map=429,minLvl=55,n=6}}
-T[18301]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18302]={{boss="Lethtendris",chance=30,creature=14327,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18303]={{boss="Pusillin",creature=14354,inst="혈투의 전장",map=429,minLvl=57,n=1}}
-T[18305]={{boss="Hydrospawn",chance=25,creature=13280,inst="혈투의 전장",map=429,minLvl=57,n=1}}

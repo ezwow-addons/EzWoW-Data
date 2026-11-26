@@ -1304,8 +1304,8 @@ T[19484]={{lvl=0,qid=7162,title="신병 계급장",titleEn="Proving Grounds (All
 T[20133]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리버의 위협"},{choice=true,lvl=60,minLevel=58,qid=8258,side="both",title="다크리버의 위협",titleEn="The Darkreaver Menace"}}
 T[20134]={{choice=true,lvl=60,minLevel=58,qid=97169,side="both",title="다크리버의 위협"}}
 T[20228]={{lvl=45,qid=8265,title="고급 파멸단 구급품",titleEn="Defiler's Advanced Care Package"}}
-T[20229]={{lvl=0,qid=8263,title="Defiler's Basic Care Package"}}
-T[20230]={{lvl=0,qid=8264,title="Defiler's Standard Care Package"}}
+T[20229]={{lvl=0,qid=8263,title="기본 파멸단 구급품",titleEn="Defiler's Basic Care Package"}}
+T[20230]={{lvl=0,qid=8264,title="일반 파멸단 구급품",titleEn="Defiler's Standard Care Package"}}
 T[20231]={{lvl=45,qid=8262,title="고급 아라소르 구급품",titleEn="Arathor Advanced Care Package"}}
 T[20233]={{lvl=0,qid=8260,title="Arathor Basic Care Package"}}
 T[20236]={{lvl=0,qid=8261,title="Arathor Standard Care Package"}}
@@ -2557,4 +2557,3 @@ T[19312]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfhear
 T[19315]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19316]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19317]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19318]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
