@@ -11,6 +11,7 @@
 --                    minLvl, chance (0..1), creature=npcID, map=instance mapID, n=number of npcs}, ... }
 local T
 T = EzWoW_Data._Table("Gear", "foreverVendors")
+T[19317]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19318]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19319]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19320]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
@@ -1247,4 +1248,3 @@ T[5213]={{boss="Greater Kraul Bat",chance=0.009,creature=4539,inst="가시덩굴
 T[5214]={{boss="Bazil Thredd",chance=0.01,creature=1716,inst="스톰윈드 지하감옥",map=34,minLvl=29,n=1},{boss="Razorfen Totemic 외 13",chance=0.01,creature=4440,inst="가시덩굴 우리",map=47,minLvl=28,n=14},{boss="Grubbis 외 19",chance=0.393,creature=7361,inst="놈리건",map=90,minLvl=28,n=20},{boss="Scarlet Tracking Hound 외 9",chance=0.022,creature=4304,inst="붉은십자군 수도원",map=189,minLvl=30,n=10}}
 T[5215]={{boss="상자: Ancient Treasure 외 22",chance=2.4,creature=-141979,inst="울다만",map=70,minLvl=37,n=23},{boss="Lady Falther'ess 외 1",chance=0.007,creature=14686,inst="가시덩굴 구릉",map=129,minLvl=38,n=2},{boss="Scarlet Defender 외 6",chance=0.017,creature=4298,inst="붉은십자군 수도원",map=189,minLvl=37,n=7},{boss="Gelk 외 4",chance=0.007,creature=13741,inst="마라우돈",map=349,minLvl=42,n=5}}
 T[5216]={{boss="상자: Ancient Treasure 외 6",chance=2,creature=-141979,inst="울다만",map=70,minLvl=42,n=7},{boss="Slime Maggot 외 1",chance=0.006,creature=8311,inst="가라앉은 사원",map=109,minLvl=45,n=2},{boss="Sandarr Dunereaver 외 21",chance=0.288,creature=10080,inst="줄파락",map=209,minLvl=43,n=22},{boss="Constrictor Vine 외 21",chance=0.015,creature=12220,inst="마라우돈",map=349,minLvl=42,n=22}}
-T[5243]={{boss="Deviate Faerie Dragon",chance=50,creature=5912,inst="통곡의 동굴",map=43,minLvl=20,n=1}}

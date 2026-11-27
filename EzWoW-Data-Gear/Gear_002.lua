@@ -4,6 +4,7 @@
 --   craftInfo : [itemID] = { reag={{itemID,count},...}, src=Korean source, srcEn }
 local T
 T = EzWoW_Data._Table("Gear", "gearCrafting")
+T[7941]={{boss="",inst="대장기술",skill=210,spell=9993}}
 T[7942]={{boss="도안 필요",inst="대장기술",skill=220,spell=9995}}
 T[7943]={{boss="도안 필요",inst="대장기술",skill=225,spell=9997}}
 T[7944]={{boss="도안 필요",inst="대장기술",skill=240,spell=10005}}
@@ -573,7 +574,7 @@ T[4237]={reag={{2318,6},{2320,1}},src="교관",srcEn="Trainer"}
 T[4238]={reag={{2996,3},{2320,3}},src="기본 제조법",srcEn="Known from the start"}
 T[4239]={reag={{2318,3},{2320,2}},src="교관",srcEn="Trainer"}
 T[4240]={reag={{2997,3},{2321,1}},src="교관",srcEn="Trainer"}
-T[4241]={reag={{2997,4},{2605,1},{2321,1}},src="도안 · 월드 드랍",srcEn="Pattern · world drop"}
+T[4241]={reag={{2997,5},{2605,1},{2321,1}},src="도안 · 월드 드랍",srcEn="Pattern · world drop"}
 T[4242]={reag={{4231,1},{2318,6},{2320,2}},src="교관",srcEn="Trainer"}
 T[4243]={reag={{4231,3},{2318,6},{2320,4}},src="교관",srcEn="Trainer"}
 T[4244]={reag={{4243,1},{4231,2},{2320,2}},src="도안 · 월드 드랍",srcEn="Pattern · world drop"}
@@ -710,9 +711,9 @@ T[5633]={reag={{5637,1},{3356,1},{3372,1}},src="조제법 · 울시르 (다르�
 T[5634]={reag={{6370,2},{3820,1},{3372,1}},src="조제법 · 울시르 (다르나서스 55.8, 24.5) / 술리 베리피즈 (아이언포지 66.2, 54.5) 판매\n조제법 · 코르겔드 (오그리마 56.1, 34.1) / 자동 판매기 1000 (잊혀진 땅 60.2, 38.2) 판매",srcEn="Recipe · sold by Ulthir (Darnassus 55.8, 24.5) / Soolie Berryfizz (Ironforge 66.2, 54.5)\nRecipe · sold by Kor'geld (Orgrimmar 56.1, 34.1) / Vendor-Tron 1000 (Desolace 60.2, 38.2)"}
 T[5739]={reag={{4234,14},{2321,2},{7071,1}},src="교관",srcEn="Trainer"}
 T[5762]={reag={{2996,4},{2321,1},{2604,1}},src="도안 · 지나 맥그레거 (서부 몰락지대 57.6, 54.1) / 발다론 (어둠의 해안 38.2, 40.6) 판매\n도안 · 마후 (썬더 블러프 43.8, 45.1) / 앤드류 힐버트 (은빛소나무 숲 43.2, 40.7) 판매",srcEn="Pattern · sold by Gina MacGregor (Westfall 57.6, 54.1) / Valdaron (Darkshore 38.2, 40.6)\nPattern · sold by Mahu (Thunder Bluff 43.8, 45.1) / Andrew Hilbert (Silverpine Forest 43.2, 40.7)"}
-T[5763]={reag={{2997,4},{2604,1},{2321,1}},src="도안 · 에이미 데이븐포트 (붉은마루 산맥 24, 47.3) / 제나빙크 파워심 (저습지 8.1, 55.8) 판매\n도안 · 마후 (썬더 블러프 43.8, 45.1) / 보르야 (오그리마 63.1, 51.4) 판매",srcEn="Pattern · sold by Amy Davenport (Redridge Mountains 24, 47.3) / Jennabink Powerseam (Wetlands 8.1, 55.8)\nPattern · sold by Mahu (Thunder Bluff 43.8, 45.1) / Borya (Orgrimmar 63.1, 51.4)"}
-T[5764]={reag={{4305,4},{4234,3},{2321,3},{2605,1}},src="도안 · 월드 드랍",srcEn="Pattern · world drop"}
-T[5765]={reag={{4305,5},{2325,1},{2321,4}},src="도안 · 알터랙 산맥 · 먼지진흙 습지대 · 힐스브래드 구릉지 드랍",srcEn="Pattern · drops in Alterac Mountains · Dustwallow Marsh · Hillsbrad Foothills"}
+T[5763]={reag={{2997,5},{2604,1},{2321,1}},src="도안 · 에이미 데이븐포트 (붉은마루 산맥 24, 47.3) / 제나빙크 파워심 (저습지 8.1, 55.8) 판매\n도안 · 마후 (썬더 블러프 43.8, 45.1) / 보르야 (오그리마 63.1, 51.4) 판매",srcEn="Pattern · sold by Amy Davenport (Redridge Mountains 24, 47.3) / Jennabink Powerseam (Wetlands 8.1, 55.8)\nPattern · sold by Mahu (Thunder Bluff 43.8, 45.1) / Borya (Orgrimmar 63.1, 51.4)"}
+T[5764]={reag={{4305,5},{4234,3},{2321,3},{2605,1}},src="도안 · 월드 드랍",srcEn="Pattern · world drop"}
+T[5765]={reag={{4305,6},{2325,1},{2321,4}},src="도안 · 알터랙 산맥 · 먼지진흙 습지대 · 힐스브래드 구릉지 드랍",srcEn="Pattern · drops in Alterac Mountains · Dustwallow Marsh · Hillsbrad Foothills"}
 T[5766]={reag={{4305,2},{2321,2},{3182,2}},src="교관",srcEn="Trainer"}
 T[5770]={reag={{4305,4},{2321,2},{3182,2}},src="도안 · 그늘숲 · 어둠의 해안 드랍",srcEn="Pattern · drops in Duskwood · Darkshore"}
 T[5780]={reag={{5784,8},{2318,6},{2321,1}},src="도안 · 지나 맥그레거 (서부 몰락지대 57.6, 54.1) / 마브라린 (어둠의 해안 37, 41.2) 판매\n도안 · 앤드류 힐버트 (은빛소나무 숲 43.2, 40.7) 판매",srcEn="Pattern · sold by Gina MacGregor (Westfall 57.6, 54.1) / Mavralyn (Darkshore 37, 41.2)\nPattern · sold by Andrew Hilbert (Silverpine Forest 43.2, 40.7)"}
@@ -1006,7 +1007,7 @@ T[10046]={reag={{2996,2},{2318,1},{2320,1}},src="교관",srcEn="Trainer"}
 T[10047]={reag={{2996,4},{2321,1}},src="교관",srcEn="Trainer"}
 T[10048]={reag={{2997,5},{2604,3},{2321,1}},src="도안 · 월드 드랍",srcEn="Pattern · world drop"}
 T[10050]={reag={{4339,4},{4291,2}},src="교관",srcEn="Trainer"}
-T[10051]={reag={{4339,4},{2604,2},{8343,2}},src="교관",srcEn="Trainer"}
+T[10051]={reag={{4339,5},{2604,2},{8343,2}},src="교관",srcEn="Trainer"}
 T[10052]={reag={{4339,2},{6261,2},{8343,1}},src="도안 · 엘리나 (다르나서스 64.6, 21.6) 판매\n도안 · 마후 (썬더 블러프 43.8, 45.1) 판매",srcEn="Pattern · sold by Elynna (Darnassus 64.6, 21.6)\nPattern · sold by Mahu (Thunder Bluff 43.8, 45.1)"}
 T[10053]={reag={{4339,3},{2325,1},{8343,1},{2324,1}},src="교관",srcEn="Trainer"}
 T[10054]={reag={{4339,2},{4342,2},{8343,2}},src="도안 · 재단사 에릭 (아이언포지 43.4, 29.3) 판매\n도안 · 보르야 (오그리마 63.1, 51.4) 판매",srcEn="Pattern · sold by Outfitter Eric (Ironforge 43.4, 29.3)\nPattern · sold by Borya (Orgrimmar 63.1, 51.4)"}
@@ -1808,7 +1809,7 @@ T[250950]={reag={{8846,3},{13466,2},{8925,1}},src="조제법 · 니나 슈어파
 T[250951]={reag={{8845,2},{3369,2},{8925,1}},src="조제법 · 니나 슈어파이어 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 180, 우호적\n조제법 · 연금술사 두렐 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 우호적",srcEn="Recipe · sold by Nina Surefire (Redridge Mountains 10.8, 72.5) · Merchant's Favor 180, Honored\nRecipe · sold by Apothecary Durelle (The Barrens 49.8, 29.6) · Merchant's Favor 180, Honored"}
 T[250953]={reag={{13465,2},{4625,2},{8925,1}},src="조제법 · 니나 슈어파이어 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 120, 약간 우호적\n조제법 · 연금술사 두렐 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 120, 약간 우호적",srcEn="Recipe · sold by Nina Surefire (Redridge Mountains 10.8, 72.5) · Merchant's Favor 120, Friendly\nRecipe · sold by Apothecary Durelle (The Barrens 49.8, 29.6) · Merchant's Favor 120, Friendly"}
 T[250954]={reag={{4625,2},{3819,2},{8925,1}},src="조제법 · 니나 슈어파이어 (붉은마루 산맥 10.8, 72.5) 판매 · 상인의 호의 180, 우호적\n조제법 · 연금술사 두렐 (불모의 땅 49.8, 29.6) 판매 · 상인의 호의 180, 우호적",srcEn="Recipe · sold by Nina Surefire (Redridge Mountains 10.8, 72.5) · Merchant's Favor 180, Honored\nRecipe · sold by Apothecary Durelle (The Barrens 49.8, 29.6) · Merchant's Favor 180, Honored"}
-T[250955]={reag={{8846,2},{13466,2},{18256,1}},src="@A 조제법 · 마리아 루메르 (스톰윈드 55.9, 85.6) 판매\n@H 조제법 · 알게르논 (언더시티 51.7, 74.7) 판매",srcEn="@A Recipe · sold by Maria Lumere (Stormwind City 55.9, 85.6)\n@H Recipe · sold by Algernon (Undercity 51.7, 74.7)"}
+T[250955]={reag={{8846,2},{13466,2},{18256,1}},src="조제법 · 마리아 루메르 (스톰윈드 55.9, 85.6) 판매\n조제법 · 알게르논 (언더시티 51.7, 74.7) 판매",srcEn="Recipe · sold by Maria Lumere (Stormwind City 55.9, 85.6)\nRecipe · sold by Algernon (Undercity 51.7, 74.7)"}
 T[251290]={reag={{251291,1},{248819,1}},src="",srcEn=""}
 T[251291]={reag={{248815,1}},src="",srcEn=""}
 T[251525]={reag={{251524,1},{2678,1}},src="조리법 · 붉은마루 산맥 · 서부 몰락지대 · 엘윈 숲 드랍",srcEn="Recipe · drops in Redridge Mountains · Westfall · Elwynn Forest"}

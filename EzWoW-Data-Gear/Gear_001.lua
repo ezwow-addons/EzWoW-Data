@@ -5782,6 +5782,7 @@ T[274275]={{lvl=300,recipe=true,skill="연금술",spell=1293561}}
 T[274276]={{lvl=300,recipe=true,skill="연금술",spell=1293562}}
 T[274387]={{lvl=300,recipe=true,skill="기계공학",spell=1293849}}
 T[274388]={{lvl=300,recipe=true,skill="기계공학",spell=1293850}}
+T[274490]={{lvl=165,recipe=true,skill="가죽세공",spell=1294289}}
 T[274971]={{lvl=200,recipe=true,skill="요리",spell=1295805}}
 T[274976]={{lvl=185,recipe=true,skill="요리",spell=1295834}}
 T[275604]={{lvl=285,recipe=true,skill="재봉술",spell=1297120}}
@@ -5908,7 +5909,7 @@ T[279271]={{lvl=300,recipe=true,skill="재봉술",spell=1306545}}
 T[279272]={{lvl=300,recipe=true,skill="기계공학",spell=1306546}}
 T[279273]={{lvl=300,recipe=true,skill="기계공학",spell=1306547}}
 T[279940]={{lvl=140,recipe=true,skill="응급치료",spell=1262996}}
-T[279941]={{lvl=140,recipe=true,skill="가죽세공",spell=1263031}}
+T[279941]={{lvl=125,recipe=true,skill="가죽세공",spell=1263031}}
 T[279943]={{lvl=140,recipe=true,skill="재봉술",spell=1263032}}
 T[279944]={{lvl=20,recipe=false,skill="대장기술",spell=1230171}}
 T[279945]={{lvl=300,recipe=true,skill="가죽세공",spell=1263079}}
@@ -7267,4 +7268,3 @@ T[7936]={{boss="도안 필요",inst="대장기술",skill=245,spell=9979}}
 T[7937]={{boss="도안 필요",inst="대장기술",skill=245,spell=9980}}
 T[7938]={{boss="",inst="대장기술",skill=225,spell=9954}}
 T[7939]={{boss="",inst="대장기술",skill=245,spell=9974}}
-T[7941]={{boss="",inst="대장기술",skill=210,spell=9993}}

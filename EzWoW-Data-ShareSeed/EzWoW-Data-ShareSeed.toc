@@ -3,7 +3,7 @@
 ## Title: EzWoW - Data (Share Seed)
 ## Notes: EzWoW shared data: records EzWoW players shared (drops, vendors, spots, flight times). Loaded by EzWoW addons when needed.
 ## Notes-koKR: EzWoW 공용 자료: EzWoW 사용자들이 공유한 기록(드롭, 상점, 위치, 비행 시간). EzWoW 애드온이 필요할 때 읽습니다.
-## Author: qqhrqqhr2
+## Author: ezwow-addons
 ## Version: 1.0.24
 ## Category: EzWoW - Data Modules
 ## IconTexture: Interface\AddOns\EzWoW-Data\Media\Icon
@@ -16,3 +16,4 @@
 
 ShareSeed_001.lua
 ShareSeed_002.lua
+ShareSeed_003.lua

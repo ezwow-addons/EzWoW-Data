@@ -306,6 +306,7 @@ T[274275]={reag={{248822,1},{248823,12},{13463,9},{18256,1}},src="",srcEn=""}
 T[274276]={reag={{248822,1},{248823,18},{13467,6},{18256,1}},src="",srcEn=""}
 T[274387]={reag={{251291,8},{17056,5},{7069,1}},src="",srcEn=""}
 T[274388]={reag={{251291,8},{12365,8},{7067,1}},src="",srcEn=""}
+T[274490]={reag={{4304,12},{8343,2}},src="",srcEn=""}
 T[274971]={reag={{730,2},{12206,1},{2692,1}},src="조리법 · Fimbo Greasemitz (강물터 78.8, 54) 판매",srcEn="Recipe · sold by Fimbo Greasemitz (Riverglades 78.8, 54)"}
 T[274976]={reag={{769,2},{2678,1}},src="조리법 · Martha Wellsworth (강물터 64.2, 84) 판매",srcEn="Recipe · sold by Martha Wellsworth (Riverglades 64.2, 84)"}
 T[275604]={reag={{14048,4},{14343,1},{7082,3},{14341,6}},src="도안 · 미쉬타 (실리더스 49.9, 36.3) 판매",srcEn="Pattern · sold by Mishta (Silithus 49.9, 36.3)"}
@@ -2556,4 +2557,3 @@ T[19311]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfhear
 T[19312]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19315]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
 T[19316]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
-T[19317]={{boss="Gaelden Hammersmith",npc=13216,zone=""},{boss="Grunnda Wolfheart",npc=13218,zone=""}}
